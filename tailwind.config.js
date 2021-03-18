@@ -1,8 +1,12 @@
 module.exports = {
-  purge: [],
+  purge: ['./*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        enorme : "500px"
+      }
+    },
   },
   variants: {
     extend: {},
