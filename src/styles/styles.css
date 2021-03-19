@@ -31428,6 +31428,12 @@ video {
           animation: bounce 1s infinite;
 }
 
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
