@@ -8,3 +8,4 @@ function toggleNavigation(){
         document.body.setAttribute("data-menu", true);
     }
 }
+
