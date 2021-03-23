@@ -12,11 +12,45 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script defer src="scripts/app.js"></script>
 </head>
-<body>
-    <main>
-        <div class="container">
-            <h1 class="text-4xl text-center font-sans">Vertigo</h1>
+<body class="bg-cream overflow-hidden">
+    <header class="w-full container z-60">
+        <div class="flex justify-between items-center mt-7">
+            <a class="flex items-center" href="index.html">
+                <img src="assets/icons/logo.svg" alt="">
+                <h1 class="uppercase font-bold text-tiny ml-3">Vertigo</h1>
+            </a>
+            <div class="flex items-center font-medium text-tiny">
+                <a class="bg-neon px-5 py-3 flex items-center mr-10" href="">Soutenir
+                    <div class="bg-black w-12 h-2px block ml-3"></div>
+                </a>
+                <button class="flex items-center outline-none">
+                    <h2 class="mr-2">Menu</h2>
+                    <img class="h-4" src="assets/icons/menu.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="w-full h-screen flex container">
+        <div class="h-screen w-6/12">
+            <div class="mt-52">
+                <h2 class="font-bold text-2lg w-10/12">Révolutionner le streaming d’aujourd’hui grâce à Vertigo.</h2>
+                <p class="text-tiny font-light mt-5 w-10/12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis vero est qui laboriosam sapiente ab maxime, eius assumenda amet obcaecati. Harum optio atque similique quis quo fugit error unde laborum!</p>
+                <div class="flex items-center font-medium text-tiny mt-5">
+                    <a class="bg-neon px-5 py-3 flex items-center mr-10" href="">Soutenir
+                        <div class="bg-black w-12 h-2px block ml-3"></div>
+                    </a>
+                    <a class="font-normal flex items-center" href="">En savoir plus
+                        <img class="ml-2" src="assets/icons/arrow-to.svg" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
     </main>
+    <div class="h-screen w-6/12 noise overflow-hidden absolute top-0 right-0">
+        <span class="w-96 h-96 rounded-full blur bg-neon z-30 block absolute -bottom-20 -right-20"></span>
+        <span class="w-72 h-72 rounded-full blur bg-purple z-30 block absolute -bottom-56 right-40"></span>
+        <span class="w-96 h-96 rounded-full blur bg-purple z-30 block absolute -top-20 -left-20"></span>
+        <span class="w-72 h-72 rounded-full blur bg-neon z-30 block absolute top-36 -left-40"></span>
+    </div>
 </body>
 </html>
