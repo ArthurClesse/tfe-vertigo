@@ -54,7 +54,17 @@ module.exports = {
       backdropFilter: { // defaults to {}
       'none': 'none',
       'blur': 'blur(20px)',
-    },
+      },
+      transitionDuration: {
+        '0': '0ms',
+        '4s': '4s',
+        '2000': '2000ms',
+      },
+      keyframes: {
+        apparition: {
+          '100%': { opacity: '1' }
+        }
+      },
     },
   },
   extend: {
@@ -69,7 +79,11 @@ module.exports = {
       'center': ['-50%', '-50%']
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      margin:['last'],
+    }
+  },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('tailwindcss-filters'),

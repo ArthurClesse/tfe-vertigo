@@ -13,29 +13,60 @@
     <script defer src="scripts/app.js"></script>
 </head>
 <body class="bg-cream overflow-hidden">
-    <header class="w-full container z-60">
+    <header class="w-full container px-20">
         <div class="flex justify-between items-center mt-7">
             <a class="flex items-center" href="index.html">
-                <img src="assets/icons/logo.svg" alt="">
+                <img class="h-14" src="assets/icons/logo.svg" alt="">
                 <h1 class="uppercase font-bold text-tiny ml-3">Vertigo</h1>
             </a>
             <div class="flex items-center font-medium text-tiny">
-                <a class="bg-neon px-5 py-3 flex items-center mr-10" href="">Soutenir
+                <a class="bg-neon px-5 py-3 flex items-center mr-10 z-40" href="">Soutenir
                     <div class="bg-black w-12 h-2px block ml-3"></div>
                 </a>
-                <button class="flex items-center outline-none">
+                <button class="flex items-center outline-none focus:outline-none btn-menu z-50">
                     <h2 class="mr-2">Menu</h2>
-                    <img class="h-4" src="assets/icons/menu.svg" alt="">
+                    <img class="h-4 burger" src="assets/icons/menu.svg" alt="">
+                    <img class="h-8 hidden close" src="assets/icons/close-line.svg" alt="">
                 </button>
             </div>
         </div>
+        <div class="w-screen h-screen fixed top-0 hidden menu bg-cream z-40 container px-20">
+            <nav>
+                <ul class="text-2xl font-medium mt-28">
+                    <li class="flex items-center text-animated-1">
+                        <a href="">À propos</a>
+                        <div class="bg-black w-24 h-4px block ml-5 mt-5"></div>
+                    </li>
+                    <li class="flex items-center text-animated-2">
+                        <a href="">Fonctionnalité</a>
+                        <div class="bg-black w-24 h-4px block ml-5 mt-5"></div>
+                    </li>
+                    <li class="flex items-center text-animated-3">
+                        <a href="">Technologie</a>
+                        <div class="bg-black w-24 h-4px block ml-5 mt-5"></div>
+                    </li>
+                </ul>
+                <div class="flex mt-10 text-tiny font-medium text-animated-4">
+                    <a class="bg-neon px-5 py-3 flex items-center mr-10" href="">Soutenir
+                        <div class="bg-black w-12 h-2px block ml-3"></div>
+                    </a>
+                </div>
+                <ul class="flex items-center text-tiny font-base mt-10 text-animated-5">
+                    <li class="mr-5">FAQ</li>
+                    <li class="mr-5">Partenaires</li>
+                    <li>Contacts</li>
+                </ul>
+            </nav>
+            <span class="w-96 h-96 rounded-full blur bg-neon z-20 block absolute -bottom-20 -right-20"></span>
+            <span class="w-72 h-72 rounded-full blur bg-purple z-20 block absolute -bottom-56 right-40"></span>
+        </div>
     </header>
-    <main class="w-full h-screen flex container">
+    <main class="w-full h-screen flex container px-20">
         <div class="h-screen w-6/12">
-            <div class="mt-52">
-                <h2 class="font-bold text-2lg w-10/12">Révolutionner le streaming d’aujourd’hui grâce à Vertigo.</h2>
-                <p class="text-tiny font-light mt-5 w-10/12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis vero est qui laboriosam sapiente ab maxime, eius assumenda amet obcaecati. Harum optio atque similique quis quo fugit error unde laborum!</p>
-                <div class="flex items-center font-medium text-tiny mt-5">
+            <div class="mt-28">
+                <h2 class="font-bold text-2lg w-10/12 text-animated-1 leading-tight">Révolutionner le streaming d’aujourd’hui grâce à Vertigo.</h2>
+                <p class="text-tiny font-light mt-5 w-10/12 text-animated-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis vero est qui laboriosam sapiente ab maxime, eius assumenda amet obcaecati. Harum optio atque similique quis quo fugit error unde laborum!</p>
+                <div class="flex items-center font-medium text-tiny mt-10 text-animated-3">
                     <a class="bg-neon px-5 py-3 flex items-center mr-10" href="">Soutenir
                         <div class="bg-black w-12 h-2px block ml-3"></div>
                     </a>
@@ -47,10 +78,10 @@
         </div>
     </main>
     <div class="h-screen w-6/12 noise overflow-hidden absolute top-0 right-0">
-        <span class="w-96 h-96 rounded-full blur bg-neon z-30 block absolute -bottom-20 -right-20"></span>
-        <span class="w-72 h-72 rounded-full blur bg-purple z-30 block absolute -bottom-56 right-40"></span>
-        <span class="w-96 h-96 rounded-full blur bg-purple z-30 block absolute -top-20 -left-20"></span>
-        <span class="w-72 h-72 rounded-full blur bg-neon z-30 block absolute top-36 -left-40"></span>
+        <span class="w-96 h-96 rounded-full blur bg-neon z-20 block absolute -bottom-20 -right-20"></span>
+        <span class="w-72 h-72 rounded-full blur bg-purple z-20 block absolute -bottom-56 right-40"></span>
+        <span class="w-96 h-96 rounded-full blur bg-purple z-20 block absolute -top-20 -left-20"></span>
+        <span class="w-72 h-72 rounded-full blur bg-neon z-20 block absolute top-36 -left-40"></span>
     </div>
 </body>
 </html>
