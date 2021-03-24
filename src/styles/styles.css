@@ -32500,36 +32500,50 @@ body[data-menu] .close{
 .text-animated-1{
   opacity: 0;
   transform: translateY(30px);
-  -webkit-animation: apparition 0.8s 0.2s ease-out forwards;
-          animation: apparition 0.8s 0.2s ease-out forwards;
+  -webkit-animation: apparition 1s 0.2s ease-out forwards;
+          animation: apparition 1s 0.2s ease-out forwards;
 }
 
 .text-animated-2{
   opacity: 0;
   transform: translateY(30px);
-  -webkit-animation: apparition 0.8s 0.4s ease-out forwards;
-          animation: apparition 0.8s 0.4s ease-out forwards;
+  -webkit-animation: apparition 1s 0.4s ease-out forwards;
+          animation: apparition 1s 0.4s ease-out forwards;
 }
 
 .text-animated-3{
   opacity: 0;
   transform: translateY(30px);
-  -webkit-animation: apparition 0.8s 0.6s ease-out forwards;
-          animation: apparition 0.8s 0.6s ease-out forwards;
+  -webkit-animation: apparition 1s 0.6s ease-out forwards;
+          animation: apparition 1s 0.6s ease-out forwards;
 }
 
 .text-animated-4{
   opacity: 0;
   transform: translateX(-30px);
-  -webkit-animation: apparition 0.8s 0.7s ease-out forwards;
-          animation: apparition 0.8s 0.7s ease-out forwards;
+  -webkit-animation: apparition 1s 0.7s ease-out forwards;
+          animation: apparition 1s 0.7s ease-out forwards;
 }
 
 .text-animated-5{
   opacity: 0;
   transform: translateX(-30px);
-  -webkit-animation: apparition 0.8s 0.8s ease-out forwards;
-          animation: apparition 0.8s 0.8s ease-out forwards;
+  -webkit-animation: apparition 1s 0.8s ease-out forwards;
+          animation: apparition 1s 0.8s ease-out forwards;
+}
+
+.ball-animated-1{
+  opacity: 0;
+  transform: translateX(30px);
+  -webkit-animation: apparition 1s 0.9s ease-out forwards;
+          animation: apparition 1s 0.9s ease-out forwards;
+}
+
+.ball-animated-2{
+  opacity: 0;
+  transform: translateY(30px);
+  -webkit-animation: apparition 1s 1s ease-out forwards;
+          animation: apparition 1s 1s ease-out forwards;
 }
 
 @keyframes apparition{
