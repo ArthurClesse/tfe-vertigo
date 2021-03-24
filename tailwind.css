@@ -84,3 +84,8 @@
         transform: none;
     }
 }
+canvas{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
