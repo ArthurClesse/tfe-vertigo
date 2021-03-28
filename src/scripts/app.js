@@ -29,3 +29,7 @@ randomTween(document.querySelector(".circle-5"));
 randomTween(document.querySelector(".circle-6"));
 randomTween(document.querySelector(".circle-7"));
 randomTween(document.querySelector(".circle-8"));
+
+function updateTextInput(val) {
+    document.getElementById('textInput').innerHTML=val; 
+  }

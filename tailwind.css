@@ -87,5 +87,14 @@
 canvas{
     position: absolute;
     top: 0;
-    right: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+    width: 25px;
+    -webkit-appearance: none;
+      appearance: none;
+    height: 25px;
+    cursor: ew-resize;
+    background: #CE7DF5;
+    border-radius: 50%;
+    
 }

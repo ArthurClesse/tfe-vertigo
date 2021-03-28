@@ -14,6 +14,21 @@ module.exports = {
         neon: '#E7FE98',
         cream: '#FBFFE5',
         purple: '#CE7DF5',
+        blue: {
+          neon: "#7DB9F5",
+        },
+        green: {
+          neon: "#98FEAC",
+        },
+        red: {
+          neon: "#F57DA2",
+        },
+        orange: {
+          neon: "#FEB398",
+        },
+        pink: {
+          neon: "#FE98F6",
+        }
       },
       fontFamily: {
         'sans' : ['Helvetica Neue', 'Arial', 'sans_serif'],
@@ -65,6 +80,9 @@ module.exports = {
           '100%': { opacity: '1' }
         }
       },
+      translate: {
+        'center': ['-50%', '-50%']
+      },
     },
   },
   extend: {
@@ -75,13 +93,13 @@ module.exports = {
       'screen-lg':'102.4rem',
       'screen-xl':'128rem'
     },
-    translate: {
-      'center': ['-50%', '-50%']
-    },
   },
   variants: {
     extend: {
-      margin:['last'],
+      margin: ['last'],
+      ringWidth: ['focus'],
+      ringColor: ['focus'],
+      ringOffsetWidth: ['focus'],
     }
   },
   plugins: [
