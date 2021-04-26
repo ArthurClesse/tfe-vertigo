@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./*.html'],
+  purge: ['./src/*.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         neon: '#E7FE98',
-        cream: '#FBFFE5',
+        cream: '#FBFCF5',
         purple: '#CE7DF5',
         blue: {
           neon: "#7DB9F5",
