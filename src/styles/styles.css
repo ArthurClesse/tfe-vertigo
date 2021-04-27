@@ -33689,6 +33689,31 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-text-stroke-color: black;
 }
 
+.shape-rotate{
+  -webkit-animation: rotateShape 20s linear infinite;
+          animation: rotateShape 20s linear infinite;
+}
+
+@-webkit-keyframes rotateShape {
+  0%{
+    transform: rotate(0);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateShape {
+  0%{
+    transform: rotate(0);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
