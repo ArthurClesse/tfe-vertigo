@@ -98,3 +98,20 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 50%;
     
 }
+.text-infinite{
+    animation: scrollTxt 25s linear infinite;
+}
+@keyframes scrollTxt {
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-100%, 0);
+    }
+}
+.stroke{
+    color: black;
+    -webkit-text-fill-color: #FBFCF5; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}

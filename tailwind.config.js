@@ -14,6 +14,7 @@ module.exports = {
         neon: '#E7FE98',
         cream: '#FBFCF5',
         purple: '#CE7DF5',
+        olive: '#B9CC7A',
         blue: {
           neon: "#7DB9F5",
         },
@@ -40,9 +41,10 @@ module.exports = {
         'lg': '2.2rem',
         '2lg': '2.8rem',
         'xl': '3.4rem',
-        '2xl': '5.6rem',
-        '3xl': '9.2rem',
-        '4xl': '17rem',
+        '2xl': '4.1rem',
+        '3xl': '5.6rem',
+        '4xl': '9.2rem',
+        '5xl': '17rem',
       },
       // Aspect ratio
       aspectRatio: {
@@ -58,6 +60,7 @@ module.exports = {
         '4px': '4px',
         '6px': '6px',
         '8px': '8px',
+        '800px': '800px'
       },
       width: {
         '1px': '1px',
@@ -83,15 +86,13 @@ module.exports = {
       translate: {
         'center': ['-50%', '-50%']
       },
-    },
-  },
-  extend: {
-    maxWidth: {
-      '7xl':'88rem',
-      'screen-sm':'64rem',
-      'screen-md':'76.8rem',
-      'screen-lg':'102.4rem',
-      'screen-xl':'128rem'
+      maxWidth: {
+        '7xl':'88rem',
+        'screen-sm':'64rem',
+        'screen-md':'76.8rem',
+        'screen-lg':'102.4rem',
+        'screen-xl':'128rem'
+      },
     },
   },
   variants: {
