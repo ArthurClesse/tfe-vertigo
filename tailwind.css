@@ -43,6 +43,9 @@
   body[data-menu] .close{
     display: block;
 }
+body[data-menu="true"]{
+    overflow: hidden;
+}
 .text-animated-1{
     opacity: 0;
     transform: translateY(30px);

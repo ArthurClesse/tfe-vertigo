@@ -24,34 +24,34 @@
     <header class="block w-full container px-10 xl:px-20 mt-7">
         <div class="flex justify-between items-center">
             <a class="flex items-center" href="index.html">
-                <img class="h-10 xl:h-14" src="assets/icons/logo.svg" alt="">
-                <h1 class="hidden xl:block uppercase font-bold text-tiny ml-3">Vertigo</h1>
+                <img class="h-12 sm:h-14" src="assets/icons/logo.svg" alt="Logo vertigo">
+                <h1 class="hidden md:block uppercase font-bold text-tiny ml-3">Vertigo</h1>
             </a>
             <div class="flex items-center font-medium text-tiny">
-                <a class="bg-neon px-5 py-3 flex items-center mr-5 xl:mr-10 z-40" href="soutenir.html">Soutenir
+                <a class="hidden bg-neon px-5 py-3 sm:flex items-center mr-5 xl:mr-10 z-40" href="soutenir.html">Soutenir
                     <div class="bg-black w-12 h-2px block ml-3"></div>
                 </a>
                 <button class="flex items-center outline-none focus:outline-none btn-menu z-50">
-                    <h2 class="hidden xl:block mr-2">Menu</h2>
+                    <h2 class="hidden sm:block mr-2">Menu</h2>
                     <img class="h-4 burger" src="assets/icons/menu.svg" alt="">
                     <img class="h-8 hidden close" src="assets/icons/close-line.svg" alt="">
                 </button>
             </div>
         </div>
         <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-cream z-40">
-            <nav class="container px-20">
-                <ul class="text-3xl font-medium mt-28">
-                    <li class="flex items-center text-animated-1">
+            <nav class="container px-10 xl:px-20">
+                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium mt-28">
+                    <li class="flex items-center py-3 text-animated-1">
                         <a class="z-20" href="propos.html">À propos</a>
-                        <div class="bg-black w-24 h-4px block ml-5 mt-5 z-20"></div>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-5 z-20"></div>
                     </li>
-                    <li class="flex items-center text-animated-2">
+                    <li class="flex items-center py-3 text-animated-2">
                         <a href="fonctionnalites.html">Fonctionnalité</a>
-                        <div class="bg-black w-24 h-4px block ml-5 mt-5"></div>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-5"></div>
                     </li>
-                    <li class="flex items-center text-animated-3">
+                    <li class="flex items-center py-3 text-animated-3">
                         <a href="technologie.html">Technologie</a>
-                        <div class="bg-black w-24 h-4px block ml-5 mt-5"></div>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-5"></div>
                     </li>
                 </ul>
                 <div class="flex mt-10 text-tiny font-medium text-animated-4">
@@ -65,8 +65,8 @@
                     <li>Contacts</li>
                 </ul>
             </nav>
-            <span class="w-96 h-96 rounded-full blur bg-neon z-20 block absolute -bottom-20 -right-20 ball-animated-1"></span>
-            <span class="w-72 h-72 rounded-full blur bg-purple z-20 block absolute -bottom-56 right-40 ball-animated-2"></span>
+            <span class="w-64 h-64 md:w-96 md:h-96 rounded-full blur bg-neon z-20 block absolute -bottom-20 -right-20 ball-animated-1"></span>
+            <span class="w-52 h-52 md:w-72 md:h-72 rounded-full blur bg-olive z-20 block absolute -bottom-32 right-20 md:-bottom-56 md:right-40 ball-animated-2"></span>
         </div>
     </header>
     <main class="w-full">
@@ -75,11 +75,11 @@
                 <div class="mt-20 xl:mt-48">
                     <h2 class="font-bold text-lg lg:text-xl xl:text-2xl w-full xl:w-10/12 text-animated-1 leading-tight lg:max-w-md xl:max-w-lg">Révolutionner le streaming d’aujourd’hui.</h2>
                     <p class="text-tiny font-extralight mt-10 xl:mt-5 w-full xl:w-10/12 max-w-xl lg:max-w-md xl:max-w-lg text-animated-2">Vertigo, c'est le nouveau logiciel destiné aux streamers, il leur permet de créer et de personnaliser leur décor mais il propose aussi plusieurs technologies afin que le décor réagisse avec le streameur ou la communauté.</p>
-                    <div class="inline-block xl:flex items-center font-medium text-tiny mt-10 text-animated-3">
+                    <div class="inline-block sm:flex items-center font-medium text-tiny mt-10 text-animated-3">
                         <a class="bg-neon px-5 py-3 flex items-center mr-10" href="soutenir.html">Soutenir
                             <div class="bg-black w-12 h-2px block ml-3"></div>
                         </a>
-                        <a class="font-normal flex items-center mt-5 xl:mt-0" href="propos.html">En savoir plus
+                        <a class="font-normal flex items-center mt-5 sm:mt-0" href="propos.html">En savoir plus
                             <img class="ml-2" src="assets/icons/arrow-to.svg" alt="">
                         </a>
                     </div>
@@ -92,19 +92,19 @@
                 <span class="w-72 h-72 rounded-full blur bg-neon z-20 block absolute top-36 -left-40"></span>
             </div>
         </section>
-        <section class="container px-10 xl:px-20 mb-28 xl:mb-64 xl:flex mt-24">
-            <div class="relative w-full xl:w-6/12 mb-20 xl:mb-36">
-                <div class="w-full h-48 xl:h-96 noise overflow-hidden relative rounded-xl">
+        <section class="container px-10 xl:px-20 mb-28 xl:mb-64 lg:flex mt-24 lg:mt-48 xl:mt-24">
+            <div class="relative w-full lg:w-6/12 mb-20 xl:mb-36">
+                <div class="w-full h-48 lg:h-72 xl:h-96 noise overflow-hidden relative rounded-xl">
                     <span class="w-48 h-48 rounded-full blur bg-neon z-20 block absolute -bottom-10 -right-10"></span>
                     <span class="w-48 h-48 rounded-full blur bg-olive z-20 block absolute bottom-20 right-56"></span>
                     <span class="w-48 h-48 rounded-full blur bg-neon z-20 block absolute -top-10 -left-10"></span>
                 </div>
                 <div class="absolute -bottom-10 xl:-bottom-20 left-10 z-30">
-                    <img class="block w-32 xl:w-5/12 rounded-xl shadow-2xl" src="assets/images/bloc-bg.png" alt="">
+                    <img class="block w-32 lg:w-40 xl:w-5/12 rounded-xl shadow-2xl" src="assets/images/bloc-bg.png" alt="">
                 </div>
             </div>
-            <div class="w-full xl:w-6/12 h-auto">
-                <div class="xl:ml-20">
+            <div class="w-full lg:w-6/12 h-auto">
+                <div class="lg:ml-10 xl:ml-20">
                     <span class="uppercase tracking-wider text-xs">Fonctionnalités</span>
                     <h2 class="font-bold text-base xl:text-lg w-full xl:w-10/12 mt-2 text-animated-1 leading-tight max-w-lg">Une personnalisation complète. Un background comme personne. </h2>
                     <p class="text-tiny font-extralight mt-7 w-full xl:w-10/12 text-animated-2 max-w-lg">Une interface vous sera proposer pour réaliser vos plus beaux background afin d’en mettre pleins la vue à vos nouveaux viewers.</p>
@@ -118,12 +118,12 @@
         </section>
         <section class="h-28 xl:h-60">
             <div class="overflow-hidden w-full absolute flex">
-                <h2 class="text-infinite whitespace-nowrap tracking-wide text-2xl xl:text-4xl font-medium">Vertigo <span class="stroke">Vertigo</span> Vertigo <span class="stroke">Vertigo</span>&nbsp;</h2>
-                <h2 class="text-infinite whitespace-nowrap tracking-wide text-2xl xl:text-4xl font-medium">Vertigo <span class="stroke">Vertigo</span> Vertigo <span class="stroke">Vertigo</span>&nbsp;</h2>
+                <h2 class="text-infinite whitespace-nowrap tracking-wide text-2xl lg:text-3xl xl:text-4xl font-medium">Vertigo <span class="stroke">Vertigo</span> Vertigo <span class="stroke">Vertigo</span>&nbsp;</h2>
+                <h2 class="text-infinite whitespace-nowrap tracking-wide text-2xl lg:text-3xl xl:text-4xl font-medium">Vertigo <span class="stroke">Vertigo</span> Vertigo <span class="stroke">Vertigo</span>&nbsp;</h2>
             </div>
         </section>
-        <section class="container px-10 xl:px-20 mt-28 xl:mt-48 mb-28 xl:mb-48 xl:flex">
-            <div class="w-full xl:w-6/12 h-auto mt-auto mb-auto">
+        <section class="container px-10 xl:px-20 mt-28 xl:mt-48 mb-28 xl:mb-48 lg:flex">
+            <div class="w-full lg:w-6/12 h-auto mt-auto mb-auto">
                 <div class="xl:mr-20">
                     <span class="uppercase tracking-wider text-xs">Technologie</span>
                     <h2 class="font-bold text-base xl:text-lg w-full xl:w-10/12 mt-2 max-w-lg text-animated-1 leading-tight">Des technologies inovantes. Le futur derrière son écran.</h2>
@@ -135,8 +135,8 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full xl:w-6/12 h-auto">
-                <div class="w-10/12 mx-auto mt-10 xl:ml-20">
+            <div class="w-full lg:w-6/12 h-auto">
+                <div class="w-10/12 md:w-80 xl:w-10/12 mx-auto mt-10 xl:ml-20">
                     <img class="shape-rotate" src="assets/images/bloc-shape.svg" alt="">
                 </div>
             </div>
@@ -144,7 +144,7 @@
         <section class="container px-10 mb-28 xl:mb-48">
             <div class="text-center">
                 <h2 class="text-lg xl:text-xl font-bold">Vous aimez le projet ? <br>Alors soutenez cette aventure</h2>
-                <div class="inline-block mt-10">
+                <div class="inline-block mt-10 text-tiny font-medium">
                     <a class="bg-neon px-5 py-3 flex items-center" href="soutenir.html">Soutenir
                         <div class="bg-black w-12 h-2px block ml-3"></div>
                     </a>
@@ -153,23 +153,23 @@
         </section>
     </main>
     <footer class="container px-10 xl:px-20">
-        <div class="xl:flex justify-between items-center">
+        <div class="lg:flex justify-between items-center">
             <a class="flex items-center" href="index.html">
                 <img class="h-14" src="assets/icons/logo.svg" alt="">
                 <h1 class="uppercase font-bold text-tiny ml-3">Vertigo</h1>
             </a>
             <div>
-                <ul class="xl:flex items-center font-medium text-tiny">
-                    <li class="pt-5 pb-3 xl:px-10">
+                <ul class="lg:flex items-center font-medium text-tiny">
+                    <li class="pt-5 pb-3 lg:p-0 lg:px-5 xl:px-10">
                         <a href="">À propos</a>
                     </li>
-                    <li class="py-3 xl:px-10">
+                    <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
                         <a href="">Fonctionnalité</a>
                     </li>
-                    <li class="py-3 xl:px-10">
+                    <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
                         <a href="">Technologie</a>
                     </li>
-                    <li class="flex text-tiny font-medium mt-3 xl:ml-10">
+                    <li class="flex text-tiny font-medium mt-3 lg:mt-0 lg:ml-5 xl:ml-10">
                         <a class="bg-neon px-5 py-3 flex items-center" href="#">Soutenir
                             <div class="bg-black w-12 h-2px block ml-3"></div>
                         </a>
@@ -177,8 +177,8 @@
                 </ul>
             </div>
         </div>
-        <div class="flex justify-start xl:justify-end mt-10 mb-20 xl:my-10">
-            <ul class="flex items-center font-light text-sm">
+        <div class="flex justify-start lg:justify-end mt-10 mb-20 xl:my-10">
+            <ul class="flex items-center font-normal text-sm">
                 <li class="pr-5">
                     <a href="">FAQ</a>
                 </li>

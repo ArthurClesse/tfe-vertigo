@@ -94,6 +94,9 @@ module.exports = {
         'screen-lg':'102.4rem',
         'screen-xl':'128rem'
       },
+      zIndex: {
+        '60': '60',
+      },
     },
   },
   variants: {
