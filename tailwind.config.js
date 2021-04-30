@@ -35,6 +35,9 @@ module.exports = {
         'sans' : ['Helvetica Neue', 'Arial', 'sans_serif'],
         'serif' : ['Georgia','Times','Times New Roman','serif']
       },
+      scale: {
+        '-1': '-1',
+      },
       fontSize: {
         'tiny' : '1.2rem',
         'base' : '1.8rem',

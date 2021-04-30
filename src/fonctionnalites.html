@@ -20,7 +20,7 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script defer src="scripts/app.js"></script>
 </head>
-<body class="bg-cream">
+<body class="bg-cream font-sans">
     <header class="block w-full container px-10 xl:px-20 mt-7">
         <div class="flex justify-between items-center">
             <a class="flex items-center" href="index.html">
@@ -28,13 +28,12 @@
                 <h1 class="hidden md:block uppercase font-bold text-tiny ml-3">Vertigo</h1>
             </a>
             <div class="flex items-center font-medium text-tiny">
-                <a class="hidden bg-neon px-5 py-3 sm:flex items-center mr-5 xl:mr-10 z-40" href="soutenir.html">Soutenir
-                    <div class="bg-black w-12 h-2px block ml-3"></div>
-                </a>
-                <button class="flex items-center outline-none focus:outline-none btn-menu z-50">
+                <button class="flex items-center outline-none focus:outline-none btn-menu z-50 fixed right-0 pr-20">
                     <span class="hidden sm:block mr-2">Menu</span>
-                    <img class="h-4 burger" src="assets/icons/menu.svg" alt="">
-                    <img class="h-8 hidden close" src="assets/icons/close-line.svg" alt="">
+                    <div class="transform -scale-x-1 burger relative w-8 h-4">
+                        <span class="h-4px w-8 bg-black block burger-line01 absolute inset-x-0 top-0 transition-transform"></span>
+                        <span class="h-4px w-6 bg-black block burger-line02 inset-x-0 bottom-0 absolute transition-transform"></span>
+                    </div>
                 </button>
             </div>
         </div>
@@ -42,8 +41,8 @@
             <nav class="container px-10 xl:px-20">
                 <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium mt-28">
                     <li class="flex items-center py-3 text-animated-1">
-                        <a class="z-20 link-menu" href="propos.html">À propos</a>
-                        <div class="test-hover bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
+                        <a class="z-20 " href="propos.html">À propos</a>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
                     </li>
                     <li class="flex items-center py-3 text-animated-2">
                         <a href="fonctionnalites.html">Fonctionnalité</a>
@@ -87,7 +86,7 @@
                     <img class="lg:ml-auto" src="assets/icons/arrow-scroll.svg" alt="">
                 </div>
                 <div>
-                    <h3 class="text-base font-medium max-w-lg xl:text-lg lg:ml-auto">Lorem ipsum dolor </h3>
+                    <h2 class="text-base font-medium max-w-lg xl:text-lg lg:ml-auto">Lorem ipsum dolor</h2>
                     <p class="text-tiny font-extralight w-full mt-5 max-w-lg lg:ml-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </div>
                 <div class="lg:ml-10">

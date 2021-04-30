@@ -44,11 +44,17 @@
         opacity: 1;
     }
 }
-  body[data-menu] .burger{
-    display: none;
+.burger-line01, .burger-line02{
+    transform-origin: center center;
 }
-  body[data-menu] .close{
-    display: block;
+  body[data-menu] .burger-line01{
+    width: 24px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+body[data-menu] .burger-line02{
+    bottom: 50%;
+    transform: translateY(50%) rotate(45deg);
 }
 body[data-menu="true"]{
     overflow: hidden;
