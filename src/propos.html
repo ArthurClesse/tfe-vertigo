@@ -32,7 +32,7 @@
                     <div class="bg-black w-12 h-2px block ml-3"></div>
                 </a>
                 <button class="flex items-center outline-none focus:outline-none btn-menu z-50">
-                    <h2 class="hidden sm:block mr-2">Menu</h2>
+                    <span class="hidden sm:block mr-2">Menu</span>
                     <img class="h-4 burger" src="assets/icons/menu.svg" alt="">
                     <img class="h-8 hidden close" src="assets/icons/close-line.svg" alt="">
                 </button>
@@ -70,16 +70,82 @@
         </div>
     </header>
     <main>
-        <section class="container px-10 mt-10 mb-96">
-            <h2 class="font-medium text-2xl leading-snug relative z-10">Discutons un peu ensemble</h2>
-            <div class="-ml-10 -mt-10 noise relative overflow-hidden">
-                <img src="assets/images/about-img01.jpg" alt="">
+        <section class="container px-10 xl:px-20 mt-10 mb-24">
+            <h2 class="font-medium text-2lg sm:text-2xl md:text-3xl xl:text-4xl leading-snug relative z-10">Discutons un peu ensemble</h2>
+            <div class="lg:flex lg:mt-10 xl:mt-20">
+                <div class="-ml-10 -mt-6 sm:-mt-10 sm:ml-0 md:-mt-12 lg:mt-0 md:w-10/12 lg:w-6/12 noise relative overflow-hidden">
+                    <img src="assets/images/about-img01.jpg" alt="">
+                </div>
+                <div class="lg:w-6/12 lg:ml-10"> 
+                    <p class="text-tiny font-extralight mt-7 w-full xl:w-10/12 max-w-lg mx-auto md:mr-0 md:ml-0 md:mt-10 lg:mt-0 lg:ml-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.</p>
+                    <div class="mt-10">
+                        <img class="lg:ml-auto" src="assets/icons/arrow-scroll.svg" alt="">
+                    </div>
+                </div>
             </div>
-            <p class="text-tiny font-extralight mt-7 w-full xl:w-10/12 max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="mt-10">
-                <img src="assets/icons/arrow-scroll.svg" alt="">
+        </section>
+        <section class="container px-10 xl:px-20 mb-24 xl:mt-48 xl:mb-48">
+            <div class="lg:flex lg:flex-row-reverse">
+                <div class="w-full h-60 sm:h-80 lg:h-96 xl:h-700px relative overflow-hidden noise lg:w-6/12">
+                    <img class="h-full w-full object-cover" src="assets/images/about-img02.jpg" alt="">
+                </div>
+                <div class="w-full mt-10 mb-16 max-w-lg mx-auto md:ml-0 lg:w-6/12 lg:mr-10 lg:mt-0 xl:mr-auto">
+                    <h2 class="text-base font-medium max-w-lg xl:text-lg">Lorem ipsum dolor sit amet consectetur</h2>
+                    <p class="text-tiny font-extralight w-full mt-5 max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    <p class="text-tiny font-extralight w-full mt-5 max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            <div class="lg:flex xl:mt-48">
+                <div class="font-medium text-xl sm:text-2xl lg:text-3xl xl:text-4xl lg:w-6/12 text-center flex flex-col">
+                    <span>Innovant</span>
+                    <span class="stroke">Innovant</span>
+                    <span>Innovant</span>
+                </div>
+                <div class="mt-16 max-w-lg mx-auto md:mr-0 lg:w-6/12 lg:mt-10 lg:ml-10 xl:m-auto">
+                    <p class="text-tiny font-extralight w-full mt-3 max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    <p class="text-tiny font-extralight w-full mt-5 max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
             </div>
         </section>
     </main>
+    <footer class="container px-10 xl:px-20">
+        <div class="lg:flex justify-between items-center">
+            <a class="flex items-center" href="index.html">
+                <img class="h-14" src="assets/icons/logo.svg" alt="">
+                <h1 class="uppercase font-bold text-tiny ml-3">Vertigo</h1>
+            </a>
+            <div>
+                <ul class="lg:flex items-center font-medium text-tiny">
+                    <li class="pt-5 pb-3 lg:p-0 lg:px-5 xl:px-10">
+                        <a href="">À propos</a>
+                    </li>
+                    <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
+                        <a href="">Fonctionnalité</a>
+                    </li>
+                    <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
+                        <a href="">Technologie</a>
+                    </li>
+                    <li class="flex text-tiny font-medium mt-3 lg:mt-0 lg:ml-5 xl:ml-10">
+                        <a class="bg-neon px-5 py-3 flex items-center" href="#">Soutenir
+                            <div class="bg-black w-12 h-2px block ml-3"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-start lg:justify-end mt-10 mb-20 xl:my-10">
+            <ul class="flex items-center font-normal text-sm">
+                <li class="pr-5">
+                    <a href="">FAQ</a>
+                </li>
+                <li class="px-5">
+                    <a href="">Partenaires</a>
+                </li>
+                <li class="pl-5">
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

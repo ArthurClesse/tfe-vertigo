@@ -12,8 +12,8 @@ function toggleNavigation(){
 
 function randomTween(element){
     TweenMax.to(element, {
-        x: Math.random() * 700,
-        y: Math.random() * 800,
+        x: Math.random() * 1500,
+        y: Math.random() * 2000,
         duration: 3,
         ease: Linear.easeNone,
         onComplete:randomTween,

@@ -20,42 +20,42 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script defer src="scripts/app.js"></script>
 </head>
-<body class="bg-cream overflow-hidden">
-    <header class="hidden xl:block w-full container px-20">
-        <div class="flex justify-between items-center mt-7">
+<body class="bg-cream">
+    <header class="block w-full container px-10 xl:px-20 mt-7">
+        <div class="flex justify-between items-center">
             <a class="flex items-center" href="index.html">
-                <img class="h-14" src="assets/icons/logo.svg" alt="">
-                <h1 class="uppercase font-bold text-tiny ml-3">Vertigo</h1>
+                <img class="h-12 sm:h-14" src="assets/icons/logo.svg" alt="Logo vertigo">
+                <h1 class="hidden md:block uppercase font-bold text-tiny ml-3">Vertigo</h1>
             </a>
             <div class="flex items-center font-medium text-tiny">
-                <a class="bg-neon px-5 py-3 flex items-center mr-10 z-40" href="soutenir.html">Soutenir
+                <a class="hidden bg-neon px-5 py-3 sm:flex items-center mr-5 xl:mr-10 z-40" href="soutenir.html">Soutenir
                     <div class="bg-black w-12 h-2px block ml-3"></div>
                 </a>
                 <button class="flex items-center outline-none focus:outline-none btn-menu z-50">
-                    <h2 class="mr-2">Menu</h2>
+                    <span class="hidden sm:block mr-2">Menu</span>
                     <img class="h-4 burger" src="assets/icons/menu.svg" alt="">
                     <img class="h-8 hidden close" src="assets/icons/close-line.svg" alt="">
                 </button>
             </div>
         </div>
         <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-cream z-40">
-            <nav class="container px-20">
-                <ul class="text-2xl font-medium mt-28">
-                    <li class="flex items-center text-animated-1">
+            <nav class="container px-10 xl:px-20">
+                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium mt-28">
+                    <li class="flex items-center py-3 text-animated-1">
                         <a class="z-20" href="propos.html">À propos</a>
-                        <div class="bg-black w-24 h-4px block ml-5 mt-5 z-20"></div>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-5 z-20"></div>
                     </li>
-                    <li class="flex items-center text-animated-2">
+                    <li class="flex items-center py-3 text-animated-2">
                         <a href="fonctionnalites.html">Fonctionnalité</a>
-                        <div class="bg-black w-24 h-4px block ml-5 mt-5"></div>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-5"></div>
                     </li>
-                    <li class="flex items-center text-animated-3">
+                    <li class="flex items-center py-3 text-animated-3">
                         <a href="technologie.html">Technologie</a>
-                        <div class="bg-black w-24 h-4px block ml-5 mt-5"></div>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-5"></div>
                     </li>
                 </ul>
                 <div class="flex mt-10 text-tiny font-medium text-animated-4">
-                    <a class="bg-neon px-5 py-3 flex items-center mr-10" href="soutenir.html">Soutenir
+                    <a class="bg-neon px-5 py-3 flex items-center mr-10" href="#">Soutenir
                         <div class="bg-black w-12 h-2px block ml-3"></div>
                     </a>
                 </div>
@@ -65,73 +65,120 @@
                     <li>Contacts</li>
                 </ul>
             </nav>
-            <span class="w-96 h-96 rounded-full blur bg-neon z-20 block absolute -bottom-20 -right-20 ball-animated-1"></span>
-            <span class="w-72 h-72 rounded-full blur bg-purple z-20 block absolute -bottom-56 right-40 ball-animated-2"></span>
+            <span class="w-64 h-64 md:w-96 md:h-96 rounded-full blur bg-neon z-20 block absolute -bottom-20 -right-20 ball-animated-1"></span>
+            <span class="w-52 h-52 md:w-72 md:h-72 rounded-full blur bg-olive z-20 block absolute -bottom-32 right-20 md:-bottom-56 md:right-40 ball-animated-2"></span>
         </div>
     </header>
-    <main class="hidden xl:flex w-full h-screen">
-        <div class="container px-20">
-            <div class="h-screen w-6/12 mt-10">
-                <h2 class="font-bold text-2lg w-10/12 text-animated-1 leading-tight">Fonctionnalité</h2>
-                <p class="text-tiny font-light mt-5 w-10/12 text-animated-2">Dans cet MVP, vous pouvez voir le début d'une animation de background. Dans le futur du projet, il sera possible de gérer différents paramètres tel que ci-dessous afin d'obtenir un background entièrement personnalisé. De plus, d'autres thèmes de background seront disponibles.</p>
-                <p class="text-tiny font-light mt-5 w-10/12 text-animated-3">Voici un avant goût de l'interface pour le générateur de background.</p>
-                <div class="w-10/12 text-animated-4">
+    <main>
+        <section class="container px-10 xl:px-20 mt-10 mb-32">
+            <h2 class="font-medium text-2lg sm:text-2xl md:text-3xl xl:text-4xl leading-snug relative z-10">De quoi est fait le coeur de Vertigo </h2>
+            <div class="w-full mt-10 mb-16 lg:flex lg:justify-between xl:mt-32">
+                <div class="lg:w-6/12">
+                    <h3 class="text-base font-medium max-w-lg xl:text-lg lg:w-10/12 lg:ml-auto">Lorem ipsum dolor </h3>
+                    <p class="text-tiny font-extralight w-full mt-5 max-w-lg lg:ml-auto lg:w-10/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="lg:w-6/12">
+                    <p class="text-tiny font-extralight w-full mt-5 lg:mt-0 lg:ml-auto max-w-lg lg:w-10/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur.</p>
                     <div class="mt-10">
-                        <div class="flex justify-between items-center text-tiny font-medium">
-                            <h3 class="text-gray-500">Thèmes</h3>
-                            <div class="flex">
-                                <div class="bg-neon rounded-lg w-10 h-10 relative cursor-pointer">
-                                    <div class="border-4 border-white h-6 w-6 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-                                </div>
-                                <div class="bg-gray-400 rounded-lg w-10 h-10 relative ml-5 cursor-pointer">
-                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                        <h3 class="uppercase text-white font-bold">t</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-10">
-                        <div class="flex flex-col">
-                            <div class="flex justify-between text-tiny font-medium">
-                                <h3 class="text-gray-500">Nombre de formes</h3>
-                                <h3 id="textInput">8</h3>
-                            </div>
-                            <input class="appearance-none outline-none bg-black rounded-full h-3 mt-5" type="range" name="rangeInput" min="0" max="10" value="8" onInput="updateTextInput(this.value);">
-                        </div>
-                    </div>
-                    <div class="mt-10">
-                        <div class="flex justify-between text-tiny font-medium">
-                            <h3 class="text-gray-500">Couleurs</h3>
-                            <h3>Jaune & Mauve</h3>
-                        </div>
-                        <div class="flex justify-between w-10/12 mt-5">
-                            <button class="w-6 h-6 rounded-full bg-neon ring-2 ring-black ring-offset-2 focus:outline-none"></button>
-                            <button class="w-6 h-6 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                            <button class="w-6 h-6 rounded-full bg-green-neon focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></dbuttoniv>
-                            <button class="w-6 h-6 rounded-full bg-purple ring-2 ring-black ring-offset-2 focus:outline-none"></button>
-                            <button class="w-6 h-6 rounded-full bg-red-neon focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                            <button class="w-6 h-6 rounded-full bg-orange-neon focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                            <button class="w-6 h-6 rounded-full bg-pink-neon focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        </div>
+                        <img class="lg:ml-auto" src="assets/icons/arrow-scroll.svg" alt="">
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="lg:flex lg:justify-between">
+                <div class="h-80 lg:w-5/12 xl:h-500px relative overflow-hidden noise">
+                    <img class="h-full w-full object-cover" src="assets/images/fonct-img01.jpg" alt="">
+                </div>
+                <div class="mt-10 lg:mt-0 lg:w-7/12 lg:h-80 xl:h-500px lg:ml-7 relative overflow-hidden noise">
+                    <img class="h-full w-full object-cover" src="assets/images/fonct-img02.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="container px-10 xl:px-20 mb-36">
+            <h2 class="text-2lg font-medium max-w-lg xl:text-lg">Lorem ipsum dolor sit amet consectetur</h2>
+            <div class="mt-14 md:flex md:flex-wrap md:justify-between xl:mb-40">
+                <div class="md:w-5/12 xl:w-4/12">
+                    <span class="mb-3 block text-tiny">01.</span>
+                    <h2 class="text-base font-bold max-w-lg xl:w-10/12">Lorem ipsum dolor sit amet consectetur</h2>
+                    <p class="text-tiny font-extralight mt-5 max-w-lg xl:w-10/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                </div>
+                <div class="mt-20 md:mt-0 md:w-5/12 xl:w-4/12">
+                    <span class="mb-3 block text-tiny">02.</span>
+                    <h2 class="text-base font-bold max-w-lg xl:w-10/12">Lorem ipsum dolor sit amet consectetur</h2>
+                    <p class="text-tiny font-extralight mt-5 max-w-lg xl:w-10/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                </div>
+                <div class="mt-20 md:w-5/12 xl:w-4/12 xl:mt-0 xl:pl-10">
+                    <span class="mb-3 block text-tiny xl:w-10/12">03.</span>
+                    <h2 class="text-base font-bold max-w-lg xl:w-10/12">Lorem ipsum dolor sit amet consectetur</h2>
+                    <p class="text-tiny font-extralight mt-5 max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="mt-20 md:w-5/12 xl:w-4/12">
+                    <span class="mb-3 block text-tiny">04.</span>
+                    <h2 class="text-base font-bold max-w-lg xl:w-10/12">Lorem ipsum dolor sit amet consectetur</h2>
+                    <p class="text-tiny font-extralight mt-5 max-w-lg xl:w-10/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="mt-20 md:w-5/12 xl:w-4/12">
+                    <span class="mb-3 block text-tiny">05.</span>
+                    <h2 class="text-base font-bold max-w-lg xl:w-10/12">Lorem ipsum dolor sit amet consectetur</h2>
+                    <p class="text-tiny font-extralight mt-5 max-w-lg xl:w-10/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+                <div class="hidden xl:block xl:w-4/12"></div>
+            </div>
+            <div class="relative w-full mt-20">
+                <div class="w-full h-48 md:h-60 lg:h-72 xl:h-96 noise overflow-hidden relative rounded-xl">
+                    <span class="w-48 h-48 rounded-full blur bg-neon z-20 block absolute -bottom-10 -right-10"></span>
+                    <span class="w-48 h-48 rounded-full blur bg-olive z-20 block absolute bottom-20 right-56"></span>
+                    <span class="w-48 h-48 rounded-full blur bg-neon z-20 block absolute -top-10 -left-10"></span>
+                </div>
+                <div class="absolute -bottom-10 lg:-bottom-20 xl:-bottom-28 left-10 z-30">
+                    <img class="block w-32 md:w-40 lg:w-52 xl:w-5/12 rounded-xl shadow-2xl" src="assets/images/bloc-bg.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="container px-10 xl:px-20 mb-32">
+            <h2 class="text-lg font-bold">Essayez en avant première la bêta de Vertigo</h2>
+            <a class="h-24 w-24 block rounded-full bg-neon relative ml-auto" href="beta.html">
+                <img class="object-cover object-center w-14 h-14 absolute top-1/2 left-1/2 transform translate-x-center translate-y-center" src="assets/icons/arrow-to.svg" alt="">
+            </a>
+        </section>
     </main>
-    <div class="xl:hidden flex justify-center items-center flex-col text-center text-xl text-black font-sans font-bold mt-72">
-        <h2>Le site Vertigo n'est pas encore responsive :'(</h2>
-        <h3 class="font-normal text-lg">(min-width : 1440px si jamais )</h3>
-    </div>
-    <div class="hidden xl:block h-screen w-6/12 overflow-hidden absolute top-0 right-0 noise">
-        <span id="ball1" class="w-48 h-48 rounded-full bg-neon z-20 block circle-1 blur absolute"></span>
-        <span id="ball1" class="w-48 h-48 rounded-full bg-purple z-20 block circle-2 blur absolute"></span>
-        <span id="ball1" class="w-56 h-56 rounded-full bg-neon z-20 block circle-3 blur absolute"></span>
-        <span id="ball1" class="w-48 h-48 rounded-full bg-purple z-20 block circle-4 blur absolute"></span>
-        <span id="ball1" class="w-30 h-30 rounded-full bg-neon z-20 block circle-5 blur absolute"></span>
-        <span id="ball1" class="w-64 h-64 rounded-full bg-purple z-20 block circle-6 blur absolute"></span>
-        <span id="ball1" class="w-48 h-48 rounded-full bg-neon z-20 block circle-7 blur absolute"></span>
-        <span id="ball1" class="w-24 h-24 rounded-full bg-purple z-20 block circle-8 blur absolute"></span>
-    </div>
+    <footer class="container px-10 xl:px-20">
+        <div class="lg:flex justify-between items-center">
+            <a class="flex items-center" href="index.html">
+                <img class="h-14" src="assets/icons/logo.svg" alt="">
+                <h1 class="uppercase font-bold text-tiny ml-3">Vertigo</h1>
+            </a>
+            <div>
+                <ul class="lg:flex items-center font-medium text-tiny">
+                    <li class="pt-5 pb-3 lg:p-0 lg:px-5 xl:px-10">
+                        <a href="">À propos</a>
+                    </li>
+                    <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
+                        <a href="">Fonctionnalité</a>
+                    </li>
+                    <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
+                        <a href="">Technologie</a>
+                    </li>
+                    <li class="flex text-tiny font-medium mt-3 lg:mt-0 lg:ml-5 xl:ml-10">
+                        <a class="bg-neon px-5 py-3 flex items-center" href="#">Soutenir
+                            <div class="bg-black w-12 h-2px block ml-3"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-start lg:justify-end mt-10 mb-20 xl:my-10">
+            <ul class="flex items-center font-normal text-sm">
+                <li class="pr-5">
+                    <a href="">FAQ</a>
+                </li>
+                <li class="px-5">
+                    <a href="">Partenaires</a>
+                </li>
+                <li class="pl-5">
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
