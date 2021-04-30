@@ -42,48 +42,62 @@
             <nav class="container px-10 xl:px-20">
                 <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium mt-28">
                     <li class="flex items-center py-3 text-animated-1">
-                        <a class="z-20" href="propos.html">À propos</a>
-                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-5 z-20"></div>
+                        <a class="z-20 link-menu" href="propos.html">À propos</a>
+                        <div class="test-hover bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
                     </li>
                     <li class="flex items-center py-3 text-animated-2">
                         <a href="fonctionnalites.html">Fonctionnalité</a>
-                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-5"></div>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5"></div>
                     </li>
                     <li class="flex items-center py-3 text-animated-3">
                         <a href="technologie.html">Technologie</a>
-                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-5"></div>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                    </li>
+                    <li class="flex mt-10 text-tiny font-medium text-animated-4">
+                        <a class="bg-neon px-5 py-3 flex items-center mr-10" href="#">Soutenir
+                            <div class="bg-black w-12 h-2px block ml-3"></div>
+                        </a>
                     </li>
                 </ul>
-                <div class="flex mt-10 text-tiny font-medium text-animated-4">
-                    <a class="bg-neon px-5 py-3 flex items-center mr-10" href="#">Soutenir
-                        <div class="bg-black w-12 h-2px block ml-3"></div>
-                    </a>
+                <div class="lg:flex lg:justify-between">
+                    <ul class="flex items-center text-tiny font-base mt-5 text-animated-5">
+                        <li class="mr-5">
+                            <a href="">FAQ</a>
+                        </li>
+                        <li class="mr-5">
+                            <a href="">Partenaires</a>
+                        </li>
+                        <li>
+                            <a href="">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="mt-10 lg:-mt-10 text-animated-5">
+                        <h2 class="text-base lg:text-lg font-medium">Contactez nous !</h2>
+                        <a class="text-tiny font-base mt-3" href="mailto:vertigo@gmail.com">vertigo@gmail.com</a>
+                    </div>
                 </div>
-                <ul class="flex items-center text-tiny font-base mt-10 text-animated-5">
-                    <li class="mr-5">FAQ</li>
-                    <li class="mr-5">Partenaires</li>
-                    <li>Contacts</li>
-                </ul>
             </nav>
-            <span class="w-64 h-64 md:w-96 md:h-96 rounded-full blur bg-neon z-20 block absolute -bottom-20 -right-20 ball-animated-1"></span>
-            <span class="w-52 h-52 md:w-72 md:h-72 rounded-full blur bg-olive z-20 block absolute -bottom-32 right-20 md:-bottom-56 md:right-40 ball-animated-2"></span>
         </div>
     </header>
     <main>
-        <section class="container px-10 xl:px-20 mt-10 mb-32">
+        <section class="container px-10 xl:px-20 mt-10 mb-32 relative">
             <h2 class="font-medium text-2lg sm:text-2xl md:text-3xl xl:text-4xl leading-snug relative z-10">De quoi est fait le coeur de Vertigo </h2>
-            <div class="w-full mt-10 mb-16 lg:flex lg:justify-between xl:mt-32">
-                <div class="lg:w-6/12">
-                    <h3 class="text-base font-medium max-w-lg xl:text-lg lg:w-10/12 lg:ml-auto">Lorem ipsum dolor </h3>
-                    <p class="text-tiny font-extralight w-full mt-5 max-w-lg lg:ml-auto lg:w-10/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="w-full mt-10 mb-16 lg:flex lg:justify-end lg:mb-48 xl:mt-32 relative z-10">
+                <div class="mt-10 hidden xl:block lg:mr-auto lg:mt-0">
+                    <img class="lg:ml-auto" src="assets/icons/arrow-scroll.svg" alt="">
                 </div>
-                <div class="lg:w-6/12">
-                    <p class="text-tiny font-extralight w-full mt-5 lg:mt-0 lg:ml-auto max-w-lg lg:w-10/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur.</p>
-                    <div class="mt-10">
+                <div>
+                    <h3 class="text-base font-medium max-w-lg xl:text-lg lg:ml-auto">Lorem ipsum dolor </h3>
+                    <p class="text-tiny font-extralight w-full mt-5 max-w-lg lg:ml-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="lg:ml-10">
+                    <p class="text-tiny font-extralight w-full mt-5 lg:mt-0 lg:ml-auto max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur.</p>
+                    <div class="mt-10 xl:hidden">
                         <img class="lg:ml-auto" src="assets/icons/arrow-scroll.svg" alt="">
                     </div>
                 </div>
             </div>
+            <div class="h-700px w-700px rounded-full blur bg-neon block absolute top-20 -left-96 z-0"></div>
             <div class="lg:flex lg:justify-between">
                 <div class="h-80 lg:w-5/12 xl:h-500px relative overflow-hidden noise">
                     <img class="h-full w-full object-cover" src="assets/images/fonct-img01.jpg" alt="">
@@ -93,8 +107,8 @@
                 </div>
             </div>
         </section>
-        <section class="container px-10 xl:px-20 mb-36">
-            <h2 class="text-2lg font-medium max-w-lg xl:text-lg">Lorem ipsum dolor sit amet consectetur</h2>
+        <section class="container px-10 xl:px-20 mb-36 xl:mb-72">
+            <h2 class="text-2lg font-medium max-w-xl xl:text-xl">Lorem ipsum dolor sit amet consectetur</h2>
             <div class="mt-14 md:flex md:flex-wrap md:justify-between xl:mb-40">
                 <div class="md:w-5/12 xl:w-4/12">
                     <span class="mb-3 block text-tiny">01.</span>
@@ -134,10 +148,10 @@
                 </div>
             </div>
         </section>
-        <section class="container px-10 xl:px-20 mb-32">
-            <h2 class="text-lg font-bold">Essayez en avant première la bêta de Vertigo</h2>
-            <a class="h-24 w-24 block rounded-full bg-neon relative ml-auto" href="beta.html">
-                <img class="object-cover object-center w-14 h-14 absolute top-1/2 left-1/2 transform translate-x-center translate-y-center" src="assets/icons/arrow-to.svg" alt="">
+        <section class="container px-10 xl:px-20 mb-32 xl:mb-56 lg:flex lg:items-center">
+            <h2 class="text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium lg:w-11/12">Essayez en avant première la bêta de Vertigo</h2>
+            <a class="h-24 w-24 xl:h-36 xl:w-36 block rounded-full bg-neon relative ml-auto" href="beta.html">
+                <img class="object-cover object-center w-14 h-14 xl:h-24 xl:w-24 absolute top-1/2 left-1/2 transform translate-x-center translate-y-center" src="assets/icons/arrow-to.svg" alt="">
             </a>
         </section>
     </main>
