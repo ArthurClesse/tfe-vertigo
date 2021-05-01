@@ -1,3 +1,5 @@
+import 'alpinejs'
+
 let menuButton = document.querySelector(".btn-menu");
 menuButton.addEventListener("click", toggleNavigation);
 

@@ -104,6 +104,10 @@ module.exports = {
       zIndex: {
         '60': '60',
       },
+      margin: {
+        '-430px': '-430px',
+        '-450px': '-450px',
+      }
     },
   },
   variants: {

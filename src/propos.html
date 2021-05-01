@@ -21,21 +21,19 @@
     <script defer src="scripts/app.js"></script>
 </head>
 <body class="bg-cream font-sans">
-    <header class="block w-full container px-10 xl:px-20 mt-7">
+    <header class="block w-full mt-7">
         <div class="flex justify-between items-center">
-            <a class="flex items-center" href="index.html">
+            <a class="flex items-center pl-10 xl:pl-20" href="index.html">
                 <img class="h-12 sm:h-14" src="assets/icons/logo.svg" alt="Logo vertigo">
                 <h1 class="hidden md:block uppercase font-bold text-tiny ml-3">Vertigo</h1>
             </a>
-            <div class="flex items-center font-medium text-tiny">
-                <button class="flex items-center outline-none focus:outline-none btn-menu z-50 fixed right-0 pr-20">
-                    <span class="hidden sm:block mr-2">Menu</span>
-                    <div class="transform -scale-x-1 burger relative w-8 h-4">
-                        <span class="h-4px w-8 bg-black block burger-line01 absolute inset-x-0 top-0 transition-transform"></span>
-                        <span class="h-4px w-6 bg-black block burger-line02 inset-x-0 bottom-0 absolute transition-transform"></span>
-                    </div>
-                </button>
-            </div>
+            <button class="flex items-center font-medium text-tiny outline-none focus:outline-none btn-menu z-50 fixed right-0 pr-10 xl:pr-20">
+                <span class="hidden sm:block mr-2">Menu</span>
+                <div class="transform -scale-x-1 burger relative w-8 h-4">
+                    <span class="h-4px w-8 bg-black block burger-line01 absolute inset-x-0 top-0 transition-transform"></span>
+                    <span class="h-4px w-6 bg-black block burger-line02 inset-x-0 bottom-0 absolute transition-transform"></span>
+                </div>
+            </button>
         </div>
         <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-cream z-40">
             <nav class="container px-10 xl:px-20">
