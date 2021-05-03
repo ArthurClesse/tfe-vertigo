@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertigo | Contact</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script defer src="scripts/app.js"></script>
+</head>
+<body class="bg-cream font-sans">
+    <header class="block w-full mt-7">
+        <div class="flex justify-between items-center">
+            <a class="flex items-center pl-10 xl:pl-20" href="index.html">
+                <img class="h-12 sm:h-14" src="assets/icons/logo.svg" alt="Logo vertigo">
+                <h1 class="hidden md:block uppercase font-bold text-tiny ml-3">Vertigo</h1>
+            </a>
+            <button class="flex items-center font-medium text-tiny outline-none focus:outline-none btn-menu z-50 fixed right-0 pr-10 xl:pr-20">
+                <span class="hidden sm:block mr-2">Menu</span>
+                <div class="transform -scale-x-1 burger relative w-8 h-4">
+                    <span class="h-4px w-8 bg-black block burger-line01 absolute inset-x-0 top-0 transition-transform"></span>
+                    <span class="h-4px w-6 bg-black block burger-line02 inset-x-0 bottom-0 absolute transition-transform"></span>
+                </div>
+            </button>
+        </div>
+        <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-cream z-40">
+            <nav class="container px-10 xl:px-20">
+                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium mt-28">
+                    <li class="flex items-center py-3 text-animated-1">
+                        <a class="z-20 " href="propos.html">À propos</a>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
+                    </li>
+                    <li class="flex items-center py-3 text-animated-2">
+                        <a href="fonctionnalites.html">Fonctionnalité</a>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                    </li>
+                    <li class="flex items-center py-3 text-animated-3">
+                        <a href="technologie.html">Technologie</a>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                    </li>
+                    <li class="flex mt-10 text-tiny font-medium text-animated-4">
+                        <a class="bg-neon px-5 py-3 flex items-center mr-10" href="#">Soutenir
+                            <div class="bg-black w-12 h-2px block ml-3"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="lg:flex lg:justify-between">
+                    <ul class="flex items-center text-tiny font-base mt-5 text-animated-5">
+                        <li class="mr-5">
+                            <a href="">FAQ</a>
+                        </li>
+                        <li class="mr-5">
+                            <a href="">Partenaires</a>
+                        </li>
+                        <li>
+                            <a href="">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="mt-10 lg:-mt-10 text-animated-5">
+                        <h2 class="text-base lg:text-lg font-medium">Contactez nous !</h2>
+                        <a class="text-tiny font-base mt-3" href="mailto:vertigo@gmail.com">vertigo@gmail.com</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="container px-10 xl:px-20 mt-10 md:mt-20 mb-32 relative lg:flex xl:mt-32 xl:mb-48">
+        <div class="h-700px w-700px rounded-full blur bg-neon block absolute top-0 left-0 z-0"></div>
+        <div class="md:w-10/12 mx-auto lg:w-6/12 xl:w-5/12 lg:mr-5 xl:m-0">
+            <h2 class="text-lg xl:text-xl font-medium">Envie de nous contacter ?</h2>
+            <p class="text-tiny font-extralight w-full mt-5 max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="text-tiny font-extralight w-full mt-5 max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="container mt-10 md:w-10/12 lg:w-6/12 lg:ml-5 lg:mt-0 xl:ml-10">
+            <form action="https://formsubmit.co/vertigo.tfe@gmail.com" method="POST">
+                <div class="xl:flex">
+                    <div class="flex flex-col xl:w-6/12 xl:mr-5">
+                        <label class="uppercase text-tiny text-black font-medium" for="prenom">Prénom*</label>
+                        <input class="bg-transparent text-tiny font-extralight pt-3 pb-2 border-b border-gray-400 outline-none" type="text" id="prenom" name="Prénom" placeholder="Entrez votre prénom" required/>
+                    </div>
+                    <div class="flex flex-col mt-7 xl:mt-0 xl:w-6/12 xl:ml-5">
+                        <label class="uppercase text-tiny text-black font-medium" for="nom">Nom*</label>
+                        <input class="bg-transparent text-tiny font-extralight pt-3 pb-2 border-b border-gray-400 outline-none" type="text" id="nom" name="Nom" placeholder="Entrez votre nom" required/>
+                    </div>
+                </div>
+                <div class="xl:flex xl:mt-16">
+                    <div class="flex flex-col mt-7 xl:mt-0 xl:mr-5 xl:w-6/12">
+                        <label class="uppercase text-tiny text-black font-medium" for="email">Email*</label>
+                        <input class="bg-transparent text-tiny font-extralight pt-3 pb-2 border-b border-gray-400 outline-none" type="email" id="email" name="Email" placeholder="Entrez votre email" required/>
+                    </div>
+                    <div class="flex flex-col mt-7 xl:mt-0 xl:ml-5 xl:w-6/12">
+                        <label class="uppercase text-tiny text-black font-medium" for="telephone">Numéro de téléphone</label>
+                        <input class="bg-transparent text-tiny font-extralight pt-3 pb-2 border-b border-gray-400 outline-none" type="tel" id="telephone" name="Téléphone" placeholder="Entrez votre numéro de téléphone">
+                    </div>
+                </div>
+                <input type="hidden" name="_subject" value="Nouveau mail !">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/contact.html">
+                <div class="flex flex-col mt-7 xl:mt-16">
+                    <label class="uppercase text-tiny text-black font-medium" for="message">Message*</label>
+                    <textarea class="message bg-transparent border border-gray-400 text-tiny font-extralight h-52 mt-3" id="message" name="Message" placeholder="Entrez votre message" required></textarea>
+                    <span class="text-sm mt-3 font-extralight text-gray-400">* Champs obligatoires</span>
+                </div>
+                <div class="xl:flex xl:items-center">
+                    <button class="font-nomal flex items-center border border-black px-5 py-3 mt-5" type="submit">Envoyer
+                        <img class="ml-2" src="assets/icons/arrow-to.svg" alt="">
+                    </button>
+                    <div class="mt-10 xl:mt-5 xl:ml-20">
+                        <h2 class="text-tiny font-light text-gray-500 max-w-lg">Contactez nous par mail</h2>
+                        <a class="text-tiny font-medium text-black max-w-lg block" href="mailto:vertigo.tfe@gmail.com">vertigo@gmail.com</a>
+                    </div>
+                </div>
+            </form>
+          </div>
+    </section>
+</body>
+</html>

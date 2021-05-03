@@ -33960,6 +33960,21 @@ input[type="range"]::-webkit-slider-thumb {
   transform:rotate(90deg);
 }
 
+.message::-moz-placeholder{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.message:-ms-input-placeholder{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.message::placeholder{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
