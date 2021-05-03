@@ -33799,7 +33799,7 @@ body[data-menu] .burger-line02{
   transform: translateY(50%) rotate(45deg);
 }
 
-body[data-menu="true"]{
+body[data-menu]{
   overflow: hidden;
 }
 
@@ -33954,6 +33954,10 @@ input[type="range"]::-webkit-slider-thumb {
   100%{
     width: 20px;
   }
+}
+
+.cross{
+  transform:rotate(90deg);
 }
 
 @media (min-width: 640px) {
