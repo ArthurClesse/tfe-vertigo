@@ -107,6 +107,10 @@ module.exports = {
       margin: {
         '-430px': '-430px',
         '-450px': '-450px',
+      },
+      inset: {
+        '500px':'500px',
+        '-500px': '-500px',
       }
     },
   },
