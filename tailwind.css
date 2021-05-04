@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    max-width: 100%;
+html, body{
+    width: 100%;
     overflow-x: hidden;
 }
 .container{
@@ -51,7 +51,7 @@ html, body {
 .burger-line01, .burger-line02{
     transform-origin: center center;
 }
-  body[data-menu] .burger-line01{
+body[data-menu] .burger-line01{
     width: 24px;
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
@@ -61,6 +61,7 @@ body[data-menu] .burger-line02{
     transform: translateY(50%) rotate(45deg);
 }
 body[data-menu]{
+    height: 100vh;
     overflow: hidden;
 }
 .text-animated-1{
@@ -164,4 +165,16 @@ input[type="range"]::-webkit-slider-thumb {
 .message::placeholder{
     padding-left: 20px;
     padding-top: 20px;
+}
+.swiper-button-prev:after{
+    display: none !important;
+}
+.swiper-button-next:after{
+    display: none !important;
+}
+.swiper-pagination-bullet{
+    margin: 0 5px;
+}
+.swiper-pagination-bullet-active{
+    background-color: #B9CC7A;
 }

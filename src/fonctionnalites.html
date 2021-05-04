@@ -14,10 +14,15 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/styles.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://unpkg.com/@barba/core"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="scripts/app.js"></script>
 </head>
 <body class="bg-cream font-sans">
@@ -134,14 +139,28 @@
                 </div>
                 <div class="hidden xl:block xl:w-4/12"></div>
             </div>
-            <div class="relative w-full mt-20">
-                <div class="w-full h-48 md:h-60 lg:h-72 xl:h-96 noise overflow-hidden relative rounded-xl">
-                    <span class="w-48 h-48 rounded-full blur bg-neon z-20 block absolute -bottom-10 -right-10"></span>
-                    <span class="w-48 h-48 rounded-full blur bg-olive z-20 block absolute bottom-20 right-56"></span>
-                    <span class="w-48 h-48 rounded-full blur bg-neon z-20 block absolute -top-10 -left-10"></span>
+            <div class="relative">
+                <div class="swiper-container relative mt-20 lg:w-10/12">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide relative">
+                          <img class="w-full h-full object-cover rounded-3xl border border-black" src="assets/images/techno-img01.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide relative">
+                          <img class="w-full h-full object-cover rounded-3xl border border-black" src="assets/images/bg-forme.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide rounded-3xl">
+                          <img class="w-full h-full object-cover rounded-3xl border border-black" src="assets/images/bg-texte.jpg" alt="">
+                      </div>
+                    </div>
                 </div>
-                <div class="absolute -bottom-10 lg:-bottom-20 xl:-bottom-28 left-10 z-30">
-                    <img class="block w-32 md:w-40 lg:w-52 xl:w-5/12 rounded-xl shadow-2xl" src="assets/images/bloc-bg.png" alt="">
+                <div class="swiper-pagination absolute -bottom-10 left-1/2 transform translate-x-center"></div>
+                <div class="swiper-button-prev w-24 h-24 bg-neon rounded-full hidden lg:block absolute -left-10 top-1/2 transform translate-y-center z-20">
+                    <img class="h-12 w-12 absolute left-1/2 top-1/2 transform translate-x-center translate-y-center" src="assets/icons/arrow-left-s-line.svg" alt="">
+                </div>
+                <div class="swiper-button-next w-24 h-24 bg-neon rounded-full  hidden lg:block absolute -right-10 top-1/2 transform translate-y-center z-20">
+                    <img class="h-12 w-12 absolute left-1/2 top-1/2 transform rotate-180 translate-x-center translate-y-center" src="assets/icons/arrow-left-s-line.svg" alt="">
                 </div>
             </div>
         </section>
