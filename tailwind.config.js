@@ -75,6 +75,7 @@ module.exports = {
         '8px': '8px',
         '500px': '500px',
         '700px': '700px',
+        '720px': '720px',
         '800px': '800px'
       },
       backdropFilter: { // defaults to {}

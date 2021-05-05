@@ -120,7 +120,7 @@ input[type="range"]::-webkit-slider-thumb {
     
 }
 .text-infinite{
-    animation: scrollTxt 25s linear infinite;
+    animation: scrollTxt 35s linear infinite;
 }
 @keyframes scrollTxt {
     0%{
@@ -132,7 +132,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .stroke{
     color: black;
-    -webkit-text-fill-color: #FBFCF5; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
@@ -177,4 +177,20 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .swiper-pagination-bullet-active{
     background-color: #B9CC7A;
+}
+.btn-send::after{
+    display: block;
+    z-index: -1;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: #E7FE98;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+.btn-send:hover::after{
+    width: 100%;
+    right: 0;
 }
