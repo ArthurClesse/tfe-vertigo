@@ -130,6 +130,28 @@ input[type="range"]::-webkit-slider-thumb {
         transform: translate(-100%, 0);
     }
 }
+.text-beta{
+    animation: scrollBeta 35s linear infinite;
+}
+@keyframes scrollBeta {
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-100%, 0);
+    }
+}
+.text-beta2{
+    animation: scrollBeta2 35s linear infinite;
+}
+@keyframes scrollBeta2 {
+    0%{
+        transform: translate(-100%, 0);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
 .stroke{
     color: black;
     -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */

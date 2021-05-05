@@ -15,6 +15,7 @@ module.exports = {
         cream: '#FBFCF5',
         purple: '#CE7DF5',
         olive: '#B9CC7A',
+        gordon: '#121212',
         blue: {
           neon: "#7DB9F5",
         },
@@ -65,7 +66,8 @@ module.exports = {
         '8px': '8px',
         '500px': '500px',
         '700px': '700px',
-        '800px': '800px'
+        '800px': '800px',
+        '80vh': '80vh'
       },
       width: {
         '1px': '1px',

@@ -50,3 +50,13 @@ function updateTextInput(val) {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  function myFunction() {
+    var x = document.getElementById("myText").value;
+    let listElements = document.querySelectorAll(".vertigo");
+
+    for(let listElement of listElements){
+        listElement.innerHTML = x;
+        listElement.style.color = "red";
+    }
+  }
