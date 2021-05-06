@@ -20,8 +20,8 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script defer src="scripts/app.js"></script>
 </head>
-<body class="bg-gordon font-sans">
-    <header class="block w-full mt-7 text-white">
+<body class="bg-gordon font-sans flex flex-col min-h-screen">
+    <header class="block w-full mt-7">
         <div class="flex justify-between items-center">
             <a class="flex items-center pl-10 xl:pl-20" href="index.html">
                 <img class="h-12 sm:h-14" src="assets/icons/logo.svg" alt="Logo vertigo">
@@ -30,28 +30,28 @@
             <button class="flex items-center font-medium text-tiny outline-none focus:outline-none btn-menu z-50 fixed right-0 pr-10 xl:pr-20">
                 <span class="hidden sm:block mr-2">Menu</span>
                 <div class="transform -scale-x-1 burger relative w-8 h-4">
-                    <span class="h-4px w-8 bg-white block burger-line01 absolute inset-x-0 top-0 transition-transform"></span>
-                    <span class="h-4px w-6 bg-white block burger-line02 inset-x-0 bottom-0 absolute transition-transform"></span>
+                    <span class="h-4px w-8 bg-black block burger-line01 absolute inset-x-0 top-0 transition-transform"></span>
+                    <span class="h-4px w-6 bg-black block burger-line02 inset-x-0 bottom-0 absolute transition-transform"></span>
                 </div>
             </button>
         </div>
-        <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-black z-40">
-            <nav class="container px-10 xl:px-20">
-                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium mt-28">
+        <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-cream z-40">
+            <nav class="container px-10 xl:px-20 absolute top-1/2 left-1/2 transform translate-y-center translate-x-center">
+                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium">
                     <li class="flex items-center py-3 text-animated-1">
                         <a class="z-20 " href="propos.html">À propos</a>
-                        <div class="bg-white w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
                     </li>
                     <li class="flex items-center py-3 text-animated-2">
                         <a href="fonctionnalites.html">Fonctionnalité</a>
-                        <div class="bg-white w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5"></div>
                     </li>
                     <li class="flex items-center py-3 text-animated-3">
                         <a href="technologie.html">Technologie</a>
-                        <div class="bg-white w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5"></div>
                     </li>
                     <li class="flex mt-10 text-tiny font-medium text-animated-4">
-                        <a class="bg-neon px-5 py-3 flex items-center mr-10 text-black" href="soutenir.html">Soutenir
+                        <a class="bg-neon px-5 py-3 flex items-center mr-10" href="soutenir.html">Soutenir
                             <div class="bg-black w-12 h-2px block ml-3"></div>
                         </a>
                     </li>
@@ -76,15 +76,62 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section class="hidden w-10/12 h-80vh mx-auto mt-10 mb-20 rounded-2xl relative xl:flex">
-            <div class="w-4/12 bg-cream h-full rounded-l-2xl">  
-                <input type="text" id="myText" value="Vertigo">
-                <button onclick="myFunction()">Try it</button>
+    <main class="flex-grow">
+        <section class="hidden w-1280px h-700px mx-auto mt-10 mb-20 rounded-2xl relative xl:flex">
+            <div class="w-4/12 bg-cream h-full rounded-l-2xl px-10">  
+                <div class="flex justify-center flex-col w-10/12 mx-auto text-center font-bold uppercase mt-10">
+                    <div class="relative">
+                        <h2 class="text-2lg">Vertigo</h2>
+                    </div>
+                    <h3 class="text-sm">Background generator</h3>
+                </div>
+                <div class="flex justify-between items-center w-10/12 mt-10">
+                    <h2 class="text-tiny font-medium text-gray-500">Thèmes</h2>
+                    <div class="flex">
+                        <a class="bg-neon rounded-lg w-10 h-10 relative ml-5 block" href="">
+                            <span class="absolute left-1/2 top-1/2 transform translate-x-center translate-y-center uppercase font-bold text-white text-tiny">t</span>
+                        </a>
+                        <a class="bg-gray-400 rounded-lg w-10 h-10 relative ml-5 block" href="">
+                            <span class="border-4 border-white h-6 w-6 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <h2 class="text-tiny font-medium text-gray-500">Texte</h2>
+                    <input type="text" id="myText" value="Vertigo">
+                    <button onclick="changeText()">Try it</button>
+                </div>
+                <div class="mt-10">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-tiny font-medium text-gray-500">Couleur texte</h2>
+                        <span class="text-sm  text-color">#000000</span>
+                    </div>
+                    <div class="mt-5 flex justify-between w-10/12">
+                        <button onclick="changeColor('#E7FE98')" class="w-8 h-8 rounded-full bg-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="changeColor('#7DB9F5')" class="w-8 h-8 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="changeColor('#98FEAC')" class="w-8 h-8 rounded-full bg-green-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="changeColor('#CE7DF5')" class="w-8 h-8 rounded-full bg-purple cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="changeColor('#F57DA2')" class="w-8 h-8 rounded-full bg-red-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="changeColor('#FEB398')" class="w-8 h-8 rounded-full bg-orange-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="changeColor('#FE98F6')" class="w-8 h-8 rounded-full bg-pink-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <h2 class="text-tiny font-medium text-gray-500">Couleur background</h2>
+                    <div class="mt-5 flex justify-between w-10/12">
+                        <button onclick="changeBackground('#E7FE98')" class="w-8 h-8 rounded-full bg-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="changeBackground('#7DB9F5')" class="w-8 h-8 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="changeBackground('#98FEAC')" class="w-8 h-8 rounded-full bg-green-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="changeBackground('#CE7DF5')" class="w-8 h-8 rounded-full bg-purple cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="changeBackground('#F57DA2')" class="w-8 h-8 rounded-full bg-red-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="changeBackground('#FEB398')" class="w-8 h-8 rounded-full bg-orange-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="changeBackground('#FE98F6')" class="w-8 h-8 rounded-full bg-pink-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                    </div>
+                </div>
             </div>
-            <div class="w-8/12 h-full bg-cream overflow-hidden noise relative rounded-r-2xl">
+            <div class="w-8/12 h-full bg-cream overflow-hidden noise relative rounded-r-2xl bg-change">
                 <div class="overflow-hidden w-full flex">
-                    <ul class="text-beta flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide">
+                    <ul class="text-beta flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide uppercase leading-none">
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
@@ -92,7 +139,7 @@
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo&nbsp;</li>
                     </ul>
-                    <ul class="text-beta flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide">
+                    <ul class="text-beta flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide uppercase leading-none">
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
@@ -102,7 +149,7 @@
                     </ul>
                 </div>
                 <div class="overflow-hidden w-full flex">
-                    <ul class="text-beta2 stroke flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide">
+                    <ul class="text-beta2 stroke flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide uppercase leading-none">
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
@@ -110,25 +157,7 @@
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo&nbsp;</li>
                     </ul>
-                    <ul class="text-beta2 stroke flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide">
-                        <li class="vertigo px-5">Vertigo</li>
-                        <li class="vertigo px-5">Vertigo</li>
-                        <li class="vertigo px-5">Vertigo</li>
-                        <li class="vertigo px-5">Vertigo</li>
-                        <li class="vertigo px-5">Vertigo</li>
-                        <li class="vertigo px-5">Vertigo&nbsp;</li>
-                    </ul>
-                </div>
-                <div class="overflow-hidden w-full flex">
-                    <ul class="text-beta flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide">
-                        <li class="vertigo px-5">Vertigo</li>
-                        <li class="vertigo px-5">Vertigo</li>
-                        <li class="vertigo px-5">Vertigo</li>
-                        <li class="vertigo px-5">Vertigo</li>
-                        <li class="vertigo px-5">Vertigo</li>
-                        <li class="vertigo px-5">Vertigo&nbsp;</li>
-                    </ul>
-                    <ul class="text-beta flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide">
+                    <ul class="text-beta2 stroke flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide uppercase leading-none">
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
@@ -138,7 +167,7 @@
                     </ul>
                 </div>
                 <div class="overflow-hidden w-full flex">
-                    <ul class="text-beta2 stroke flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide">
+                    <ul class="text-beta flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide uppercase leading-none">
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
@@ -146,7 +175,7 @@
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo&nbsp;</li>
                     </ul>
-                    <ul class="text-beta2 stroke flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide">
+                    <ul class="text-beta flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide uppercase leading-none">
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
@@ -156,7 +185,7 @@
                     </ul>
                 </div>
                 <div class="overflow-hidden w-full flex">
-                    <ul class="text-beta flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide">
+                    <ul class="text-beta2 stroke flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide uppercase leading-none">
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
@@ -164,7 +193,25 @@
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo&nbsp;</li>
                     </ul>
-                    <ul class="text-beta flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide">
+                    <ul class="text-beta2 stroke flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide uppercase leading-none">
+                        <li class="vertigo px-5">Vertigo</li>
+                        <li class="vertigo px-5">Vertigo</li>
+                        <li class="vertigo px-5">Vertigo</li>
+                        <li class="vertigo px-5">Vertigo</li>
+                        <li class="vertigo px-5">Vertigo</li>
+                        <li class="vertigo px-5">Vertigo&nbsp;</li>
+                    </ul>
+                </div>
+                <div class="overflow-hidden w-full flex">
+                    <ul class="text-beta flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide uppercase leading-none">
+                        <li class="vertigo px-5">Vertigo</li>
+                        <li class="vertigo px-5">Vertigo</li>
+                        <li class="vertigo px-5">Vertigo</li>
+                        <li class="vertigo px-5">Vertigo</li>
+                        <li class="vertigo px-5">Vertigo</li>
+                        <li class="vertigo px-5">Vertigo&nbsp;</li>
+                    </ul>
+                    <ul class="text-beta flex flex-row items-center text-4xl font-bold whitespace-nowrap tracking-wide uppercase leading-none">
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>
                         <li class="vertigo px-5">Vertigo</li>

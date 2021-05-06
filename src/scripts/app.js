@@ -54,56 +54,67 @@ function updateTextInput(val) {
     },
   });
 
-
-  function myFunction() {
+//Bêta Vertigo
+  function changeText() {
     var x = document.getElementById("myText").value;
     let listElements = document.querySelectorAll(".vertigo");
 
     for(let listElement of listElements){
         listElement.innerHTML = x;
-        listElement.style.color = "red";
     }
   }
+  function changeColor(newColor) { // definition of function
+    let textColor = document.querySelector(".text-color");
+    let listElements = document.querySelectorAll(".vertigo");
 
-  //Page transition
-const wipe = document.querySelector('.page-transition');
-const TLAnim = gsap.timeline();
-
-function delay(n) {
-    n = n || 2000;
-    return new Promise((done) => {
-        setTimeout(() => {
-            done();
-        }, n);
-    });
-}
-
-barba.init({
-
-  sync: true,
-
-  transitions: [
-    {
-      async leave(data){
-
-        const done = this.async();
-
-        TLAnim.to(wipe, {left: '0%', ease: "power2.out", duration: 0.5});
-
-        await delay(500);
-        done();
-
-      },
-      enter(data){
-
-        TLAnim
-        .to(wipe, {left: '100%', ease:"power2.in", duration: 0.5})
-        .set(wipe, {left: '-110%'})
-        document.body.removeAttribute("data-menu");
-
-
-      }
+    for(let listElement of listElements){
+        listElement.style.color = newColor;
     }
-  ]
+    textColor.innerHTML = newColor;
+}   
+function changeBackground(newBackground) { // definition of function
+    let bgChange = document.querySelector(".bg-change");
+    bgChange.style.backgroundColor = newBackground;
+}   
+  //Page transition
+// const wipe = document.querySelector('.page-transition');
+// const TLAnim = gsap.timeline();
 
-})
+// function delay(n) {
+//     n = n || 2000;
+//     return new Promise((done) => {
+//         setTimeout(() => {
+//             done();
+//         }, n);
+//     });
+// }
+
+// barba.init({
+
+//   sync: true,
+
+//   transitions: [
+//     {
+//       async leave(data){
+
+//         const done = this.async();
+
+//         TLAnim.to(wipe, {left: '0%', ease: "power2.out", duration: 0.5});
+
+//         await delay(500);
+//         done();
+
+//       },
+//       enter(data){
+
+//         TLAnim
+//         .to(wipe, {left: '100%', ease:"power2.in", duration: 0.5})
+//         .set(wipe, {left: '-110%'})
+//         document.body.removeAttribute("data-menu");
+
+
+//       }
+//     }
+//   ]
+
+// })

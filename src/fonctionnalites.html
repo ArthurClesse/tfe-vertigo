@@ -26,7 +26,7 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script defer src="scripts/app.js"></script>
 </head>
-<body class="bg-cream font-sans" data-barba="wrapper"> 
+<body class="bg-cream font-sans"> 
     <div class="page-transition w-screen h-full bg-neon absolute -left-110% z-60">
         <div class="flex items-center justify-center absolute top-1/2 left-1/2 transform translate-y-center translate-x-center">
             <img class="h-20 md:h-28 xl:h-44" src="assets/icons/logo.svg" alt="Logo vertigo">
@@ -48,8 +48,8 @@
             </button>
         </div>
         <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-cream z-40">
-            <nav class="container px-10 xl:px-20">
-                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium mt-28">
+            <nav class="container px-10 xl:px-20 absolute top-1/2 left-1/2 transform translate-y-center translate-x-center">
+                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium">
                     <li class="flex items-center py-3 text-animated-1">
                         <a class="z-20 " href="propos.html">À propos</a>
                         <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
@@ -88,7 +88,7 @@
             </nav>
         </div>
     </header>
-    <main data-barba="container" data-barba-namespace="page1">
+    <main>
         <section class="container px-10 xl:px-20 mt-10 mb-32 relative">
             <h2 class="font-medium text-2lg sm:text-2xl md:text-3xl xl:text-4xl leading-snug relative z-10">De quoi est fait le c&#156;ur de <span class="uppercase">Vertigo</span></h2>
             <div class="w-full mt-10 mb-16 lg:flex lg:justify-end lg:mb-48 xl:mt-32 relative z-10">

@@ -67,7 +67,8 @@ module.exports = {
         '500px': '500px',
         '700px': '700px',
         '800px': '800px',
-        '80vh': '80vh'
+        '80vh': '80vh',
+        '650px': '650px',
       },
       width: {
         '1px': '1px',
@@ -78,7 +79,8 @@ module.exports = {
         '500px': '500px',
         '700px': '700px',
         '720px': '720px',
-        '800px': '800px'
+        '800px': '800px',
+        '1280px': '1280px',
       },
       backdropFilter: { // defaults to {}
       'none': 'none',

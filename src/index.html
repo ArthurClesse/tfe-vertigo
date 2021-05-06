@@ -20,7 +20,7 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script defer src="scripts/app.js"></script>
 </head>
-<body class="bg-cream font-sans" data-barba="wrapper">
+<body class="bg-cream font-sans">
     <div class="page-transition w-screen h-full bg-neon absolute -left-110% z-60">
         <div class="flex items-center justify-center absolute top-1/2 left-1/2 transform translate-y-center translate-x-center">
             <img class="h-20 md:h-28 xl:h-44" src="assets/icons/logo.svg" alt="Logo vertigo">
@@ -42,8 +42,8 @@
             </button>
         </div>
         <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-cream z-40">
-            <nav class="container px-10 xl:px-20">
-                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium mt-28">
+            <nav class="container px-10 xl:px-20 absolute top-1/2 left-1/2 transform translate-y-center translate-x-center">
+                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium">
                     <li class="flex items-center py-3 text-animated-1">
                         <a class="z-20 " href="propos.html">À propos</a>
                         <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
@@ -82,13 +82,13 @@
             </nav>
         </div>
     </header>
-    <main class="w-full" data-barba="container" data-barba-namespace="home">
+    <main class="w-full">
         <section class="block xl:flex container px-10 xl:px-20">
-            <div class="w-full lg:w-6/12 h-auto xl:h-800px">
-                <div class="mt-20 xl:mt-48">
+            <div class="w-full lg:w-6/12 h-auto xl:h-800px relative">
+                <div class="mt-20 xl:mt-48 relative z-10">
                     <h2 class="font-bold text-lg lg:text-xl xl:text-2xl w-full xl:w-10/12 text-animated-1 leading-tight max-w-lg">Révolutionner le streaming d’aujourd’hui.</h2>
-                    <p class="text-tiny font-extralight mt-10 xl:mt-5 w-full xl:w-10/12 max-w-xl text-animated-2">Vertigo, c'est le nouveau logiciel destiné aux streamers, il leur permet de créer et de personnaliser leur décor mais il propose aussi plusieurs technologies afin que le décor réagisse avec le streameur ou la communauté.</p>
-                    <div class="inline-block sm:flex items-center font-medium text-tiny mt-10 text-animated-3">
+                    <p class="text-tiny font-extralight mt-10 xl:mt-5 w-full xl:w-10/12 max-w-xl text-animated-2 relative">Vertigo, c'est le nouveau logiciel destiné aux streamers, il leur permet de créer et de personnaliser leur décor mais il propose aussi plusieurs technologies afin que le décor réagisse avec le streameur ou la communauté.</p>
+                    <div class="inline-block sm:flex items-center font-medium text-tiny mt-10 text-animated-3 relative">
                         <a class="bg-neon px-5 py-3 flex items-center mr-10" href="soutenir.html">Soutenir
                             <div class="bg-black w-12 h-2px block ml-3"></div>
                         </a>

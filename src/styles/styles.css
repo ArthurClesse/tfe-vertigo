@@ -11759,6 +11759,10 @@ video {
   height: 80vh;
 }
 
+.h-650px {
+  height: 650px;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -29763,6 +29767,10 @@ video {
   width: 800px;
 }
 
+.w-1280px {
+  width: 1280px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -45555,6 +45563,10 @@ input[type="range"]::-webkit-slider-thumb {
 
   .sm\:h-80vh {
     height: 80vh;
+  }
+
+  .sm\:h-650px {
+    height: 650px;
   }
 
   .sm\:text-xs {
@@ -63548,6 +63560,10 @@ input[type="range"]::-webkit-slider-thumb {
     width: 800px;
   }
 
+  .sm\:w-1280px {
+    width: 1280px;
+  }
+
   .sm\:z-0 {
     z-index: 0;
   }
@@ -78875,6 +78891,10 @@ input[type="range"]::-webkit-slider-thumb {
 
   .md\:h-80vh {
     height: 80vh;
+  }
+
+  .md\:h-650px {
+    height: 650px;
   }
 
   .md\:text-xs {
@@ -96868,6 +96888,10 @@ input[type="range"]::-webkit-slider-thumb {
     width: 800px;
   }
 
+  .md\:w-1280px {
+    width: 1280px;
+  }
+
   .md\:z-0 {
     z-index: 0;
   }
@@ -112195,6 +112219,10 @@ input[type="range"]::-webkit-slider-thumb {
 
   .lg\:h-80vh {
     height: 80vh;
+  }
+
+  .lg\:h-650px {
+    height: 650px;
   }
 
   .lg\:text-xs {
@@ -130188,6 +130216,10 @@ input[type="range"]::-webkit-slider-thumb {
     width: 800px;
   }
 
+  .lg\:w-1280px {
+    width: 1280px;
+  }
+
   .lg\:z-0 {
     z-index: 0;
   }
@@ -145515,6 +145547,10 @@ input[type="range"]::-webkit-slider-thumb {
 
   .xl\:h-80vh {
     height: 80vh;
+  }
+
+  .xl\:h-650px {
+    height: 650px;
   }
 
   .xl\:text-xs {
@@ -163508,6 +163544,10 @@ input[type="range"]::-webkit-slider-thumb {
     width: 800px;
   }
 
+  .xl\:w-1280px {
+    width: 1280px;
+  }
+
   .xl\:z-0 {
     z-index: 0;
   }
@@ -178835,6 +178875,10 @@ input[type="range"]::-webkit-slider-thumb {
 
   .\32xl\:h-80vh {
     height: 80vh;
+  }
+
+  .\32xl\:h-650px {
+    height: 650px;
   }
 
   .\32xl\:text-xs {
@@ -196826,6 +196870,10 @@ input[type="range"]::-webkit-slider-thumb {
 
   .\32xl\:w-800px {
     width: 800px;
+  }
+
+  .\32xl\:w-1280px {
+    width: 1280px;
   }
 
   .\32xl\:z-0 {

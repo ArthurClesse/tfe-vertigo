@@ -20,7 +20,7 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script defer src="scripts/app.js"></script>
 </head>
-<body class="bg-cream font-sans">
+<body class="bg-cream font-sans flex flex-col min-h-screen">
     <header class="block w-full mt-7">
         <div class="flex justify-between items-center">
             <a class="flex items-center pl-10 xl:pl-20" href="index.html">
@@ -36,8 +36,8 @@
             </button>
         </div>
         <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-cream z-40">
-            <nav class="container px-10 xl:px-20">
-                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium mt-28">
+            <nav class="container px-10 xl:px-20 absolute top-1/2 left-1/2 transform translate-y-center translate-x-center">
+                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium">
                     <li class="flex items-center py-3 text-animated-1">
                         <a class="z-20 " href="propos.html">À propos</a>
                         <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
@@ -76,7 +76,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="flex-grow">
         <section class="container px-10 xl:px-20 mt-10 mb-32 relative xl:flex xl:mt-32 xl:mb-48">
             <div class="xl:w-5/12">
                 <h2 class="text-lg xl:text-xl font-medium">Nos partenaires actuelle</h2>
