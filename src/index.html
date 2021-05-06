@@ -20,7 +20,13 @@
     <script src="https://unpkg.com/@barba/core"></script>
     <script defer src="scripts/app.js"></script>
 </head>
-<body class="bg-cream font-sans">
+<body class="bg-cream font-sans" data-barba="wrapper">
+    <div class="page-transition w-screen h-full bg-neon absolute -left-110% z-60">
+        <div class="flex items-center justify-center absolute top-1/2 left-1/2 transform translate-y-center translate-x-center">
+            <img class="h-20 md:h-28 xl:h-44" src="assets/icons/logo.svg" alt="Logo vertigo">
+            <h2 class="uppercase text-xl md:text-2xl xl:text-4xl font-bold ml-10">vertigo</h2>
+        </div>
+    </div>
     <header class="block w-full mt-7">
         <div class="flex justify-between items-center">
             <a class="flex items-center pl-10 xl:pl-20" href="index.html">
@@ -76,7 +82,7 @@
             </nav>
         </div>
     </header>
-    <main class="w-full">
+    <main class="w-full" data-barba="container" data-barba-namespace="home">
         <section class="block xl:flex container px-10 xl:px-20">
             <div class="w-full lg:w-6/12 h-auto xl:h-800px">
                 <div class="mt-20 xl:mt-48">
@@ -198,10 +204,10 @@
             <div>
                 <ul class="lg:flex items-center font-medium text-tiny">
                     <li class="pt-5 pb-3 lg:p-0 lg:px-5 xl:px-10">
-                        <a href="propos.html">À propos</a>
+                        <a class="link-top" href="propos.html">À propos</a>
                     </li>
                     <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
-                        <a href="fonctionnalites.html">Fonctionnalité</a>
+                        <a class="link-top" href="fonctionnalites.html">Fonctionnalité</a>
                     </li>
                     <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
                         <a href="technologie.html">Technologie</a>

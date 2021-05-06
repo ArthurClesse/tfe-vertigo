@@ -18,14 +18,21 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/styles.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <script src="https://unpkg.com/@barba/core"></script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script defer src="scripts/app.js"></script>
 </head>
-<body class="bg-cream font-sans">
+<body class="bg-cream font-sans" data-barba="wrapper"> 
+    <div class="page-transition w-screen h-full bg-neon absolute -left-110% z-60">
+        <div class="flex items-center justify-center absolute top-1/2 left-1/2 transform translate-y-center translate-x-center">
+            <img class="h-20 md:h-28 xl:h-44" src="assets/icons/logo.svg" alt="Logo vertigo">
+            <h2 class="uppercase text-xl md:text-2xl xl:text-4xl font-bold ml-10">vertigo</h2>
+        </div>
+    </div>
     <header class="block w-full mt-7">
         <div class="flex justify-between items-center">
             <a class="flex items-center pl-10 xl:pl-20" href="index.html">
@@ -81,7 +88,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main data-barba="container" data-barba-namespace="page1">
         <section class="container px-10 xl:px-20 mt-10 mb-32 relative">
             <h2 class="font-medium text-2lg sm:text-2xl md:text-3xl xl:text-4xl leading-snug relative z-10">De quoi est fait le c&#156;ur de <span class="uppercase">Vertigo</span></h2>
             <div class="w-full mt-10 mb-16 lg:flex lg:justify-end lg:mb-48 xl:mt-32 relative z-10">
