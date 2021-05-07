@@ -64,6 +64,9 @@ body[data-menu]{
     height: 100vh;
     overflow: hidden;
 }
+body[data-stroke] .stroke{
+    -webkit-text-fill-color: none; /* Will override color (regardless of order) */
+}
 .text-animated-1{
     opacity: 0;
     transform: translateY(30px);

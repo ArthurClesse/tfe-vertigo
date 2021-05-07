@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertigo | Bêta Vertigo</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script defer src="scripts/app.js"></script>
+</head>
+<body class="bg-gordon font-sans flex flex-col min-h-screen ">
+    <header class="block w-full mt-7 text-white">
+        <div class="flex justify-between items-center">
+            <a class="flex items-center pl-10 xl:pl-20" href="index.html">
+                <img class="h-12 sm:h-14" src="assets/icons/logo.svg" alt="Logo vertigo">
+                <h1 class="hidden md:block uppercase font-bold text-tiny ml-3">Vertigo</h1>
+            </a>
+            <button class="flex items-center font-medium text-tiny outline-none focus:outline-none btn-menu z-50 fixed right-0 pr-10 xl:pr-20">
+                <span class="hidden sm:block mr-2">Menu</span>
+                <div class="transform -scale-x-1 burger relative w-8 h-4">
+                    <span class="h-4px w-8 bg-white block burger-line01 absolute inset-x-0 top-0 transition-transform"></span>
+                    <span class="h-4px w-6 bg-white block burger-line02 inset-x-0 bottom-0 absolute transition-transform"></span>
+                </div>
+            </button>
+        </div>
+        <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-black z-40">
+            <nav class="container px-10 xl:px-20 absolute top-1/2 left-1/2 transform translate-y-center translate-x-center">
+                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium">
+                    <li class="flex items-center py-3 text-animated-1">
+                        <a class="z-20 " href="propos.html">À propos</a>
+                        <div class="bg-white w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
+                    </li>
+                    <li class="flex items-center py-3 text-animated-2">
+                        <a href="fonctionnalites.html">Fonctionnalité</a>
+                        <div class="bg-white w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                    </li>
+                    <li class="flex items-center py-3 text-animated-3">
+                        <a href="technologie.html">Technologie</a>
+                        <div class="bg-white w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                    </li>
+                    <li class="flex mt-10 text-tiny font-medium text-animated-4">
+                        <a class="bg-neon px-5 py-3 flex items-center mr-10 text-black" href="soutenir.html">Soutenir
+                            <div class="bg-black w-12 h-2px block ml-3"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="lg:flex lg:justify-between">
+                    <ul class="flex items-center text-tiny font-base mt-5 text-animated-5">
+                        <li class="mr-5">
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li class="mr-5">
+                            <a href="partenaires.html">Partenaires</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="mt-10 lg:-mt-10 text-animated-5">
+                        <h2 class="text-base lg:text-lg font-medium">Contactez nous !</h2>
+                        <a class="text-tiny font-base mt-3" href="mailto:vertigo.tfe@gmail.com">vertigo@gmail.com</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <section class="hidden w-1280px h-700px mx-auto mt-10 mb-20 rounded-2xl xl:flex">
+            <div class="w-4/12 bg-cream h-full rounded-l-2xl px-10">  
+                <div class="flex justify-center flex-col w-10/12 mx-auto text-center font-bold uppercase mt-10">
+                    <div class="relative">
+                        <h2 class="text-2lg">Vertigo</h2>
+                    </div>
+                    <h3 class="text-sm">Background generator</h3>
+                </div>
+                <div class="flex justify-between items-center w-10/12 mt-10">
+                    <h2 class="text-tiny font-medium text-gray-500">Thèmes</h2>
+                    <div class="flex">
+                        <a class="bg-gray-400 rounded-lg w-10 h-10 relative ml-5 block" href="beta.html">
+                            <span class="absolute left-1/2 top-1/2 transform translate-x-center translate-y-center uppercase font-bold text-white text-tiny">t</span>
+                        </a>
+                        <a class="bg-purple rounded-lg w-10 h-10 relative ml-5 block" href="#">
+                            <span class="border-4 border-white h-6 w-6 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-tiny font-medium text-gray-500">Couleur ronds 1</h2>
+                        <span class="text-sm  text-color">#E7FE98</span>
+                    </div>
+                    <div class="mt-5 flex justify-between w-10/12">
+                        <button onclick="circleColor('#E7FE98')" class="w-7 h-7 rounded-full bg-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="circleColor('#7DB9F5')" class="w-7 h-7 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="circleColor('#98FEAC')" class="w-7 h-7 rounded-full bg-green-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="circleColor('#CE7DF5')" class="w-7 h-7 rounded-full bg-purple cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="circleColor('#F57DA2')" class="w-7 h-7 rounded-full bg-red-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="circleColor('#FEB398')" class="w-7 h-7 rounded-full bg-orange-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="circleColor('#FE98F6')" class="w-7 h-7 rounded-full bg-pink-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-tiny font-medium text-gray-500">Couleur ronds 2</h2>
+                        <span class="text-sm background-color">#FBFCF5</span>
+                    </div>
+                    <div class="mt-5 flex justify-between w-10/12">
+                        <button onclick="circleColor2('#E7FE98')" class="w-7 h-7 rounded-full bg-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="circleColor2('#7DB9F5')" class="w-7 h-7 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="circleColor2('#98FEAC')" class="w-7 h-7 rounded-full bg-green-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="circleColor2('#CE7DF5')" class="w-7 h-7 rounded-full bg-purple cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="circleColor2('#F57DA2')" class="w-7 h-7 rounded-full bg-red-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="circleColor2('#FEB398')" class="w-7 h-7 rounded-full bg-orange-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        <button onclick="circleColor2('#FE98F6')" class="w-7 h-7 rounded-full bg-pink-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                    </div>
+                </div>
+                <div class="mt-10 flex flex-col">
+                    <h2 class="text-tiny font-medium text-gray-500">Taille ronds 1</h2>
+                    <input class="mt-5" id="range-circle1" type='range' min="90" max="600" value="300">
+                </div>
+                <div class="mt-10 flex flex-col">
+                    <h2 class="text-tiny font-medium text-gray-500">Taille ronds 1</h2>
+                    <input class="mt-5" id="range-circle2" type='range' min="90" max="600" value="80">
+                </div>
+            </div>
+            <div class="w-8/12 h-full bg-cream overflow-hidden noise relative rounded-r-2xl bg-change">
+                <div class="h-full w-full overflow-hidden absolute top-0 right-0">
+                    <span class="w-48 h-48 rounded-full bg-neon z-20 block circle-color1 circle-1 blur absolute"></span>
+                    <span class="w-48 h-48 rounded-full bg-purple z-20 block circle-color2 circle-2 blur absolute"></span>
+                    <span class="w-56 h-56 rounded-full bg-neon z-20 block circle-color1 circle-3 blur absolute"></span>
+                    <span class="w-48 h-48 rounded-full bg-purple z-20 block circle-color2 circle-4 blur absolute"></span>
+                    <span class="w-30 h-30 rounded-full bg-neon z-20 block circle-color1 circle-5 blur absolute"></span>
+                    <span class="w-64 h-64 rounded-full bg-purple z-20 block circle-color2 circle-6 blur absolute"></span>
+                    <span class="w-48 h-48 rounded-full bg-neon z-20 block circle-color1 circle-7 blur absolute"></span>
+                    <span class="w-24 h-24 rounded-full bg-purple z-20 block circle-color2 circle-8 blur absolute"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="px-10 xl:px-20 text-white">
+        <div class="lg:flex justify-between items-center">
+            <a class="flex items-center" href="index.html">
+                <img class="h-14" src="assets/icons/logo.svg" alt="">
+                <h1 class="uppercase font-bold text-tiny ml-3">Vertigo</h1>
+            </a>
+            <div>
+                <ul class="lg:flex items-center font-medium text-tiny">
+                    <li class="pt-5 pb-3 lg:p-0 lg:px-5 xl:px-10">
+                        <a href="propos.html">À propos</a>
+                    </li>
+                    <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
+                        <a href="fonctionnalites.html">Fonctionnalité</a>
+                    </li>
+                    <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
+                        <a href="technologie.html">Technologie</a>
+                    </li>
+                    <li class="flex text-tiny font-medium mt-3 lg:mt-0 lg:ml-5 xl:ml-10">
+                        <a class="bg-neon px-5 py-3 flex items-center text-black" href="soutenir.html">Soutenir
+                            <div class="bg-black w-12 h-2px block ml-3"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-start lg:justify-end mt-10 mb-20 xl:my-10">
+            <ul class="flex items-center font-normal text-sm">
+                <li class="pr-5">
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li class="px-5">
+                    <a href="partenaires.html">Partenaires</a>
+                </li>
+                <li class="pl-5">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
