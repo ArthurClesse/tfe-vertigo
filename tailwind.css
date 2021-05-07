@@ -219,3 +219,28 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
     right: 0;
 }
+.btn-soutenir div{
+    transition: all .3s ease-in-out;
+}
+.btn-soutenir:hover div{
+    width: 15px;
+}
+.link-menu{
+    transition: color .3s ease-in-out;
+}
+.link-menu:hover{
+    color: #B9CC7A;
+}
+.link-menu div{
+    transition: all .3s ease-in-out;
+}
+.link-menu:hover div{
+    width: 45px;
+    background-color: #B9CC7A;
+}
+.sublink-menu{
+    transition: color .2s ease-in-out;
+}
+.sublink-menu:hover{
+    color: #B9CC7A;
+}
