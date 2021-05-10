@@ -51,9 +51,15 @@ html, body{
 .burger-line01, .burger-line02{
     transform-origin: center center;
 }
-body[data-menu] .burger-line01{
+.burger-line01{
+    transition: all .3s ease-in-out;
+}
+.btn-menu:hover .burger-line01{
     width: 24px;
+}
+body[data-menu] .burger-line01{
     top: 50%;
+    width: 24px;
     transform: translateY(-50%) rotate(-45deg);
 }
 body[data-menu] .burger-line02{
@@ -237,4 +243,21 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .sublink-menu:hover{
     color: #B9CC7A;
+}
+.cursor{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 999;
+    transition: transform 0.2s;
+}
+html, *{
+    cursor: none;
 }

@@ -17,20 +17,24 @@
     <link rel="stylesheet" href="styles/styles.css">
 
     <script defer src="scripts/face-api.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script defer src="scripts/app.js"></script>
+
     <script defer src="scripts/face-api.js"></script>
+    <script defer src="scripts/app.js"></script>
 </head>
 <body class="bg-cream font-sans">
-    <header class="block w-full mt-7">
+    <div class="cursor"></div>
+    <header class="block w-full pt-7 bg-cream">
         <div class="flex justify-between items-center">
             <a class="flex items-center pl-10 xl:pl-20" href="index.html">
                 <img class="h-12 sm:h-14" src="assets/icons/logo.svg" alt="Logo vertigo">
                 <h1 class="hidden md:block uppercase font-bold text-tiny ml-3">Vertigo</h1>
             </a>
-            <button class="flex items-center font-medium text-tiny outline-none focus:outline-none btn-menu z-50 fixed right-0 pr-10 xl:pr-20">
+            <button class="flex items-center font-medium text-tiny outline-none focus:outline-none btn-menu z-50 fixed right-0 pr-10 xl:pr-20 link">
                 <span class="hidden sm:block mr-2">Menu</span>
                 <div class="transform -scale-x-1 burger relative w-8 h-4">
                     <span class="h-4px w-8 bg-black block burger-line01 absolute inset-x-0 top-0 transition-transform"></span>
@@ -38,23 +42,26 @@
                 </div>
             </button>
         </div>
-        <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-cream z-40">
-            <nav class="container px-10 xl:px-20 absolute top-1/2 left-1/2 transform translate-y-center translate-x-center">
-                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium">
-                    <li class="flex items-center py-3 text-animated-1">
-                        <a class="z-20 " href="propos.html">À propos</a>
-                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
+        <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-cream z-40 noise overflow-hidden">
+            <nav class="container px-10 xl:px-20 absolute top-1/2 left-1/2 transform translate-y-center translate-x-center z-40">
+                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium inline-block">
+                    <li class="py-3 block text-animated-1">
+                        <a class="z-20 flex items-center link link-menu" href="propos.html">À propos
+                            <div class="bg-black w-14 md:w-0 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
+                        </a>
                     </li>
-                    <li class="flex items-center py-3 text-animated-2">
-                        <a href="fonctionnalites.html">Fonctionnalité</a>
-                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                    <li class="block py-3 text-animated-2">
+                        <a class="z-20 flex items-center link link-menu" href="fonctionnalites.html">Fonctionnalité
+                            <div class="bg-black w-14 md:w-0 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                        </a>
                     </li>
-                    <li class="flex items-center py-3 text-animated-3">
-                        <a href="technologie.html">Technologie</a>
-                        <div class="bg-black w-14 md:w-24 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                    <li class="block py-3 text-animated-3">
+                        <a class="z-20 flex items-center link link-menu" href="technologie.html">Technologie
+                            <div class="bg-black w-14 md:w-0 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                        </a>
                     </li>
                     <li class="flex mt-10 text-tiny font-medium text-animated-4">
-                        <a class="bg-neon px-5 py-3 flex items-center mr-10" href="soutenir.html">Soutenir
+                        <a class="bg-neon px-5 py-3 flex items-center mr-10 btn-soutenir link" href="soutenir.html">Soutenir
                             <div class="bg-black w-12 h-2px block ml-3"></div>
                         </a>
                     </li>
@@ -62,28 +69,28 @@
                 <div class="lg:flex lg:justify-between">
                     <ul class="flex items-center text-tiny font-base mt-5 text-animated-5">
                         <li class="mr-5">
-                            <a href="faq.html">FAQ</a>
+                            <a class="sublink-menu link" href="faq.html">FAQ</a>
                         </li>
                         <li class="mr-5">
-                            <a href="partenaires.html">Partenaires</a>
+                            <a class="sublink-menu link" href="partenaires.html">Partenaires</a>
                         </li>
                         <li class="mr-5">
-                            <a href="contact.html">Contacts</a>
+                            <a class="sublink-menu link" href="contact.html">Contacts</a>
                         </li>
                         <li>
-                            <a href="beta.html">Bêta</a>
+                            <a class="sublink-menu link" href="beta.html">Bêta</a>
                         </li>
                     </ul>
                     <div class="mt-10 lg:-mt-10 text-animated-5">
                         <h2 class="text-base lg:text-lg font-medium">Contactez nous !</h2>
-                        <a class="text-tiny font-base mt-3" href="mailto:vertigo.tfe@gmail.com">vertigo@gmail.com</a>
+                        <a class="text-tiny font-base mt-3 sublink-menu link" href="mailto:vertigo.tfe@gmail.com">vertigo@gmail.com</a>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-    <main>
-        <section class="container px-10 xl:px-20 mt-10 mb-32 relative xl:flex xl:mt-32 xl:mb-48">
+    <main class="bg-cream">
+        <section class="container px-10 xl:px-20 pt-10 pb-32 relative xl:flex xl:pt-32 xl:pb-48">
             <div class="h-500px w-500px xl:h-700px xl:w-700px rounded-full blur bg-neon block absolute top-0 xl:top-16 -left-96 xl:-left-500px z-0"></div>
             <div class="h-72 w-72 rounded-full blur bg-olive block absolute -bottom-36 xl:top-500px -right-48 z-0 overflow-hidden"></div>
             <div class="xl:w-5/12 relative">
@@ -92,7 +99,7 @@
             </div>
             <div class="mt-20 xl:mt-0 xl:ml-auto xl:w-7/12">
                 <div class="py-5 border-b border-gray-300 md:w-10/12 xl:ml-auto" x-data="{ open: false }">
-                    <div class="flex items-center cursor-pointer" @click="open = true">
+                    <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">26 avril 2021</span>
                             <h2 class="text-base font-medium max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h2>
@@ -107,7 +114,7 @@
                     </div>
                 </div>
                 <div class="py-5 border-b border-gray-300 md:w-10/12 xl:ml-auto" x-data="{ open: false }">
-                    <div class="flex items-center cursor-pointer" @click="open = true">
+                    <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">26 avril 2021</span>
                             <h2 class="text-base font-medium max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h2>
@@ -122,7 +129,7 @@
                     </div>
                 </div>
                 <div class="py-5 border-b border-gray-300 md:w-10/12 xl:ml-auto" x-data="{ open: false }">
-                    <div class="flex items-center cursor-pointer" @click="open = true">
+                    <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">26 avril 2021</span>
                             <h2 class="text-base font-medium max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h2>
@@ -137,7 +144,7 @@
                     </div>
                 </div>
                 <div class="py-5 border-b border-gray-300 md:w-10/12 xl:ml-auto" x-data="{ open: false }">
-                    <div class="flex items-center cursor-pointer" @click="open = true">
+                    <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">26 avril 2021</span>
                             <h2 class="text-base font-medium max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h2>
@@ -152,7 +159,7 @@
                     </div>
                 </div>
                 <div class="py-5 border-b border-gray-300 md:w-10/12 xl:ml-auto" x-data="{ open: false }">
-                    <div class="flex items-center cursor-pointer" @click="open = true">
+                    <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">26 avril 2021</span>
                             <h2 class="text-base font-medium max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h2>
@@ -169,44 +176,44 @@
             </div>
         </section>
     </main>
-    <footer class="px-10 xl:px-20">
+    <footer class="px-10 xl:px-20 bg-cream">
         <div class="lg:flex justify-between items-center">
-            <a class="flex items-center" href="index.html">
+            <a class="flex items-center link" href="index.html">
                 <img class="h-14" src="assets/icons/logo.svg" alt="">
                 <h1 class="uppercase font-bold text-tiny ml-3">Vertigo</h1>
             </a>
             <div>
                 <ul class="lg:flex items-center font-medium text-tiny">
                     <li class="pt-5 pb-3 lg:p-0 lg:px-5 xl:px-10">
-                        <a href="propos.html">À propos</a>
+                        <a class="link link-top" href="propos.html">À propos</a>
                     </li>
                     <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
-                        <a href="fonctionnalites.html">Fonctionnalité</a>
+                        <a class="link link-top" href="fonctionnalites.html">Fonctionnalité</a>
                     </li>
                     <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
-                        <a href="technologie.html">Technologie</a>
+                        <a class="link" href="technologie.html">Technologie</a>
                     </li>
                     <li class="flex text-tiny font-medium mt-3 lg:mt-0 lg:ml-5 xl:ml-10">
-                        <a class="bg-neon px-5 py-3 flex items-center" href="soutenir.html">Soutenir
+                        <a class="bg-neon px-5 py-3 flex items-center link" href="soutenir.html">Soutenir
                             <div class="bg-black w-12 h-2px block ml-3"></div>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="flex justify-start lg:justify-end mt-10 mb-20 xl:my-10">
+        <div class="flex justify-start lg:justify-end pt-10 pb-20 xl:py-10">
             <ul class="flex items-center font-normal text-sm">
                 <li class="pr-5">
-                    <a href="faq.html">FAQ</a>
+                    <a class="link" href="faq.html">FAQ</a>
                 </li>
                 <li class="px-5">
-                    <a href="partenaires.html">Partenaires</a>
+                    <a class="link" href="partenaires.html">Partenaires</a>
                 </li>
                 <li class="px-5">
-                    <a href="contact.html">Contact</a>
+                    <a class="link" href="contact.html">Contact</a>
                 </li>
                 <li class="pl-5">
-                    <a href="beta.html">Bêta</a>
+                    <a class="link" href="beta.html">Bêta</a>
                 </li>
             </ul>
         </div>

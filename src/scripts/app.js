@@ -12,148 +12,52 @@ function toggleNavigation(){
 }
 
 
-function randomTween(element){
-    TweenMax.to(element, {
-        x: Math.random() * 850,
-        y: Math.random() * 700,
-        duration: 3,
-        ease: Linear.easeNone,
-        onComplete:randomTween,
-        onCompleteParams: [element]
-    })
-  }
-  
-randomTween(document.querySelector(".circle-1"));
-randomTween(document.querySelector(".circle-2"));
-randomTween(document.querySelector(".circle-3"));
-randomTween(document.querySelector(".circle-4"));
-randomTween(document.querySelector(".circle-5"));
-randomTween(document.querySelector(".circle-6"));
-randomTween(document.querySelector(".circle-7"));
-randomTween(document.querySelector(".circle-8"));
-
-//Color change cicle 1
-function circleColor(newColor) {
-  let textColor = document.querySelector(".text-color");
-  let listCircles = document.querySelectorAll(".circle-color1");
-
-  for(let listCircle of listCircles){
-    listCircle.style.backgroundColor = newColor;
-  }
-  textColor.innerHTML = newColor;
-}
-
-//Color change cicle 2
-function circleColor2(newColor) {
-  let textColor = document.querySelector(".text-color");
-  let list2Circles = document.querySelectorAll(".circle-color2");
-
-  for(let list2Circle of list2Circles){
-    list2Circle.style.backgroundColor = newColor;
-  }
-  textColor.innerHTML = newColor;
-}   
-
-//Slider range cirlce 1
-let slider = document.getElementById('range-circle1');
-let listCircles = document.querySelectorAll(".circle-color1");
-
-slider.addEventListener('input', e => {
-  for(let listCircle of listCircles){
-    listCircle.style.width = e.target.value + 'px';
-    listCircle.style.height = e.target.value + 'px'
-  }
-})
-
-
-//Slider range cirlce 2
-let slider2 = document.getElementById('range-circle2');
-let list2Circles = document.querySelectorAll(".circle-color2");
-
-slider2.addEventListener('input', e => {
-  for(let list2Circle of list2Circles){
-    list2Circle.style.width = e.target.value + 'px';
-    list2Circle.style.height = e.target.value + 'px'
-  }
-})
-
-
-//Swipper JS
-function updateTextInput(val) {
-    document.getElementById('textInput').innerHTML=val; 
-  }
-
-  const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-//Bêta Vertigo
-//Change text
-  function changeText() {
-    var x = document.getElementById("myText").value;
-    let listElements = document.querySelectorAll(".vertigo");
-
-    for(let listElement of listElements){
-        listElement.innerHTML = x;
-    }
-  }
-
-//Change text color
-  function changeColor(newColor) {
-    let textColor = document.querySelector(".text-color");
-    let listElements = document.querySelectorAll(".vertigo");
-
-    for(let listElement of listElements){
-        listElement.style.color = newColor;
-    }
-    textColor.innerHTML = newColor;
-}   
-
-//Change background color
-function changeBackground(newBackground) {
-    let bgColor = document.querySelector(".background-color");
-    let bgChange = document.querySelector(".bg-change");
-
-    bgChange.style.backgroundColor = newBackground;
-    bgColor.innerHTML = newBackground;
-} 
-
-//Without stroke text
-function noStroke(){
-    let listStrokes = document.querySelectorAll(".text-beta2");
-    for(let listStroke of listStrokes){
-        if(listStroke.classList.contains("stroke")){
-            listStroke.classList.remove("stroke");
-        }
-    }
-}
-
-//With stroke text
-function withStroke(){
-
-    let listStrokes = document.querySelectorAll(".text-beta2");
-    for(let listStroke of listStrokes){
-        if(listStroke.classList.contains("stroke")){
-        }
-        else{
-            listStroke.classList.add("stroke");
-        }
-    }
-}
-
+  $(document).ready(function(){
+    var cursor = $(".cursor");
+    
+        $(window).mousemove(function(e) {
+            cursor.css({
+                top: e.clientY - cursor.height() / 2,
+                left: e.clientX - cursor.width() / 2
+            });
+        });
+    
+        $(window)
+            .mouseleave(function() {
+                cursor.css({
+                    opacity: "0"
+                });
+            })
+            .mouseenter(function() {
+                cursor.css({
+                    opacity: "1"
+                });
+            });
+    
+        $(".link")
+            .mouseenter(function() {
+                cursor.css({
+                    transform: "scale(3.2)"
+                });
+            })
+            .mouseleave(function() {
+                cursor.css({
+                    transform: "scale(1)"
+                });
+            });
+    
+        $(window)
+            .mousedown(function() {
+                cursor.css({
+                    transform: "scale(.2)"
+                });
+            })
+            .mouseup(function() {
+                cursor.css({
+                    transform: "scale(1)"
+                });
+            });
+    });
   //Page transition
 // const wipe = document.querySelector('.page-transition');
 // const TLAnim = gsap.timeline();

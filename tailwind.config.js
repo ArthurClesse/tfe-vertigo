@@ -14,6 +14,7 @@ module.exports = {
         neon: '#E7FE98',
         cream: '#FBFCF5',
         purple: '#CE7DF5',
+        circle: '#f7f8fa',
         olive: '#B9CC7A',
         gordon: '#121212',
         blue: {
