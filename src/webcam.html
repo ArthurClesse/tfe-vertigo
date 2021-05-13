@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertigo | Bêta Vertigo</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="scripts/face-api.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <script defer src="scripts/face-api.js"></script>
+    <script defer src="scripts/app.js"></script>
+</head>
+<body class="bg-gordon font-sans flex flex-col min-h-screen ">
+    <div class="cursor"></div>
+    <header class="block w-full pt-7 bg-gordon text-white">
+        <div class="flex justify-between items-center">
+            <a class="flex items-center pl-10 xl:pl-20 link" href="index.html">
+                <img class="h-12 sm:h-14" src="assets/icons/logo.svg" alt="Logo vertigo">
+                <h1 class="hidden md:block uppercase font-bold text-tiny ml-3">Vertigo</h1>
+            </a>
+            <button class="flex items-center font-medium text-tiny outline-none focus:outline-none btn-menu z-50 fixed right-0 pr-10 xl:pr-20 link">
+                <span class="hidden sm:block mr-2">Menu</span>
+                <div class="transform -scale-x-1 burger relative w-8 h-4">
+                    <span class="h-4px w-8 bg-white block burger-line01 absolute inset-x-0 top-0 transition-transform"></span>
+                    <span class="h-4px w-6 bg-white block burger-line02 inset-x-0 bottom-0 absolute transition-transform"></span>
+                </div>
+            </button>
+        </div>
+        <div class="w-full h-screen fixed top-0 left-0 hidden menu bg-gordon z-40 noise overflow-hidden">
+            <nav class="container px-10 xl:px-20 absolute top-1/2 left-1/2 transform translate-y-center translate-x-center z-40">
+                <ul class="text-lg sm:text-xl md:text-2xl xl:text-3xl font-medium inline-block">
+                    <li class="py-3 block text-animated-1">
+                        <a class="z-20 flex items-center link link-menu" href="propos.html">À propos
+                            <div class="bg-white w-14 md:w-0 h-4px block ml-5 mt-1 sm:mt-5 z-20"></div>
+                        </a>
+                    </li>
+                    <li class="block py-3 text-animated-2">
+                        <a class="z-20 flex items-center link link-menu" href="fonctionnalites.html">Fonctionnalités
+                            <div class="bg-white w-14 md:w-0 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                        </a>
+                    </li>
+                    <li class="block py-3 text-animated-3">
+                        <a class="z-20 flex items-center link link-menu" href="technologie.html">Technologie
+                            <div class="bg-white w-14 md:w-0 h-4px block ml-5 mt-1 sm:mt-5"></div>
+                        </a>
+                    </li>
+                    <li class="flex mt-10 text-tiny font-medium text-animated-4">
+                        <a class="bg-neon px-5 py-3 flex items-center mr-10 btn-soutenir link text-black" href="soutenir.html">Soutenir
+                            <div class="bg-black w-12 h-2px block ml-3"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="lg:flex lg:justify-between">
+                    <ul class="flex items-center text-tiny font-base mt-5 text-animated-5">
+                        <li class="mr-5">
+                            <a class="sublink-menu link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="mr-5">
+                            <a class="sublink-menu link" href="partenaires.html">Partenaires</a>
+                        </li>
+                        <li class="mr-5">
+                            <a class="sublink-menu link" href="contact.html">Contacts</a>
+                        </li>
+                        <li>
+                            <a class="sublink-menu link" href="beta.html">Bêta</a>
+                        </li>
+                    </ul>
+                    <div class="mt-10 lg:-mt-10 text-animated-5">
+                        <h2 class="text-base lg:text-lg font-medium">Contactez nous !</h2>
+                        <a class="text-tiny font-base mt-3 sublink-menu link" href="mailto:vertigo.tfe@gmail.com">vertigo@info.com</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-grow bg-gordon">
+        <div id="container-video" class="relative my-10 flex justify-center z-30">
+            <video id="video" height="690" width="920" autoplay muted></video>
+            <canvas class="absolute top-0" height="690" width="920"></canvas>
+        </div>
+    </main>
+    <footer class="px-10 xl:px-20 bg-gordon text-white">
+        <div class="lg:flex justify-between items-center">
+            <a class="flex items-center link" href="index.html">
+                <img class="h-14" src="assets/icons/logo.svg" alt="">
+                <h1 class="uppercase font-bold text-tiny ml-3">Vertigo</h1>
+            </a>
+            <div>
+                <ul class="lg:flex items-center font-medium text-tiny">
+                    <li class="pt-5 pb-3 lg:p-0 lg:px-5 xl:px-10">
+                        <a class="link link-top" href="propos.html">À propos</a>
+                    </li>
+                    <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
+                        <a class="link link-top" href="fonctionnalites.html">Fonctionnalité</a>
+                    </li>
+                    <li class="py-3 lg:p-0 lg:px-5 xl:px-10">
+                        <a class="link" href="technologie.html">Technologie</a>
+                    </li>
+                    <li class="flex text-tiny font-medium mt-3 lg:mt-0 lg:ml-5 xl:ml-10">
+                        <a class="bg-neon px-5 py-3 flex items-center link text-black" href="soutenir.html">Soutenir
+                            <div class="bg-black w-12 h-2px block ml-3"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-start lg:justify-end pt-10 pb-20 xl:py-10">
+            <ul class="flex items-center font-normal text-sm">
+                <li class="pr-5">
+                    <a class="link" href="faq.html">FAQ</a>
+                </li>
+                <li class="px-5">
+                    <a class="link" href="partenaires.html">Partenaires</a>
+                </li>
+                <li class="px-5">
+                    <a class="link" href="contact.html">Contact</a>
+                </li>
+                <li class="pl-5">
+                    <a class="link" href="beta.html">Bêta</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

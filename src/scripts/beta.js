@@ -63,6 +63,7 @@ slider2.addEventListener('input', e => {
     list2Circle.style.height = e.target.value + 'px'
   }
 })
+
 //Bêta Vertigo
 //Change text
 function changeText() {

@@ -25,7 +25,7 @@
     <script defer src="scripts/app.js"></script>
 </head>
 <body class="bg-cream font-sans flex flex-col min-h-screen">
-    <div class="cursor"></div>
+    <div class="cursor hidden lg:block"></div>
     <header class="block w-full pt-7 bg-cream">
         <div class="flex justify-between items-center">
             <a class="flex items-center pl-10 xl:pl-20 link" href="index.html">
@@ -88,47 +88,48 @@
         </div>
     </header>
     <main class="bg-cream flex-grow">
-        <section class="container px-10 xl:px-20 mb-48">
+        <section class="container px-10 xl:px-20 mb-24 xl:mb-48 mt-10 relative reveal">
             <div class="h-full">
-                <h2 class="font-medium text-2lg sm:text-2xl md:text-3xl xl:text-4xl leading-snug relative z-10">Aidez-nous <span class="block">à&nbsp;avancer</span></h2>
-                <p class="text-tiny font-extralight w-full mt-3 max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <h2 class="font-medium text-2lg sm:text-2xl md:text-3xl xl:text-4xl leading-snug relative z-20 reveal-2">Aidez-nous <span class="block">à&nbsp;avancer</span></h2>
+                <p class="text-tiny font-extralight w-full mt-3 max-w-lg z-10 relative reveal-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <img class="mt-5" src="assets/icons/arrow-scroll.svg" alt="">
             </div>
-            <div class="w-7/12 lg:h-96 xl:h-450px ml-auto lg:-mt-80 xl:-mt-96 relative overflow-hidden noise img-hover">
+            <div class="w-full lg:w-8/12 xl:w-7/12 h-full lg:h-96 xl:h-450px lg:ml-auto mt-10 lg:-mt-28 xl:-mt-96 relative overflow-hidden noise img-hover z-10 reveal-4">
                 <img class="w-full h-full object-cover" src="assets/images/soutenir-img01.jpg"">
             </div>
+            <div class="h-700px w-700px rounded-full blur bg-neon block absolute bottom-0 lg:top-20 -right-96 xl:-right-72 z-0"></div>
         </section>
-        <section class="container px-10 xl:px-20 xl:flex xl:items-center xl:mb-48">
-            <div class="xl:w-6/12 h-full">
+        <section class="container px-10 xl:px-20 lg:flex lg:items-center mb-24 xl:mb-48 reveal">
+            <div class="lg:w-6/12 h-full reveal-2">
                 <div class="w-full h-full relative circle block">
                     <img class="w-full h-full object-cover transform -rotate-90 mb-auto" src="assets/images/circle.svg" alt="">
-                    <h2 class="text-xl font-medium absolute left-1/2 top-1/2 transform translate-y-center translate-x-center text-center">3450€ <span class="block text-lg">de donations</span></h2>
+                    <h2 class="text-lg md:text-xl font-medium absolute left-1/2 top-1/2 transform translate-y-center translate-x-center text-center">3450€ <span class="block text-base xl:text-lg">de donations</span></h2>
                 </div>
                 <h2 class="text-lg font-medium text-center"><span class="font-extralight">Objectif</span> 5000€</h2>
             </div>
-            <div class="w-6/12 relative">
+            <div class="lg:w-6/12 relative mt-16">
                 <div class="flex flex-col-reverse" x-data="{ don : 'small' }">
-                    <div class="flex text-base mt-10">
-                        <button class="px-10 font-extralight focus:outline-none link" @click="don = 'small'" :class="{ 'font-medium': don === 'small' }">10€</button>
-                        <button class="px-10 font-extralight focus:outline-none link" @click="don = 'medium'" :class="{ 'font-medium': don === 'medium' }">20€</button>
-                        <button class="px-10 font-extralight focus:outline-none link" @click="don = 'big'" :class="{ 'font-medium': don === 'big' }">50€</button>
+                    <div class="flex text-base mt-10 w-10/12 reveal-4">
+                        <button class="pr-5 sm:pr-10 lg:px-10 font-extralight focus:outline-none link" @click="don = 'small'" :class="{ 'font-medium': don === 'small' }">10€</button>
+                        <button class="px-5 sm:px-10 font-extralight focus:outline-none link" @click="don = 'medium'" :class="{ 'font-medium': don === 'medium' }">20€</button>
+                        <button class="pl-5 sm:pl-10 xl:px-10 font-extralight focus:outline-none link" @click="don = 'big'" :class="{ 'font-medium': don === 'big' }">50€</button>
                     </div>
-                    <div>
-                        <div class="border-l border-black ml-10" x-show="don === 'small'">
-                            <h2 class="font-medium text-base ml-10">Donnation de 10€</h2>
-                            <p class="text-tiny font-extralight w-full max-w-lg mt-3 ml-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.10</p>
+                    <div class="reveal-3">
+                        <div class="lg:border-l lg:border-black lg:ml-10" x-show="don === 'small'">
+                            <h2 class="font-medium text-base lg:ml-10">Donnation de 10€</h2>
+                            <p class="text-tiny font-extralight w-full max-w-lg mt-3 lg:ml-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.10</p>
                         </div>
-                        <div class="border-l border-black ml-10" x-show="don === 'medium'">
-                            <h2 class="font-medium text-base ml-10">Donnation de 20€</h2>
-                            <p class="text-tiny font-extralight w-full max-w-lg mt-3 ml-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.10</p>
+                        <div class="lg:border-l lg:border-black lg:ml-10" x-show="don === 'medium'">
+                            <h2 class="font-medium text-base lg:ml-10">Donnation de 20€</h2>
+                            <p class="text-tiny font-extralight w-full max-w-lg mt-3 lg:ml-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.10</p>
                         </div>
-                        <div class="border-l border-black ml-10" x-show="don === 'big'">
-                            <h2 class="font-medium text-base ml-10">Donnation de 50€</h2>
-                            <p class="text-tiny font-extralight w-full max-w-lg mt-3 ml-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.10</p>
+                        <div class="lg:border-l lg:border-black lg:ml-10" x-show="don === 'big'">
+                            <h2 class="font-medium text-base lg:ml-10">Donnation de 50€</h2>
+                            <p class="text-tiny font-extralight w-full max-w-lg mt-3 lg:ml-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.10</p>
                         </div>
                     </div>
                 </div>
-                <div class="inline-block sm:flex items-center font-medium text-tiny mt-10 relative reveal-3 pl-10">
+                <div class="inline-block sm:flex items-center font-medium text-tiny mt-10 relative reveal-5 lg:pl-10">
                     <a class="bg-neon px-5 py-3 flex items-center mr-10 btn-soutenir link" href="soutenir.html">Soutenir
                         <div class="bg-black w-12 h-2px block ml-3"></div>
                     </a>

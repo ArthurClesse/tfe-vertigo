@@ -140,7 +140,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 }
 .text-beta{
-    animation: scrollBeta 35s linear infinite;
+    animation: scrollBeta 65s linear infinite;
 }
 @keyframes scrollBeta {
     0%{
@@ -151,7 +151,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 }
 .text-beta2{
-    animation: scrollBeta2 35s linear infinite;
+    animation: scrollBeta2 65s linear infinite;
 }
 @keyframes scrollBeta2 {
     0%{
