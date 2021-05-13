@@ -11,6 +11,7 @@ function toggleNavigation(){
     }
 }
 
+//CUSTOM CURSOR
   $(document).ready(function(){
     var cursor = $(".cursor");
     
@@ -68,7 +69,7 @@ function toggleNavigation(){
             });
     });
 
-
+//TEXT ANIMATION
 const ratio = .1
 const option = {
   root: null,
