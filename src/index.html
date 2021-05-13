@@ -16,22 +16,16 @@
 
     <link rel="stylesheet" href="styles/styles.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+       
     <script defer src="scripts/app.js"></script>
 </head>
 <body class="bg-cream font-sans w-full h-full">
-    <div class="page-transition w-screen h-full bg-neon absolute -left-110% z-60">
-        <div class="flex items-center justify-center absolute top-1/2 left-1/2 transform translate-y-center translate-x-center">
-            <img class="h-20 md:h-28 xl:h-44" src="assets/icons/logo.svg" alt="Logo vertigo">
-            <h2 class="uppercase text-xl md:text-2xl xl:text-4xl font-bold ml-10">vertigo</h2>
-        </div>
-    </div>
     <div class="cursor"></div>
     <header class="block w-full pt-7 bg-cream">
         <div class="flex justify-between items-center">
-            <a class="flex items-center pl-10 xl:pl-20" href="index.html">
+            <a class="flex items-center pl-10 xl:pl-20 link" href="index.html">
                 <img class="h-12 sm:h-14" src="assets/icons/logo.svg" alt="Logo vertigo">
                 <h1 class="hidden md:block uppercase font-bold text-tiny ml-3">Vertigo</h1>
             </a>
@@ -52,7 +46,7 @@
                         </a>
                     </li>
                     <li class="block py-3 text-animated-2">
-                        <a class="z-20 flex items-center link link-menu" href="fonctionnalites.html">Fonctionnalité
+                        <a class="z-20 flex items-center link link-menu" href="fonctionnalites.html">Fonctionnalités
                             <div class="bg-black w-14 md:w-0 h-4px block ml-5 mt-1 sm:mt-5"></div>
                         </a>
                     </li>
@@ -93,10 +87,10 @@
     <main class="w-full bg-cream">
         <section class="block xl:flex container px-10 xl:px-20 pt-20 xl:pt-48">
             <div class="w-full lg:w-6/12 h-auto xl:h-800px relative">
-                <div class="relative z-10">
-                    <h2 class="font-bold text-lg lg:text-xl xl:text-2xl w-full xl:w-10/12 leading-tight max-w-lg">Révolutionner le streaming d’aujourd’hui.</h2>
-                    <p class="text-tiny font-extralight mt-10 xl:mt-5 w-full xl:w-10/12 max-w-xl relative">Vertigo, c'est le nouveau logiciel destiné aux streamers, il leur permet de créer et de personnaliser leur décor mais il propose aussi plusieurs technologies afin que le décor réagisse avec le streameur ou la communauté.</p>
-                    <div class="inline-block sm:flex items-center font-medium text-tiny mt-10 relative">
+                <div class="relative z-10 reveal">
+                    <h2 class="font-bold text-lg lg:text-xl xl:text-2xl w-full xl:w-10/12 leading-tight max-w-lg reveal-1">Révolutionner le&nbsp;streaming d’aujourd’hui.</h2>
+                    <p class="text-tiny font-extralight mt-10 xl:mt-5 w-full xl:w-10/12 max-w-xl relative reveal-2">Vertigo, c'est le nouveau logiciel destiné aux streamers, il leur permet de créer et de personnaliser leur décor mais il propose aussi plusieurs technologies afin que le décor réagisse avec le streameur ou la communauté.</p>
+                    <div class="inline-block sm:flex items-center font-medium text-tiny mt-10 relative reveal-3">
                         <a class="bg-neon px-5 py-3 flex items-center mr-10 btn-soutenir link" href="soutenir.html">Soutenir
                             <div class="bg-black w-12 h-2px block ml-3"></div>
                         </a>
@@ -113,8 +107,8 @@
                 <span class="w-72 h-72 rounded-full blur bg-neon z-20 block absolute top-36 -left-40"></span>
             </div>
         </section>
-        <section class="container px-10 xl:px-20 pb-28 xl:pb-48 lg:flex pt-24 lg:pt-48 xl:pt-24">
-            <div class="relative w-full lg:w-6/12 mb-20 xl:mb-36">
+        <section class="container px-10 xl:px-20 pb-28 xl:pb-48 lg:flex pt-24 lg:pt-48 xl:pt-24 reveal">
+            <div class="relative w-full lg:w-6/12 mb-20 xl:mb-36 reveal-1">
                 <div class="w-full h-48 lg:h-72 xl:h-96 noise overflow-hidden relative rounded-xl">
                     <span class="w-48 h-48 rounded-full blur bg-neon z-20 block absolute -bottom-10 -right-10"></span>
                     <span class="w-48 h-48 rounded-full blur bg-olive z-20 block absolute bottom-20 right-56"></span>
@@ -125,11 +119,11 @@
                 </div>
             </div>
             <div class="w-full lg:w-6/12 h-auto">
-                <div class="lg:ml-10 xl:ml-20 relative z-10">
-                    <span class="uppercase tracking-wider text-xs">Fonctionnalités</span>
-                    <h2 class="font-bold text-base xl:text-lg w-full xl:w-10/12 mt-2 leading-tight max-w-lg">Une personnalisation complète. Un background comme personne. </h2>
-                    <p class="text-tiny font-extralight mt-7 w-full xl:w-10/12 max-w-lg">Une interface vous sera proposer pour réaliser vos plus beaux background afin d’en mettre pleins la vue à vos nouveaux viewers.</p>
-                    <div class="inline-block font-medium text-tiny mt-7">
+                <div class="lg:ml-10 xl:ml-20 relative z-10 splittext">
+                    <span class="uppercase tracking-wider text-xs reveal-2">Fonctionnalités</span>
+                    <h2 class="font-bold text-base xl:text-lg w-full xl:w-10/12 mt-2 leading-tight max-w-lg reveal-3">Une personnalisation complète. Un background comme personne. </h2>
+                    <p class="text-tiny font-extralight mt-7 w-full xl:w-10/12 max-w-lg reveal-4">Une interface vous sera proposer pour réaliser vos plus beaux background afin d’en mettre pleins la vue à vos nouveaux viewers.</p>
+                    <div class="inline-block font-medium text-tiny mt-7 reveal-5">
                         <a class="font-nomal flex items-center border border-black px-5 py-3 btn-send relative link" href="fonctionnalites.html">Fonctionnalité
                             <img class="ml-2" src="assets/icons/arrow-to.svg" alt="">
                         </a>
@@ -144,16 +138,16 @@
                 <h2 class="text-infinite whitespace-nowrap tracking-wide text-2xl lg:text-3xl xl:text-4xl font-medium">Vertigo <span class="stroke">Vertigo</span> Vertigo <span class="stroke">Vertigo</span> Vertigo <span class="stroke">Vertigo</span>&nbsp;</h2>
             </div>
         </section>
-        <section class="container px-10 xl:px-20 mt-28 xl:mt-48">
+        <section class="container px-10 xl:px-20 mt-28 xl:mt-48 reveal">
             <div>
                 <div class="w-full lg:w-8/12 xl:w-6/12 h-auto mx-auto">
                     <div class="mx-10 text-center z-10">
-                        <span class="uppercase tracking-wider text-xs">Partenaires</span>
-                        <h2 class="font-bold text-base xl:text-lg w-full xl:w-10/12 mx-auto mt-2 max-w-lg leading-tight">Vertigo soutenue par les plus grands</h2>
-                        <p class="text-tiny font-extralight mt-7 w-full xl:w-10/12 mx-auto max-w-lg">Le projet Vertigo est soutenue par de grandes marques qui sont implantés depuis longtemps sur ce marché. Ils nous font confiance maintenant c’est à vous.</p>
+                        <span class="uppercase tracking-wider text-xs reveal-2">Partenaires</span>
+                        <h2 class="font-bold text-base xl:text-lg w-full xl:w-10/12 mx-auto mt-2 max-w-lg leading-tight reveal-3">Vertigo soutenue par les plus grands</h2>
+                        <p class="text-tiny font-extralight mt-7 w-full xl:w-10/12 mx-auto max-w-lg reveal-4">Le projet Vertigo est soutenue par de grandes marques qui sont implantés depuis longtemps sur ce marché. Ils nous font confiance maintenant c’est à vous.</p>
                     </div>
                 </div>
-                <div class="w-full lg:w-8/12 flex justify-center flex-wrap mx-auto mt-10">
+                <div class="w-full lg:w-8/12 flex justify-center flex-wrap mx-auto mt-10 reveal-5">
                     <a class="w-5/12 xl:w-3/12 h-auto px-5 link" href="https://www.twitch.tv/" target="_blank">
                         <img class="w-full h-full object-contain" src="assets/images/twitch.png" alt="">
                     </a>
@@ -173,29 +167,29 @@
                 <img class="h-20 w-20 lg:h-32 lg:w-32 absolute left-1/2 top-1/2 transform translate-x-center translate-y-center z-30 cursor-pointer" src="assets/icons/play-fill.svg" alt="">
             </div>
         </section>
-        <section class="container px-10 xl:px-20 pt-28 xl:pt-48 pb-28 xl:pb-48 lg:flex bg-cream">
+        <section class="container px-10 xl:px-20 pt-28 xl:pt-48 pb-28 xl:pb-48 lg:flex bg-cream reveal">
             <div class="w-full lg:w-6/12 h-auto mt-auto mb-auto">
                 <div class="xl:mr-20">
-                    <span class="uppercase tracking-wider text-xs">Technologie</span>
-                    <h2 class="font-bold text-base xl:text-lg w-full xl:w-10/12 mt-2 max-w-lg leading-tight">Des technologies inovantes. Le futur derrière son écran.</h2>
-                    <p class="text-tiny font-extralight mt-7 w-full xl:w-10/12 max-w-lg">Découvrez de nouvelles technologies comme nul part ailleurs. Un détection de l’humeur faciale, une interaction direct avec sa communauté et encore pleins d’autres.</p>
-                    <div class="inline-block font-medium text-tiny mt-7">
+                    <span class="uppercase tracking-wider text-xs reveal-2">Technologie</span>
+                    <h2 class="font-bold text-base xl:text-lg w-full xl:w-10/12 mt-2 max-w-lg leading-tight reveal-3">Des technologies inovantes. Le futur derrière son écran.</h2>
+                    <p class="text-tiny font-extralight mt-7 w-full xl:w-10/12 max-w-lg reveal-4">Découvrez de nouvelles technologies comme nul part ailleurs. Un détection de l’humeur faciale, une interaction direct avec sa communauté et encore pleins d’autres.</p>
+                    <div class="inline-block font-medium text-tiny mt-7 reveal-5">
                         <a class="font-nomal flex items-center border border-black px-5 py-3 relative btn-send link z-10" href="fonctionnalites.html">Technologie
                             <img class="ml-2" src="assets/icons/arrow-to.svg" alt="">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="w-full lg:w-6/12 h-auto">
+            <div class="w-full lg:w-6/12 h-auto reveal-2">
                 <div class="w-10/12 md:w-80 xl:w-10/12 mx-auto mt-10 xl:ml-20">
                     <img class="shape-rotate" src="assets/images/bloc-shape.svg" alt="">
                 </div>
             </div>
         </section>
-        <section class="container px-10 pb-28 xl:pb-48">
+        <section class="container px-10 pb-28 xl:pb-48 reveal">
             <div class="text-center">
-                <h2 class="text-lg xl:text-xl font-bold">Vous aimez le projet ? <br>Alors soutenez cette aventure</h2>
-                <div class="inline-block mt-10 text-tiny font-medium">
+                <h2 class="text-lg xl:text-xl font-bold reveal-2">Vous aimez le projet ? <br>Alors soutenez cette aventure</h2>
+                <div class="inline-block mt-10 text-tiny font-medium reveal-3">
                     <a class="bg-neon px-5 py-3 flex items-center link" href="soutenir.html">Soutenir
                         <div class="bg-black w-12 h-2px block ml-3"></div>
                     </a>

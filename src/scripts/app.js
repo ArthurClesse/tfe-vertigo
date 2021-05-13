@@ -11,7 +11,6 @@ function toggleNavigation(){
     }
 }
 
-
   $(document).ready(function(){
     var cursor = $(".cursor");
     
@@ -45,7 +44,17 @@ function toggleNavigation(){
                     transform: "scale(1)"
                 });
             });
-    
+          $(".img-hover")
+            .mouseenter(function() {
+                cursor.css({
+                    transform: "scale(6.2)"
+                });
+            })
+            .mouseleave(function() {
+                cursor.css({
+                    transform: "scale(1)"
+                });
+            });
         $(window)
             .mousedown(function() {
                 cursor.css({
@@ -58,6 +67,28 @@ function toggleNavigation(){
                 });
             });
     });
+
+
+const ratio = .1
+const option = {
+  root: null,
+  rootMargin: "0px",
+  threshold: ratio
+}
+
+const handleIntersect = function (entries, observer) {
+  entries.forEach(function (entry){
+    if(entry.intersectionRatio > ratio){
+      entry.target.classList.add('reveal-visible')
+      observer.unobserve(entry.target)
+    }
+  })
+}
+
+const observer = new IntersectionObserver(handleIntersect, option)
+document.querySelectorAll('.reveal').forEach(function (r){
+  observer.observe(r)
+})
   //Page transition
 // const wipe = document.querySelector('.page-transition');
 // const TLAnim = gsap.timeline();

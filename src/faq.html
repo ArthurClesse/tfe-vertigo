@@ -16,14 +16,11 @@
 
     <link rel="stylesheet" href="styles/styles.css">
 
-    <script defer src="scripts/face-api.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
 
-    <script defer src="scripts/face-api.js"></script>
     <script defer src="scripts/app.js"></script>
 </head>
 <body class="bg-cream font-sans">
@@ -97,12 +94,12 @@
                 <h2 class="text-lg xl:text-xl font-medium">Vous avez des questions ?</h2>
                 <p class="text-tiny font-extralight w-full mt-5 max-w-lg">Comme dans tout projet, il y a des questions. Ici, vous pourrez retrouver toutes les questions les plus fréquentes qui sont posé au sujet de Vertigo. Elles sont bien sûr accompagnées de leurs réponses. Si vous avez d'autres questions ou que vous voulez simplement nous contacter, vous pouvez bien entendu le faire dans la page <a class="font-medium" href="contact.html">contact</a>.</p>
             </div>
-            <div class="mt-20 xl:mt-0 xl:ml-auto xl:w-7/12">
+            <div class="mt-20 xl:mt-0 xl:ml-auto xl:w-7/12 relative">
                 <div class="py-5 border-b border-gray-300 md:w-10/12 xl:ml-auto" x-data="{ open: false }">
                     <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">26 avril 2021</span>
-                            <h2 class="text-base font-medium max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h2>
+                            <h2 class="text-base font-medium max-w-lg">Pourquoi utiliser Vertigo ?</h2>
                         </div>
                         <div class="relative w-2/12">
                             <span class="w-8 h-4px bg-black block absolute"></span>
@@ -117,7 +114,7 @@
                     <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">26 avril 2021</span>
-                            <h2 class="text-base font-medium max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h2>
+                            <h2 class="text-base font-medium max-w-lg">Puis-je utiliser Vertigo avec mon stream-deck ?</h2>
                         </div>
                         <div class="relative w-2/12">
                             <span class="w-8 h-4px bg-black block absolute"></span>
@@ -132,7 +129,7 @@
                     <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">26 avril 2021</span>
-                            <h2 class="text-base font-medium max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h2>
+                            <h2 class="text-base font-medium max-w-lg">Dois-je avoir obligatoirement un fond vert ?</h2>
                         </div>
                         <div class="relative w-2/12">
                             <span class="w-8 h-4px bg-black block absolute"></span>
