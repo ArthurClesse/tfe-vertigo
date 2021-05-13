@@ -67,7 +67,7 @@ body[data-menu] .burger-line02{
     transform: translateY(50%) rotate(45deg);
 }
 body[data-menu]{
-    height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
 }
 body[data-stroke] .stroke{
@@ -268,7 +268,7 @@ html, *{
 .reveal-visible [class*="reveal-"]{
     opacity: 1;
     transform: translateY(0);
-    transition: 1s cubic-bezier(.5, 0, 0, 1);
+    transition: .8s cubic-bezier(.5, 0, 0, 1);
 }
 .reveal-visible .reveal-2{
     transition-delay: .1s;

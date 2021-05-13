@@ -19,13 +19,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
 
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+
     <script defer src="scripts/app.js"></script>
 </head>
 <body class="bg-cream font-sans flex flex-col min-h-screen">
     <div class="cursor"></div>
     <header class="block w-full pt-7 bg-cream">
         <div class="flex justify-between items-center">
-            <a class="flex items-center pl-10 xl:pl-20" href="index.html">
+            <a class="flex items-center pl-10 xl:pl-20 link" href="index.html">
                 <img class="h-12 sm:h-14" src="assets/icons/logo.svg" alt="Logo vertigo">
                 <h1 class="hidden md:block uppercase font-bold text-tiny ml-3">Vertigo</h1>
             </a>
@@ -87,20 +90,52 @@
     <main class="bg-cream flex-grow">
         <section class="container px-10 xl:px-20 mb-48">
             <div class="h-full">
-                <h2 class="font-medium text-2lg sm:text-2xl md:text-3xl xl:text-4xl leading-snug relative z-10">Aidez-nous à&nbsp;avancer</h2>
+                <h2 class="font-medium text-2lg sm:text-2xl md:text-3xl xl:text-4xl leading-snug relative z-10">Aidez-nous <span class="block">à&nbsp;avancer</span></h2>
                 <p class="text-tiny font-extralight w-full mt-3 max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <img class="mt-5" src="assets/icons/arrow-scroll.svg" alt="">
+            </div>
+            <div class="w-7/12 lg:h-96 xl:h-450px ml-auto lg:-mt-80 xl:-mt-96 relative overflow-hidden noise img-hover">
+                <img class="w-full h-full object-cover" src="assets/images/soutenir-img01.jpg"">
             </div>
         </section>
-        <section class="container px-10 xl:px-20 xl:flex">
+        <section class="container px-10 xl:px-20 xl:flex xl:items-center xl:mb-48">
             <div class="xl:w-6/12 h-full">
                 <div class="w-full h-full relative circle block">
                     <img class="w-full h-full object-cover transform -rotate-90 mb-auto" src="assets/images/circle.svg" alt="">
                     <h2 class="text-xl font-medium absolute left-1/2 top-1/2 transform translate-y-center translate-x-center text-center">3450€ <span class="block text-lg">de donations</span></h2>
                 </div>
-                <h2 class="text-lg font-medium text-center">Objectif 5000€</h2>
+                <h2 class="text-lg font-medium text-center"><span class="font-extralight">Objectif</span> 5000€</h2>
             </div>
-            <div>
-                
+            <div class="w-6/12 relative">
+                <div class="flex flex-col-reverse" x-data="{ don : 'small' }">
+                    <div class="flex text-base mt-10">
+                        <button class="px-10 font-extralight focus:outline-none link" @click="don = 'small'" :class="{ 'font-medium': don === 'small' }">10€</button>
+                        <button class="px-10 font-extralight focus:outline-none link" @click="don = 'medium'" :class="{ 'font-medium': don === 'medium' }">20€</button>
+                        <button class="px-10 font-extralight focus:outline-none link" @click="don = 'big'" :class="{ 'font-medium': don === 'big' }">50€</button>
+                    </div>
+                    <div>
+                        <div class="border-l border-black ml-10" x-show="don === 'small'">
+                            <h2 class="font-medium text-base ml-10">Donnation de 10€</h2>
+                            <p class="text-tiny font-extralight w-full max-w-lg mt-3 ml-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.10</p>
+                        </div>
+                        <div class="border-l border-black ml-10" x-show="don === 'medium'">
+                            <h2 class="font-medium text-base ml-10">Donnation de 20€</h2>
+                            <p class="text-tiny font-extralight w-full max-w-lg mt-3 ml-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.10</p>
+                        </div>
+                        <div class="border-l border-black ml-10" x-show="don === 'big'">
+                            <h2 class="font-medium text-base ml-10">Donnation de 50€</h2>
+                            <p class="text-tiny font-extralight w-full max-w-lg mt-3 ml-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-block sm:flex items-center font-medium text-tiny mt-10 relative reveal-3 pl-10">
+                    <a class="bg-neon px-5 py-3 flex items-center mr-10 btn-soutenir link" href="soutenir.html">Soutenir
+                        <div class="bg-black w-12 h-2px block ml-3"></div>
+                    </a>
+                    <a class="font-normal flex items-center mt-5 sm:mt-0 link" href="propos.html">En savoir plus
+                        <img class="ml-2" src="assets/icons/arrow-to.svg" alt="">
+                    </a>
+                </div>
             </div>
         </section>
     </main>
