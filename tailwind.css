@@ -258,8 +258,10 @@ input[type="range"]::-webkit-slider-thumb {
     z-index: 999;
     transition: transform 0.2s;
 }
-html, *{
-    cursor: none;
+@media (min-width:1024px) {
+    html, *{
+        cursor: none;
+    }
 }
 .reveal [class*="reveal-"]{
     opacity: 0;
