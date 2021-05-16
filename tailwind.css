@@ -225,6 +225,12 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
     right: 0;
 }
+.btn-send img{
+    transition: transform .3s ease-in-out;
+}
+.btn-send:hover img{
+    transform: rotate(90deg);
+}
 .btn-soutenir div{
     transition: all .3s ease-in-out;
 }
@@ -286,4 +292,10 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .reveal-visible .reveal-6{
     transition-delay: .5s;
+}
+.link-propos img{
+    transition: transform .3s ease-in-out;
+}
+.link-propos:hover img{
+    transform: rotate(90deg);
 }
