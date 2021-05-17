@@ -36,6 +36,8 @@ html, body{
     90% { transform:translate(-10%, 10%) }
   }
   .blur{
+      -webkit-filter: blur(30px);
+      -moz-filter: blur(30px);
       filter: blur(30px);
   }
   body[data-menu] .menu{
@@ -322,4 +324,25 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .link-beta:hover img{
     transform: translate(-50%, -50%) rotate(90deg);
+}
+.img-float{
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+.link-partner img{
+    transition: all .3s ease-in-out;
+}
+.link-partner:hover img{
+    transform: scale(1.1);
 }
