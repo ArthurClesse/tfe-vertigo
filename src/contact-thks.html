@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html class="overflow-x-hidden" lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vertigo | Partenaires</title>
+    <title>Vertigo | Contact</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -85,37 +85,60 @@
         </div>
     </header>
     <main class="flex-grow bg-cream">
-        <section class="container px-10 xl:px-20 mt-10 mb-32 relative xl:flex xl:mt-32 xl:mb-48 reveal">
-            <div class="xl:w-5/12">
-                <h2 class="text-lg xl:text-xl font-medium reveal-2">Nos partenaires actuelle</h2>
-                <p class="text-tiny font-extralight w-full mt-5 max-w-lg reveal-3">Vertigo est un tout nouveau projet mais avec beaucoup de chance, nous avons déjà l'honneur de pouvoir compter sur de grandes marques pour nous soutenir. Grâce à elles, Vertigo pourra peut être un jour révolutionner le streaming.</p>
-                <p class="text-tiny font-extralight w-full mt-5 max-w-lg reveal-4">C'est avec plaisir que nous accueillons d'autres marques qui souhaitent nous soutenir donc si vous êtes dans le cas, je vous invite à nous contacter grâce à notre adresse email : <a class="font-medium" href="mailto:vertigo.tfe@gmail.com">vertigo@gmail.com</a> ou grâce à notre <a class="font-medium" href="contact.html">formulaire en ligne</a>.</p>
-            </div>
-            <div class="xl:w-6/12 xl:ml-auto reveal-5">
-                <div class="flex flex-wrap justify-between md:justify-start xl:justify-between mt-20 xl:mt-0 xl:ml-auto">
-                    <a class="w-5/12 link" href="https://www.ubisoft.com/fr-fr/" target="_blank">
-                        <img class="w-full h-full md:w-8/12 object-contain xl:w-full" src="assets/images/ubisoft.png" alt="">
-                    </a>
-                    <a class="w-5/12 link" href="https://www.logitech.com/fr-be" target="_blank">
-                        <img class="w-full h-full md:w-8/12 object-contain xl:w-full" src="assets/images/logitech.png" alt="">
-                    </a>
-                    <a class="w-5/12 mt-10 link" href="https://streamlabs.com/?l=fr-FR" target="_blank">
-                        <img class="w-full h-full md:w-8/12 object-contain xl:w-full" src="assets/images/streamlabs.png" alt="">
-                    </a>
-                    <a class="w-5/12 mt-10 link" href="https://www.elgato.com/fr" target="_blank">
-                        <img class="w-full h-full md:w-8/12 object-contain xl:w-full" src="assets/images/elgato.png" alt="">
-                    </a>
-                    <a class="w-5/12 mt-10 link" href="https://fr.rode.com/" target="_blank">
-                        <img class="w-full h-full md:w-8/12 object-contain xl:w-full" src="assets/images/rode.png" alt="">
-                    </a>
-                </div>
-                <div class="mt-20 max-w-lg xl:mt-28">
-                    <p class="text-tiny font-normal text-gray-500 max-w-lg">Si vous souhaitez devenir partenaire du projet</p>
-                    <a class="text-tiny font-medium text-black max-w-lg mt-5 block" href="mailto:vertigo@gmail.com">vertigo@info.com</a>
-                </div>
-            </div>
+        <section class="container px-10 xl:px-20 mt-20 reveal">
+            <h2 class="text-2lg font-medium text-center reveal-2">Merci pour votre message !</h2>
         </section>
+        <section class="container px-10 xl:px-20 mt-10 md:mt-20 mb-32 relative lg:flex xl:mt-32 xl:mb-48 reveal">
+            <div class="h-500px w-500px xl:h-700px xl:w-700px rounded-full blur bg-neon block absolute top-0 xl:top-16 -left-96 xl:-left-500px z-0"></div>
+            <div class="h-72 w-72 rounded-full blur bg-olive block absolute -bottom-36 xl:top-500px -right-48 z-0 overflow-hidden"></div>
+            <div class="md:w-10/12 mx-auto lg:w-6/12 xl:w-5/12 lg:mr-5 xl:m-0 relative">
+                <h2 class="text-lg xl:text-xl font-medium reveal-2">Envie de nous contacter ?</h2>
+                <p class="text-tiny font-extralight w-full mt-5 max-w-lg reveal-3">Si vous souhaitez nous contacter pour avoir plus d'informations sur le projet, poser une question, devenir partenaire ou encore postuler pour nous aider à développer Vertigo. Nous nous ferons un plaisir de vous répondre.</p>
+                <p class="text-tiny font-extralight w-full mt-5 max-w-lg reveal-4">Vos avis comptent aussi ! Ce formulaire est aussi là pour récolter vos avis sur le projet afin que Vertigo soient le mieux développer pour ses futurs client.</p>
+            </div>
+            <div class="container mt-10 md:w-10/12 lg:w-6/12 lg:ml-5 lg:mt-0 xl:ml-10 relative reveal-5">
+                <form action="https://formsubmit.co/vertigo.tfe@gmail.com" method="POST">
+                    <div class="xl:flex">
+                        <div class="flex flex-col xl:w-6/12 xl:mr-5">
+                            <label class="uppercase text-tiny text-black font-medium" for="prenom">Prénom*</label>
+                            <input class="bg-transparent text-tiny font-extralight pt-3 pb-2 border-b border-gray-400 outline-none" type="text" id="prenom" name="Prénom" placeholder="Entrez votre prénom" required/>
+                        </div>
+                        <div class="flex flex-col mt-7 xl:mt-0 xl:w-6/12 xl:ml-5">
+                            <label class="uppercase text-tiny text-black font-medium" for="nom">Nom*</label>
+                            <input class="bg-transparent text-tiny font-extralight pt-3 pb-2 border-b border-gray-400 outline-none" type="text" id="nom" name="Nom" placeholder="Entrez votre nom" required/>
+                        </div>
+                    </div>
+                    <div class="xl:flex xl:mt-16">
+                        <div class="flex flex-col mt-7 xl:mt-0 xl:mr-5 xl:w-6/12">
+                            <label class="uppercase text-tiny text-black font-medium" for="email">Email*</label>
+                            <input class="bg-transparent text-tiny font-extralight pt-3 pb-2 border-b border-gray-400 outline-none" type="email" id="email" name="Email" placeholder="Entrez votre email" required/>
+                        </div>
+                        <div class="flex flex-col mt-7 xl:mt-0 xl:ml-5 xl:w-6/12">
+                            <label class="uppercase text-tiny text-black font-medium" for="telephone">Numéro de téléphone</label>
+                            <input class="bg-transparent text-tiny font-extralight pt-3 pb-2 border-b border-gray-400 outline-none" type="tel" id="telephone" name="Téléphone" placeholder="Entrez votre numéro de téléphone">
+                        </div>
+                    </div>
+                    <input type="hidden" name="_subject" value="Nouveau mail !">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/contact-thks.html">
+                    <div class="flex flex-col mt-7 xl:mt-16">
+                        <label class="uppercase text-tiny text-black font-medium" for="message">Message*</label>
+                        <textarea class="message bg-transparent border border-gray-400 text-tiny font-extralight h-52 mt-3 focus:border-none" id="message" name="Message" placeholder="Entrez votre message" required></textarea>
+                        <span class="text-sm mt-3 font-extralight text-gray-400">* Champs obligatoires</span>
+                    </div>
+                    <div class="xl:flex xl:items-center">
+                        <button class="font-nomal flex items-center border border-black px-5 py-3 mt-5 btn-send relative" type="submit">Envoyer
+                            <img class="ml-2" src="assets/icons/arrow-to.svg" alt="">
+                        </button>
+                        <div class="mt-10 xl:mt-5 xl:ml-20">
+                            <h2 class="text-tiny font-light text-gray-500 max-w-lg">Contactez nous par mail</h2>
+                            <a class="text-tiny font-medium text-black max-w-lg block" href="mailto:vertigo.tfe@gmail.com">vertigo@info.com</a>
+                        </div>
+                    </div>
+                </form>
+              </div>
     </main>
+    </section>
     <footer class="px-10 xl:px-20 bg-cream">
         <div class="lg:flex justify-between items-center">
             <a class="flex items-center link" href="index.html">
