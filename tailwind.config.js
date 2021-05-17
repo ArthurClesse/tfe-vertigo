@@ -112,6 +112,7 @@ module.exports = {
         '60': '60',
       },
       margin: {
+        '-400px': '-400px',
         '-430px': '-430px',
         '-450px': '-450px',
       },
@@ -128,6 +129,7 @@ module.exports = {
       ringWidth: ['focus'],
       ringColor: ['focus'],
       ringOffsetWidth: ['focus'],
+      scale: ['hover'],
     }
   },
   plugins: [

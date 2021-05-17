@@ -299,3 +299,27 @@ input[type="range"]::-webkit-slider-thumb {
 .link-propos:hover img{
     transform: rotate(90deg);
 }
+.link-beta::after{
+    content: '';
+    display: block;
+    width: 208px;
+    height: 208px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+    background-color: #E7FE98;
+    border-radius: 50%;
+    opacity: 50%;
+    transition: all .3s ease-in-out;
+}
+.link-beta:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+}
+.link-beta img{
+    transition: all .3s ease-in-out;
+}
+.link-beta:hover img{
+    transform: translate(-50%, -50%) rotate(90deg);
+}

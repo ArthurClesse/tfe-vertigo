@@ -36,7 +36,7 @@
 
     <script defer src="scripts/app.js"></script>
 </head>
-<body class="bg-cream font-sans">
+<body class="bg-cream font-sans flex flex-col min-h-screen">
     <div class="cursor hidden lg:block"></div>
     <header class="block w-full pt-7 bg-cream">
         <div class="flex justify-between items-center">
@@ -99,20 +99,20 @@
             </nav>
         </div>
     </header>
-    <main class="bg-cream">
-        <section class="container px-10 xl:px-20 pt-10 pb-32 relative xl:flex xl:pt-32 xl:pb-48 reveal">
+    <main class="bg-cream flex-grow">
+        <section class="container px-10 xl:px-20 pt-10 pb-32 relative xl:flex xl:mt-32 xl:pb-48 reveal">
             <div class="h-500px w-500px xl:h-700px xl:w-700px rounded-full blur bg-neon block absolute top-0 xl:top-16 -left-96 xl:-left-500px z-0"></div>
-            <div class="h-72 w-72 rounded-full blur bg-olive block absolute -bottom-36 xl:top-500px -right-48 z-0 overflow-hidden"></div>
-            <div class="xl:w-5/12 relative">
-                <h2 class="text-lg xl:text-xl font-medium reveal-2">Vous avez des questions ?</h2>
-                <p class="text-tiny font-extralight w-full mt-5 max-w-lg reveal-3">Comme dans tout projet, il y a des questions. Ici, vous pourrez retrouver toutes les questions les plus fréquentes qui sont posé au sujet de Vertigo. Elles sont bien sûr accompagnées de leurs réponses. Si vous avez d'autres questions ou que vous voulez simplement nous contacter, vous pouvez bien entendu le faire dans la page <a class="font-medium link" href="contact.html">contact</a>.</p>
+            <div class="h-72 w-72 rounded-full blur bg-olive block lg:hidden xl:block absolute -bottom-36 xl:top-500px -right-48 z-0 overflow-hidden"></div>
+            <div class="md:w-10/12 md:mx-auto xl:w-5/12 relative">
+                <h2 class="text-lg xl:text-xl font-medium reveal-2">Vous avez des questions&nbsp;?</h2>
+                <p class="text-tiny font-extralight w-full mt-5 max-w-lg reveal-3">Comme dans tout projet, il y a des questions. Ici, vous pourrez retrouver toutes les questions les plus fréquemment posées au sujet de Vertigo. Elles sont bien sûr accompagnées de leurs réponses. Si vous avez d'autres questions ou que vous voulez simplement nous contacter, vous pouvez bien entendu le faire dans la page <a class="font-medium link" href="contact.html">contact</a>.</p>
             </div>
-            <div class="mt-20 xl:mt-0 xl:ml-auto xl:w-7/12 relative reveal-4">
+            <div class="mt-20 xl:mt-0 md:w-10/12 md:mx-auto xl:ml-auto xl:w-7/12 relative reveal-4">
                 <div class="py-5 border-b border-gray-300 md:w-10/12 xl:ml-auto" x-data="{ open: false }">
                     <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">16 février 2021</span>
-                            <h2 class="text-base font-medium max-w-lg">Pourquoi utiliser Vertigo ?</h2>
+                            <h2 class="text-base font-medium max-w-lg">Pourquoi utiliser Vertigo&nbsp;?</h2>
                         </div>
                         <div class="relative w-2/12">
                             <span class="w-8 h-4px bg-black block absolute"></span>
@@ -132,7 +132,7 @@
                     <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">12 mai 2021</span>
-                            <h2 class="text-base font-medium max-w-lg">Puis-je utiliser Vertigo avec mon stream-deck ?</h2>
+                            <h2 class="text-base font-medium max-w-lg">Puis-je utiliser Vertigo avec mon stream-deck&nbsp;?</h2>
                         </div>
                         <div class="relative w-2/12">
                             <span class="w-8 h-4px bg-black block absolute"></span>
@@ -146,14 +146,14 @@
                     x-transition:leave="transition ease-out duration-100"
                     x-transition:leave-start="opacity-100 transform scale-100"
                     x-transition:leave-end="opacity-0 transform scale-90">
-                        <p class="font-extralight text-tiny max-w-lg">Vertigo a bien sûr été pensé pour être facile d'utilisation pour les streamers donc il semble inivitable qu'il puisse être utilisé avec un stream-deck. Les streamers pourront changer quand ils le souhaient de décor qu'ils auront prédéfinis à l'avance.</p>
+                        <p class="font-extralight text-tiny max-w-lg">Vertigo a bien sûr été pensé pour être facile d'utilisation pour les streamers donc il semble inévitable qu'il puisse être utilisé avec un stream-deck. Les streamers pourront changer quand ils le souhaitent de décor qu'ils auront prédéfinis à l'avance.</p>
                     </div>
                 </div>
                 <div class="py-5 border-b border-gray-300 md:w-10/12 xl:ml-auto" x-data="{ open: false }">
                     <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">26 avril 2021</span>
-                            <h2 class="text-base font-medium max-w-lg">Dois-je avoir obligatoirement un fond&nbsp;vert ?</h2>
+                            <h2 class="text-base font-medium max-w-lg">Dois-je avoir obligatoirement un fond&nbsp;vert&nbsp;?</h2>
                         </div>
                         <div class="relative w-2/12">
                             <span class="w-8 h-4px bg-black block absolute"></span>
@@ -167,14 +167,14 @@
                     x-transition:leave="transition ease-out duration-100"
                     x-transition:leave-start="opacity-100 transform scale-100"
                     x-transition:leave-end="opacity-0 transform scale-90">
-                        <p class="font-extralight text-tiny max-w-lg">Oui, Vertigo est basé sur la fait d'intégrer les décors que vous faites à votre fond vert.</p>
+                        <p class="font-extralight text-tiny max-w-lg">Oui, Vertigo est basé sur le fait d'intégrer les décors que vous créé, à votre fond vert.</p>
                     </div>
                 </div>
                 <div class="py-5 border-b border-gray-300 md:w-10/12 xl:ml-auto" x-data="{ open: false }">
                     <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">02 avril 2021</span>
-                            <h2 class="text-base font-medium max-w-lg">D'autres technologies seront bientôt&nbsp;disponible ?</h2>
+                            <h2 class="text-base font-medium max-w-lg">D'autres technologies seront-elles bientôt&nbsp;disponibles&nbsp;?</h2>
                         </div>
                         <div class="relative w-2/12">
                             <span class="w-8 h-4px bg-black block absolute"></span>
@@ -188,14 +188,14 @@
                     x-transition:leave="transition ease-out duration-100"
                     x-transition:leave-start="opacity-100 transform scale-100"
                     x-transition:leave-end="opacity-0 transform scale-90">
-                        <p class="font-extralight text-tiny max-w-lg">Pour le moment, Vertigo ne possèdera que la technolgie de détection faciale mais dans le futur le logiciel pourra proposer plusieurs technologie afin d'être le plus polyvalent possible.</p>
+                        <p class="font-extralight text-tiny max-w-lg">Pour le moment, Vertigo ne possèdera que la technologie de détection faciale mais dans le futur, le logiciel pourra proposer plusieurs technologies afin d'être le plus polyvalent possible.</p>
                     </div>
                 </div>
                 <div class="py-5 border-b border-gray-300 md:w-10/12 xl:ml-auto" x-data="{ open: false }">
                     <div class="flex items-center link" @click="open = true">
                         <div class="w-10/12">
                             <span class="text-sm font-extralight">26 avril 2021</span>
-                            <h2 class="text-base font-medium max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h2>
+                            <h2 class="text-base font-medium max-w-lg">Le logiciel sera-t-il payant à sa sortie&nbsp;?</h2>
                         </div>
                         <div class="relative w-2/12">
                             <span class="w-8 h-4px bg-black block absolute"></span>
@@ -209,7 +209,7 @@
                     x-transition:leave="transition ease-out duration-100"
                     x-transition:leave-start="opacity-100 transform scale-100"
                     x-transition:leave-end="opacity-0 transform scale-90">
-                        <p class="font-extralight text-tiny max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <p class="font-extralight text-tiny max-w-lg">Vertigo est encore en développement donc la question reste en suspens mais nous ferons tout pour qu'il soit accessible à tous dès sa sortie. Notre priorité est d'aider les streamers.</p>
                     </div>
                 </div>
             </div>
