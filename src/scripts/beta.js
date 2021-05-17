@@ -21,24 +21,24 @@ randomTween(document.querySelector(".circle-8"));
 
 //Color change cicle 1
 function circleColor(newColor) {
-  let textColor = document.querySelector(".text-color");
+  let circleColor01 = document.querySelector(".text-color01");
   let listCircles = document.querySelectorAll(".circle-color1");
 
   for(let listCircle of listCircles){
     listCircle.style.backgroundColor = newColor;
   }
-  textColor.innerHTML = newColor;
+  circleColor01.innerHTML = newColor;
 }
 
 //Color change cicle 2
 function circleColor2(newColor) {
-  let textColor = document.querySelector(".text-color");
+  let circleColor02 = document.querySelector(".text-color02");
   let list2Circles = document.querySelectorAll(".circle-color2");
 
   for(let list2Circle of list2Circles){
     list2Circle.style.backgroundColor = newColor;
   }
-  textColor.innerHTML = newColor;
+  circleColor02.innerHTML = newColor;
 }   
 
 //Slider range cirlce 1
