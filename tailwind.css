@@ -71,7 +71,7 @@ body[data-menu]{
     overflow: hidden;
 }
 body[data-stroke] .stroke{
-    -webkit-text-fill-color: none; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: none;
 }
 .text-animated-1{
     opacity: 0;
