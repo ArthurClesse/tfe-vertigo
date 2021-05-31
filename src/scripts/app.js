@@ -90,45 +90,17 @@ const observer = new IntersectionObserver(handleIntersect, option)
 document.querySelectorAll('.reveal').forEach(function (r){
   observer.observe(r)
 })
-  //Page transition
-// const wipe = document.querySelector('.page-transition');
-// const TLAnim = gsap.timeline();
 
-// function delay(n) {
-//     n = n || 2000;
-//     return new Promise((done) => {
-//         setTimeout(() => {
-//             done();
-//         }, n);
-//     });
-// }
-
-// barba.init({
-
-//   sync: true,
-
-//   transitions: [
-//     {
-//       async leave(data){
-
-//         const done = this.async();
-
-//         TLAnim.to(wipe, {left: '0%', ease: "power2.out", duration: 0.5});
-
-//         await delay(500);
-//         done();
-
-//       },
-//       enter(data){
-
-//         TLAnim
-//         .to(wipe, {left: '100%', ease:"power2.in", duration: 0.5})
-//         .set(wipe, {left: '-110%'})
-//         document.body.removeAttribute("data-menu");
-
-
-//       }
-//     }
-//   ]
-
-// })
+var webcam = document.querySelector('.webcam');
+var msgSafari = document.querySelector('.msg-safari');
+var textWidth = document.querySelector('.text-width');
+var ua = navigator.userAgent.toLowerCase(); 
+if (ua.indexOf('safari') != -1) { 
+  if (ua.indexOf('chrome') > -1) {
+    console.log("Tu es sur chrome")
+  } else {
+    webcam.classList.add('hide-safari');
+    textWidth.classList.add('hide-safari');
+    msgSafari.classList.add('show-safari');
+  }
+}

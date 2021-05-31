@@ -1,5 +1,10 @@
 const video = document.getElementById('video');
 
+navigator.getUserMedia = ( navigator.getUserMedia ||
+  navigator.webkitGetUserMedia ||
+  navigator.mozGetUserMedia ||
+  navigator.msGetUserMedia);
+
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('assets/models'),
   faceapi.nets.faceLandmark68Net.loadFromUri('assets/models'),

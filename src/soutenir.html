@@ -118,22 +118,22 @@
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-medium leading-none">3480€</h2>
             </div>
             <div class="relative mt-16 lg:mt-20 lg:ml-auto lg:w-6/12">
-                <div class="flex flex-col-reverse" x-data="{ don : 'small' }">
+                <div x-data="{ don : 'small' }" class="flex flex-col-reverse">
                     <div class="flex text-base mt-10 w-10/12 reveal-4">
-                        <button class="pr-5 sm:pr-10 font-extralight focus:outline-none link" @click="don = 'small'" :class="{ 'font-medium': don === 'small' }">10€</button>
-                        <button class="px-5 sm:px-10 font-extralight focus:outline-none link" @click="don = 'medium'" :class="{ 'font-medium': don === 'medium' }">20€</button>
-                        <button class="pl-5 sm:pl-10 font-extralight focus:outline-none link" @click="don = 'big'" :class="{ 'font-medium': don === 'big' }">50€</button>
+                        <button @click="don = 'small'" :class="{ 'font-medium': don === 'small' }" class="pr-5 sm:pr-10 font-extralight focus:outline-none link">10€</button>
+                        <button @click="don = 'medium'" :class="{ 'font-medium': don === 'medium' }" class="px-5 sm:px-10 font-extralight focus:outline-none link">20€</button>
+                        <button @click="don = 'big'" :class="{ 'font-medium': don === 'big' }" class="pl-5 sm:pl-10 font-extralight focus:outline-none link">50€</button>
                     </div>
                     <div class="reveal-3">
-                        <div class="md:border-l md:border-black" x-show="don === 'small'">
+                        <div x-show="don === 'small'" class="md:border-l md:border-black">
                             <h2 class="font-medium text-base md:ml-10 max-w-lg">Une petite participation pour un grand&nbsp;projet</h2>
                             <p class="text-tiny font-extralight w-full max-w-lg mt-3 md:ml-10">Grâce à votre donation de 10€, vous aurez l'honneur d'obtenir un accés en avant-première de la bêta de Vertigo. De plus, vous aidez le projet à se développer plus&nbsp;vite.</p>
                         </div>
-                        <div class="md:border-l md:border-black" x-show="don === 'medium'">
+                        <div x-show="don === 'medium'" class="md:border-l md:border-black">
                             <h2 class="font-medium text-base md:ml-10 max-w-lg">Une belle occasion d'aider un beau&nbsp;projet</h2>
                             <p class="text-tiny font-extralight w-full max-w-lg mt-3 md:ml-10">Grâce à votre donation de 20€, vous aurez la chance d'obtenir un accés en avant-première de la bêta de Vertigo mais aussi un accès au Discord de la communauté&nbsp;Vertigo.</p>
                         </div>
-                        <div class="md:border-l md:border-black" x-show="don === 'big'">
+                        <div  x-show="don === 'big'" class="md:border-l md:border-black">
                             <h2 class="font-medium text-base md:ml-10 max-w-lg">Le meilleur moyen pour découvrir&nbsp;Vertigo</h2>
                             <p class="text-tiny font-extralight w-full max-w-lg mt-3 md:ml-10">Grâce à votre généreuse donation de 50€, Vertigo vous offre à leur tour un accès en avant-première de la bêta, un accés au Discord de la communauté Vertigo et des thèmes uniques inclus dans le&nbsp;logiciel.</p>
                         </div>

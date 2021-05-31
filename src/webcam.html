@@ -101,10 +101,13 @@
         </div>
     </header>
     <main class="flex-grow bg-gordon">
-        <section class="container px-10 xl:px-20 block xl:hidden">
+        <section class="container px-10 xl:px-20 block xl:hidden text-width">
             <h2 class="text-white text-lg sm:text-2lg lg:text-xl font-medium text-center my-20">Désolé, mais la technologie de Vertigo n'est disponible que sur desktop. Ouvrez la page sur un écran de minimum 1440px.</h2>
         </section>
-        <section class="container px-10 xl:px-20 hidden xl:block">
+        <section class="container px-10 xl:px-20 hidden msg-safari">
+            <h2 class="text-white text-lg sm:text-2lg lg:text-xl font-medium text-center my-20">Pour le moment, le technologie de Vertigo n'est pas disponible sur Safari.</h2>
+        </section>
+        <section class="container px-10 xl:px-20 hidden xl:block webcam">
             <div id="container-video" class="relative my-10 flex justify-center z-30">
                 <video id="video" height="690" width="920" autoplay muted></video>
                 <canvas class="absolute top-0" height="690" width="920"></canvas>
