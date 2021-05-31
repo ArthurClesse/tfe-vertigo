@@ -130,6 +130,7 @@ module.exports = {
       ringColor: ['focus'],
       ringOffsetWidth: ['focus'],
       scale: ['hover'],
+      aspectRatio: ['responsive', 'hover'],
     }
   },
   plugins: [
