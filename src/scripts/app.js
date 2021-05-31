@@ -104,3 +104,30 @@ if (ua.indexOf('safari') != -1) {
     msgSafari.classList.add('show-safari');
   }
 }
+
+//DARK MODE
+var btnLight = document.querySelector(".btn-light");
+var btnDark = document.querySelector(".btn-dark");
+var activeTheme = localStorage.getItem("theme");
+
+if (activeTheme !== null) {
+  document.body.setAttribute("data-theme", activeTheme);
+}
+
+if (btnLight) {
+  btnLight.addEventListener("click", modeLight);
+}
+
+if (btnDark) {
+  btnDark.addEventListener("click", modeDark);
+}
+
+function modeLight() {
+  document.body.setAttribute("data-theme", "dark");
+  localStorage.setItem("theme", "dark");
+}
+
+function modeDark() {
+  document.body.setAttribute("data-theme", "light");
+  localStorage.setItem("theme", "light");
+}

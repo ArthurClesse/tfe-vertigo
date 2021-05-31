@@ -211,6 +211,12 @@ input[type="range"]::-webkit-slider-thumb {
 .swiper-pagination-bullet-active{
     background-color: #B9CC7A;
 }
+.btn-send{
+    transition: all .3S ease-in-out;
+}
+.btn-send:hover{
+    color: black;
+}
 .btn-send::after{
     display: block;
     z-index: -1;
@@ -227,11 +233,12 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
     right: 0;
 }
-.btn-send img{
+.btn-send svg{
     transition: transform .3s ease-in-out;
 }
-.btn-send:hover img{
+.btn-send:hover svg{
     transform: rotate(90deg);
+    fill: black !important;
 }
 .btn-soutenir div{
     transition: all .3s ease-in-out;
@@ -295,10 +302,10 @@ input[type="range"]::-webkit-slider-thumb {
 .reveal-visible .reveal-6{
     transition-delay: .5s;
 }
-.link-propos img{
+.link-propos svg{
     transition: transform .3s ease-in-out;
 }
-.link-propos:hover img{
+.link-propos:hover svg{
     transform: rotate(90deg);
 }
 .link-beta::after{
@@ -404,3 +411,68 @@ input[type="range"]::-webkit-slider-thumb {
     opacity: 0;
     top: 100%;
 } */
+
+/* DARK MODE */
+body[data-theme=light] .btn-dark{
+    display: none;
+}
+body[data-theme=dark] .btn-light{
+    display: none;
+}
+body[data-theme=dark]{
+    background-color: #121212;
+}
+body[data-theme=dark] header{
+    background-color: #121212;
+}
+body[data-theme=dark] main{
+    background-color: #121212;
+}
+body[data-theme=dark] footer{
+    background-color: #121212;
+}
+body[data-theme=dark] section{
+    background-color: #121212;
+}
+body[data-theme=dark] p{
+    color: white;
+}
+body[data-theme=dark] a{
+    color: white;
+}
+body[data-theme=dark] h2{
+    color: white;
+}
+body[data-theme=dark] h3{
+    color: white;
+}
+body[data-theme=dark] span{
+    color: white;
+}
+body[data-theme=dark] li{
+    color: white;
+}
+body[data-theme=dark] .menu{
+    background-color: #121212;
+}
+body[data-theme=dark] .btn-soutenir{
+    color: black;
+}
+body[data-theme=dark] .soutenir-footer{
+    color: black;
+}
+body[data-theme=dark] .burger-line01{
+    background-color: white;
+}
+body[data-theme=dark] .burger-line02{
+    background-color: white;
+}
+body[data-theme=dark] .svg-propos{
+    fill: white;
+}
+body[data-theme=dark] .link-menu div{
+    background-color: white;
+}
+body[data-theme=dark] .btn-send{
+   border: white solid 1px;
+}
