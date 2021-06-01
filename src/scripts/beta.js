@@ -118,6 +118,7 @@ function withStroke(){
     }
 }
 
+//MENU BETA
 const linkFace = document.querySelector(".link-facial");
 const linkGene = document.querySelector(".link-general");
 const containerFace = document.querySelector(".container-facial");
@@ -136,3 +137,11 @@ linkGene.addEventListener("click", function(){
   containerFace.classList.add("hidden");
   linkFace.classList.remove("text-purple");
 })
+
+//POPUP 
+const popUp = document.querySelector(".container-popup");
+const btnPop = document.querySelector(".btn-popup");
+
+btnPop.addEventListener("click", function(){
+  popUp.classList.add("hidden");
+});

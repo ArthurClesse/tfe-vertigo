@@ -373,6 +373,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .container-video{
+    opacity: 0;
     transform: translate(-50%, 30px);
     animation: videoAppa 0.8s ease-out forwards;
 }
@@ -380,6 +381,17 @@ input[type="range"]::-webkit-slider-thumb {
     100%{
         opacity: 1;
         transform: translate(-50%, -50%);
+    }
+}
+.container-beta{
+    opacity: 0;
+    transform: translateY(50px);
+    animation: betaAppa 0.8s ease-out forwards;
+}
+@keyframes betaAppa{
+    100%{
+        opacity: 1;
+        transform: none;
     }
 }
 :root{
