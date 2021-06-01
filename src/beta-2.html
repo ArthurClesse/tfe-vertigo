@@ -111,7 +111,14 @@
         <section class="container px-10 xl:px-20 block xl:hidden">
             <h2 class="text-white text-lg sm:text-2lg lg:text-xl font-medium text-center my-20">Désolé, mais la bêta de Vertigo n'est disponible que sur desktop. Ouvrez la page sur un écran de minimum 1440px.</h2>
         </section>
-        <section class="hidden w-1280px h-700px mx-auto mt-10 mb-20 rounded-2xl xl:flex">
+        <div class="fixed bottom-10 right-10 bg-cream w-96 z-20 container-popup text-animated-1">
+            <div class="p-5 text-black">
+                <h2 class="font-medium text-tiny">Avertissement bêta Vertigo</h2>
+                <p class="text-sm mt-3 leading-relaxed">Pour rappel, ceci n'est qu'une bêta du logiciel Vertigo. Elle vous permet de mieux comprendre le logiciel ainsi que de découvrir quelques fonctionnalités qui seront disponibles lors du lancement du logiciel.</p>
+                <button class="mt-3 text-purple underline btn-popup link focus:outline-none">J'ai compris</button>
+            </div>
+        </div>
+        <section class="hidden w-1280px h-700px mx-auto mt-10 mb-20 rounded-2xl xl:flex container-beta">
             <div class="w-4/12 bg-cream h-full rounded-l-2xl px-10">  
                 <div class="flex justify-center flex-col w-10/12 mx-auto text-center font-bold uppercase mt-10">
                     <div class="relative">
@@ -130,43 +137,56 @@
                         </a>
                     </div>
                 </div>
-                <div class="mt-10">
-                    <div class="flex justify-between items-center">
-                        <h2 class="text-tiny font-medium text-gray-500">Couleur ronds 1</h2>
-                        <span class="text-sm text-color01">#E7FE98</span>
-                    </div>
-                    <div class="mt-5 flex justify-between w-10/12">
-                        <button onclick="circleColor('#E7FE98')" class="w-7 h-7 rounded-full bg-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="circleColor('#7DB9F5')" class="w-7 h-7 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="circleColor('#98FEAC')" class="w-7 h-7 rounded-full bg-green-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="circleColor('#CE7DF5')" class="w-7 h-7 rounded-full bg-purple cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="circleColor('#F57DA2')" class="w-7 h-7 rounded-full bg-red-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="circleColor('#FEB398')" class="w-7 h-7 rounded-full bg-orange-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="circleColor('#FE98F6')" class="w-7 h-7 rounded-full bg-pink-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                    </div>
+                <div class="mt-7">
+                    <ul class="flex justify-between text-sm">
+                        <li class="text-purple link-general link">Général</li>
+                        <li class="cursor-not-allowed">Couleurs</li>
+                        <li class="cursor-not-allowed">Formes</li>
+                        <li class="link-facial link">Détection faciale</li>
+                    </ul>
                 </div>
-                <div class="mt-10">
-                    <div class="flex justify-between items-center">
-                        <h2 class="text-tiny font-medium text-gray-500">Couleur ronds 2</h2>
-                        <span class="text-sm text-color02">#FBFCF5</span>
-                    </div>
-                    <div class="mt-5 flex justify-between w-10/12">
-                        <button onclick="circleColor2('#E7FE98')" class="w-7 h-7 rounded-full bg-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="circleColor2('#7DB9F5')" class="w-7 h-7 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="circleColor2('#98FEAC')" class="w-7 h-7 rounded-full bg-green-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="circleColor2('#CE7DF5')" class="w-7 h-7 rounded-full bg-purple cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="circleColor2('#F57DA2')" class="w-7 h-7 rounded-full bg-red-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="circleColor2('#FEB398')" class="w-7 h-7 rounded-full bg-orange-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="circleColor2('#FE98F6')" class="w-7 h-7 rounded-full bg-pink-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                    </div>
+                <div class="container-facial hidden reveal">
+
                 </div>
-                <div class="mt-10 flex flex-col">
-                    <h2 class="text-tiny font-medium text-gray-500">Taille ronds 1</h2>
-                    <input class="mt-5" id="range-circle1" type='range' min="90" max="600" value="300">
-                </div>
-                <div class="mt-10 flex flex-col">
-                    <h2 class="text-tiny font-medium text-gray-500">Taille ronds 2</h2>
-                    <input class="mt-5" id="range-circle2" type='range' min="90" max="600" value="80">
+                <div class="container-general">
+                    <div class="mt-7">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-tiny font-medium text-gray-500">Couleur ronds 1</h2>
+                            <span class="text-sm text-color01">#E7FE98</span>
+                        </div>
+                        <div class="mt-3 flex justify-between w-10/12">
+                            <button onclick="circleColor('#E7FE98')" class="w-7 h-7 rounded-full bg-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="circleColor('#7DB9F5')" class="w-7 h-7 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="circleColor('#98FEAC')" class="w-7 h-7 rounded-full bg-green-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="circleColor('#CE7DF5')" class="w-7 h-7 rounded-full bg-purple cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="circleColor('#F57DA2')" class="w-7 h-7 rounded-full bg-red-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="circleColor('#FEB398')" class="w-7 h-7 rounded-full bg-orange-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="circleColor('#FE98F6')" class="w-7 h-7 rounded-full bg-pink-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        </div>
+                    </div>
+                    <div class="mt-7">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-tiny font-medium text-gray-500">Couleur ronds 2</h2>
+                            <span class="text-sm text-color02">#FBFCF5</span>
+                        </div>
+                        <div class="mt-3 flex justify-between w-10/12">
+                            <button onclick="circleColor2('#E7FE98')" class="w-7 h-7 rounded-full bg-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="circleColor2('#7DB9F5')" class="w-7 h-7 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="circleColor2('#98FEAC')" class="w-7 h-7 rounded-full bg-green-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="circleColor2('#CE7DF5')" class="w-7 h-7 rounded-full bg-purple cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="circleColor2('#F57DA2')" class="w-7 h-7 rounded-full bg-red-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="circleColor2('#FEB398')" class="w-7 h-7 rounded-full bg-orange-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="circleColor2('#FE98F6')" class="w-7 h-7 rounded-full bg-pink-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        </div>
+                    </div>
+                    <div class="mt-7 flex flex-col">
+                        <h2 class="text-tiny font-medium text-gray-500">Taille ronds 1</h2>
+                        <input class="mt-5" id="range-circle1" type='range' min="90" max="600" value="300">
+                    </div>
+                    <div class="mt-7 flex flex-col">
+                        <h2 class="text-tiny font-medium text-gray-500">Taille ronds 2</h2>
+                        <input class="mt-5" id="range-circle2" type='range' min="90" max="600" value="80">
+                    </div>
                 </div>
             </div>
             <div class="w-8/12 h-full bg-cream overflow-hidden noise relative rounded-r-2xl bg-change">

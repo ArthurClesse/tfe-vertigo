@@ -63,3 +63,31 @@ slider2.addEventListener('input', e => {
     list2Circle.style.height = e.target.value + 'px'
   }
 })
+
+//MENU BETA
+const linkFace = document.querySelector(".link-facial");
+const linkGene = document.querySelector(".link-general");
+const containerFace = document.querySelector(".container-facial");
+const containerGene = document.querySelector(".container-general");
+
+
+linkFace.addEventListener("click", function(){
+  containerGene.classList.add("hidden");
+  linkGene.classList.remove("text-purple");
+  containerFace.classList.remove("hidden");
+  linkFace.classList.add("text-purple");
+});
+linkGene.addEventListener("click", function(){
+  containerGene.classList.remove("hidden");
+  linkGene.classList.add("text-purple");
+  containerFace.classList.add("hidden");
+  linkFace.classList.remove("text-purple");
+})
+
+//POPUP 
+const popUp = document.querySelector(".container-popup");
+const btnPop = document.querySelector(".btn-popup");
+
+btnPop.addEventListener("click", function(){
+  popUp.classList.add("hidden");
+});
