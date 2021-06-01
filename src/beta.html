@@ -32,7 +32,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 
-    <script src="scripts/beta.js"></script>
+    <script defer src="scripts/beta.js"></script>
     <script defer src="scripts/app.js"></script>
 </head>
 <body class="bg-gordon font-sans flex flex-col min-h-screen ">
@@ -121,48 +121,61 @@
                         </a>
                     </div>
                 </div>
-                <div class="mt-10">
-                    <h2 class="text-tiny font-medium text-gray-500">Texte</h2>
-                    <div class="flex justify-between items-center mt-5">
-                        <input class="bg-transparent border-b border-gray-500 text-tiny focus:outline-none" type="text" maxlength="9" id="myText" value="Vertigo">
-                        <button class="uppercase text-sm font-medium focus:outline-none hover:text-purple transition-colors link" onclick="changeText()">Appliquer</button>
-                    </div>
+                <div class="mt-7">
+                    <ul class="flex justify-between text-sm">
+                        <li class="text-purple link-general link cursor-pointer">Général</li>
+                        <li class="cursor-not-allowed">Couleurs</li>
+                        <li class="cursor-not-allowed">Formes</li>
+                        <li class="cursor-pointer link-facial link">Détection faciale</li>
+                    </ul>
                 </div>
-                <div class="mt-10">
-                    <div class="flex justify-between items-center">
-                        <h2 class="text-tiny font-medium text-gray-500">Couleur texte</h2>
-                        <span class="text-sm  text-color">#000000</span>
-                    </div>
-                    <div class="mt-5 flex justify-between w-10/12">
-                        <button onclick="changeColor('#E7FE98')" class="w-7 h-7 rounded-full bg-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="changeColor('#7DB9F5')" class="w-7 h-7 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="changeColor('#98FEAC')" class="w-7 h-7 rounded-full bg-green-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="changeColor('#CE7DF5')" class="w-7 h-7 rounded-full bg-purple cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="changeColor('#F57DA2')" class="w-7 h-7 rounded-full bg-red-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="changeColor('#FEB398')" class="w-7 h-7 rounded-full bg-orange-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="changeColor('#FE98F6')" class="w-7 h-7 rounded-full bg-pink-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                    </div>
+                <div class="container-facial hidden">
+
                 </div>
-                <div class="mt-10">
-                    <div class="flex justify-between items-center">
-                        <h2 class="text-tiny font-medium text-gray-500">Couleur background</h2>
-                        <span class="text-sm background-color">#FBFCF5</span>
+                <div class="container-general">
+                    <div class="mt-7">
+                        <h2 class="text-tiny font-medium text-gray-500">Texte</h2>
+                        <div class="flex justify-between items-center mt-5">
+                            <input class="bg-transparent border-b border-gray-500 text-tiny focus:outline-none" type="text" maxlength="9" id="myText" value="Vertigo">
+                            <button class="uppercase text-sm font-medium focus:outline-none hover:text-purple transition-colors link" onclick="changeText()">Appliquer</button>
+                        </div>
                     </div>
-                    <div class="mt-5 flex justify-between w-10/12">
-                        <button onclick="changeBackground('#E7FE98')" class="w-7 h-7 rounded-full bg-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="changeBackground('#7DB9F5')" class="w-7 h-7 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="changeBackground('#98FEAC')" class="w-7 h-7 rounded-full bg-green-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="changeBackground('#CE7DF5')" class="w-7 h-7 rounded-full bg-purple cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="changeBackground('#F57DA2')" class="w-7 h-7 rounded-full bg-red-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="changeBackground('#FEB398')" class="w-7 h-7 rounded-full bg-orange-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
-                        <button onclick="changeBackground('#FE98F6')" class="w-7 h-7 rounded-full bg-pink-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                    <div class="mt-10">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-tiny font-medium text-gray-500">Couleur texte</h2>
+                            <span class="text-sm  text-color">#000000</span>
+                        </div>
+                        <div class="mt-5 flex justify-between w-10/12">
+                            <button onclick="changeColor('#E7FE98')" class="w-7 h-7 rounded-full bg-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="changeColor('#7DB9F5')" class="w-7 h-7 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="changeColor('#98FEAC')" class="w-7 h-7 rounded-full bg-green-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="changeColor('#CE7DF5')" class="w-7 h-7 rounded-full bg-purple cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="changeColor('#F57DA2')" class="w-7 h-7 rounded-full bg-red-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="changeColor('#FEB398')" class="w-7 h-7 rounded-full bg-orange-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="changeColor('#FE98F6')" class="w-7 h-7 rounded-full bg-pink-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-10 flex justify-between items-center">
-                    <h2 class="text-tiny font-medium text-gray-500">Contour texte</h2>
-                    <div>
-                        <button onclick="withStroke()" class="withstroke uppercase font-medium text-sm focus:outline-none focus:text-purple link">Oui</button>
-                        <button onclick="noStroke()" class="nostroke uppercase font-medium text-sm ml-5 focus:outline-none focus:text-purple link">Non</button>
+                    <div class="mt-10">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-tiny font-medium text-gray-500">Couleur background</h2>
+                            <span class="text-sm background-color">#FBFCF5</span>
+                        </div>
+                        <div class="mt-5 flex justify-between w-10/12">
+                            <button onclick="changeBackground('#E7FE98')" class="w-7 h-7 rounded-full bg-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="changeBackground('#7DB9F5')" class="w-7 h-7 rounded-full bg-blue-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="changeBackground('#98FEAC')" class="w-7 h-7 rounded-full bg-green-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="changeBackground('#CE7DF5')" class="w-7 h-7 rounded-full bg-purple cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="changeBackground('#F57DA2')" class="w-7 h-7 rounded-full bg-red-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="changeBackground('#FEB398')" class="w-7 h-7 rounded-full bg-orange-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                            <button onclick="changeBackground('#FE98F6')" class="w-7 h-7 rounded-full bg-pink-neon cursor-pointer focus:ring-2 focus:ring-black focus:ring-offset-2 focus:outline-none"></button>
+                        </div>
+                    </div>
+                    <div class="mt-10 flex justify-between items-center">
+                        <h2 class="text-tiny font-medium text-gray-500">Contour texte</h2>
+                        <div>
+                            <button onclick="withStroke()" class="withstroke uppercase font-medium text-sm focus:outline-none focus:text-purple link">Oui</button>
+                            <button onclick="noStroke()" class="nostroke uppercase font-medium text-sm ml-5 focus:outline-none focus:text-purple link">Non</button>
+                        </div>
                     </div>
                 </div>
             </div>
