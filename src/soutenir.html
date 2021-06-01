@@ -112,40 +112,45 @@
             </div>
             <div class="h-700px w-700px rounded-full blur bg-neon block absolute bottom-0 lg:top-20 -right-96 xl:-right-72 z-0"></div>
         </section>
-        <section class="container px-10 xl:px-20 mb-24 xl:mb-48 reveal">
+        <section class="container px-10 xl:px-20 mb-24 lg:mb-48 reveal">
             <div class="reveal-2">
                 <span class="text-2lg lg:text-2xl font-extralight">Donations récoltées </span>
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-medium leading-none">3480€</h2>
             </div>
-            <div class="relative mt-16 lg:mt-20 lg:ml-auto lg:w-6/12">
-                <div x-data="{ don : 'small' }" class="flex flex-col-reverse">
-                    <div class="flex text-base mt-10 w-10/12 reveal-4">
-                        <button @click="don = 'small'" :class="{ 'font-medium': don === 'small' }" class="pr-5 sm:pr-10 font-extralight focus:outline-none link">10€</button>
-                        <button @click="don = 'medium'" :class="{ 'font-medium': don === 'medium' }" class="px-5 sm:px-10 font-extralight focus:outline-none link">20€</button>
-                        <button @click="don = 'big'" :class="{ 'font-medium': don === 'big' }" class="pl-5 sm:pl-10 font-extralight focus:outline-none link">50€</button>
-                    </div>
-                    <div class="reveal-3">
-                        <div x-show="don === 'small'" class="md:border-l md:border-black">
-                            <h2 class="font-medium text-base md:ml-10 max-w-lg">Une petite participation pour un grand&nbsp;projet</h2>
-                            <p class="text-tiny font-extralight w-full max-w-lg mt-3 md:ml-10">Grâce à votre donation de 10€, vous aurez l'honneur d'obtenir un accés en avant-première de la bêta de Vertigo. De plus, vous aidez le projet à se développer plus&nbsp;vite.</p>
-                        </div>
-                        <div x-show="don === 'medium'" class="md:border-l md:border-black">
-                            <h2 class="font-medium text-base md:ml-10 max-w-lg">Une belle occasion d'aider un beau&nbsp;projet</h2>
-                            <p class="text-tiny font-extralight w-full max-w-lg mt-3 md:ml-10">Grâce à votre donation de 20€, vous aurez la chance d'obtenir un accés en avant-première de la bêta de Vertigo mais aussi un accès au Discord de la communauté&nbsp;Vertigo.</p>
-                        </div>
-                        <div  x-show="don === 'big'" class="md:border-l md:border-black">
-                            <h2 class="font-medium text-base md:ml-10 max-w-lg">Le meilleur moyen pour découvrir&nbsp;Vertigo</h2>
-                            <p class="text-tiny font-extralight w-full max-w-lg mt-3 md:ml-10">Grâce à votre généreuse donation de 50€, Vertigo vous offre à leur tour un accès en avant-première de la bêta, un accés au Discord de la communauté Vertigo et des thèmes uniques inclus dans le&nbsp;logiciel.</p>
-                        </div>
-                    </div>
+            <div class="relative mt-16 lg:mt-20 lg:ml-auto lg:flex" x-data="{ open: false }">
+                <div class="w-full lg:w-6/12 reveal-3" x-show="open">
+                    <h2 class="text-2lg sm:text-xl font-medium max-w-lg">Merci pour votre donnations !</h2>
                 </div>
-                <div class="inline-block sm:flex items-center font-medium text-tiny mt-10 relative reveal-5">
-                    <a class="bg-neon px-5 py-3 flex items-center mr-10 btn-soutenir link" href="soutenir-thks.html">Soutenir
-                        <div class="bg-black w-12 h-2px block ml-3"></div>
-                    </a>
-                    <a class="font-normal flex items-center mt-5 sm:mt-0 link link-propos" href="propos.html">En savoir plus
-                        <img class="ml-2" src="assets/icons/arrow-to.svg" alt="Icone flèche savoir plus">
-                    </a>
+                <div class="w-full lg:w-6/12 mt-20 lg:mt-0 ml-auto">
+                    <div class="flex flex-col-reverse" x-data="{ don : 'small' }">
+                        <div class="flex text-base mt-10 w-10/12 reveal-4">
+                            <button class="pr-5 sm:pr-10 font-extralight focus:outline-none link" @click="don = 'small'" :class="{ 'font-medium': don === 'small' }">10€</button>
+                            <button class="px-5 sm:px-10 font-extralight focus:outline-none link" @click="don = 'medium'" :class="{ 'font-medium': don === 'medium' }">20€</button>
+                            <button class="pl-5 sm:pl-10 font-extralight focus:outline-none link" @click="don = 'big'" :class="{ 'font-medium': don === 'big' }">50€</button>
+                        </div>
+                        <div class="reveal-3">
+                            <div class="md:border-l md:border-black" x-show="don === 'small'">
+                                <h2 class="font-medium text-base md:ml-10 max-w-lg">Une petite participation pour un grand&nbsp;projet</h2>
+                                <p class="text-tiny font-extralight w-full max-w-lg mt-3 md:ml-10">Grâce à votre donation de 10€, vous aurez l'honneur d'obtenir un accés en avant-première de la bêta de Vertigo. De plus, vous aidez le projet à se développer plus&nbsp;vite.</p>
+                            </div>
+                            <div class="md:border-l md:border-black" x-show="don === 'medium'">
+                                <h2 class="font-medium text-base md:ml-10 max-w-lg">Une belle occasion d'aider un beau&nbsp;projet</h2>
+                                <p class="text-tiny font-extralight w-full max-w-lg mt-3 md:ml-10">Grâce à votre donation de 20€, vous aurez la chance d'obtenir un accés en avant-première de la bêta de Vertigo mais aussi un accés au Discord de la communauté&nbsp;Vertigo.</p>
+                            </div>
+                            <div class="md:border-l md:border-black" x-show="don === 'big'">
+                                <h2 class="font-medium text-base md:ml-10 max-w-lg">Le meilleur moyen pour découvrir&nbsp;Vertigo</h2>
+                                <p class="text-tiny font-extralight w-full max-w-lg mt-3 md:ml-10">Grâce à votre généreuse donation de 50€, Vertigo vous offre à leur tour un accés en avant-première de la bêta, un accés au Discord de la communauté Vertigo et des thèmes uniques inclus dans le&nbsp;logiciel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline-block sm:flex items-center font-medium text-tiny mt-10 relative reveal-5">
+                        <div class="bg-neon px-5 py-3 flex items-center mr-10 btn-soutenir link" @click="open = true">Soutenir
+                            <div class="bg-black w-12 h-2px block ml-3"></div>
+                        </div>
+                        <a class="font-normal flex items-center mt-5 sm:mt-0 link link-propos" href="propos.html">En savoir plus
+                            <img class="ml-2" src="assets/icons/arrow-to.svg" alt="Icone flèche savoir plus">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
