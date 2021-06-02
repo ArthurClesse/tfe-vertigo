@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 
     <script defer src="scripts/app.js"></script>
 </head>
@@ -110,7 +110,15 @@
         <section class="block xl:flex container px-10 xl:px-20 pt-20 xl:pt-48">
             <div class="w-full lg:w-6/12 h-auto xl:h-800px relative">
                 <div class="relative z-10 reveal">
-                    <h2 class="font-bold text-lg lg:text-xl xl:text-2xl w-full xl:w-10/12 leading-tight max-w-lg reveal-1">Révolutionner le&nbsp;streaming d’aujourd’hui.</h2>
+                    <h2 class="font-bold text-lg lg:text-xl xl:text-2xl w-full xl:w-10/12 leading-tight max-w-lg reveal-1">
+                        <div id="holder" class="relative max-w-lg h-11 lg:h-16 xl:h-20">
+                            <div id="slogans" class="relative top-0 right-0">
+                                <h2 class="slogan"><strong class="block relative opacity-0">Révolutionner</strong></h2>
+                                <h2 class="slogan"><strong class="block relative opacity-0">Améliorer</strong></h2>
+                                <h2 class="slogan"><strong class="block relative opacity-0">Développer</strong></h2>
+                            </div>
+                        </div>
+                        le&nbsp;streaming d’aujourd’hui.</h2>
                     <p class="text-tiny font-extralight mt-10 xl:mt-5 w-full lg:pr-10 xl:pr-0 xl:w-10/12 max-w-lg relative reveal-2">Vertigo, c'est le nouveau logiciel destiné aux streamers, il leur permet de créer et de personnaliser leur décor mais il propose aussi une technologie inédite afin que le décor réagisse avec le&nbsp;streamer.</p>
                     <div class="inline-block sm:flex items-center font-medium text-tiny mt-10 relative reveal-3">
                         <a class="bg-neon px-5 py-3 flex items-center mr-10 btn-soutenir link" href="soutenir.html">Soutenir
@@ -184,12 +192,28 @@
                     </a>
                 </div>
             </div>
-            <a href="video.html">
-                <div class="w-full xl:h-700px overflow-hidden noise mt-10 img-hover relative z-10">
+                <div class="w-full xl:h-700px overflow-hidden noise mt-10 relative z-10">
                     <img id="imgVideo" class="w-full h-full object-cover" src="assets/images/streamer.jpg" srcset="assets/images/streamer@2x.jpg" alt="Image d'un streamer">
-                    <img id="playerBtn" class="h-20 w-20 lg:h-32 lg:w-32 absolute left-1/2 top-1/2 transform translate-x-center translate-y-center z-30 cursor-pointer" src="assets/icons/play-fill.svg" alt="Icone du bouton play">
+                    <a href="video.html" class="w-40 h-40 lg:h-52 lg:w-52 block z-30 bg-transparent absolute top-1/2 left-1/2 transform translate-y-center translate-x-center text-neon link circle-video">
+                        <div class="bg-neon w-24 h-24 lg:w-32 lg:h-32 absolute top-1/2 left-1/2 transform translate-y-center translate-x-center rounded-full circle-play">
+                            <svg class="absolute top-1/2 left-1/2 transform translate-y-center translate-x-center rounded-full h-10 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z"/></svg>
+                        </div>
+                        <div class="w-40 h-40 lg:h-52 lg:w-52 absolute top-1/2 left-1/2 transform translate-y-center translate-x-center circle-rotate z-20">
+                            <svg viewBox="0 0 150 150" class="fill-current">
+                                <path fill="transparent" id="curve" d="M 15, 75 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" />
+                                <text width="150" font-family="Helvetica Neue" font-size="15px">
+                                    <textPath xlink:href="#curve">Regarder vidéo</textPath>
+                                </text>
+                                <text width="150" font-family="Helvetica Neue" font-size="15px" transform = "rotate(120 75 75)">
+                                    <textPath xlink:href="#curve">Regarder vidéo</textPath>
+                                </text>
+                                <text width="150" font-family="Helvetica Neue" font-size="15px" transform = "rotate(240 75 75)">
+                                    <textPath xlink:href="#curve">Regarder vidéo</textPath>
+                                </text>
+                            </svg>
+                        </div>
+                    </a>
                 </div>
-            </a>
             <div class="h-96 lg:h-500px xl:h-500px w-96 lg:w-500px xl:w-500px rounded-full blur bg-olive block absolute -bottom-56 -right-56 z-0"></div>
         </section>
         <section class="container px-10 xl:px-20 pt-28 xl:pt-48 pb-28 xl:pb-48 lg:flex bg-cream reveal">
