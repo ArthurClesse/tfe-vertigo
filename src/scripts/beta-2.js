@@ -39,7 +39,16 @@ function circleColor2(newColor) {
     list2Circle.style.backgroundColor = newColor;
   }
   circleColor02.innerHTML = newColor;
-}   
+}
+
+//Color change full circle
+function circleFullColor(newColor) {
+    let listFullCircles = document.querySelectorAll(".circle-color");
+  
+    for(let listFullCircle of listFullCircles){
+        listFullCircle.style.backgroundColor = newColor;
+    }
+  }
 
 //Slider range cirlce 1
 let slider = document.getElementById('range-circle1');
