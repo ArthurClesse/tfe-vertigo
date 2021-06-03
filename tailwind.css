@@ -438,3 +438,10 @@ input[type="range"]::-webkit-slider-thumb {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+.link-credit svg{
+    transition: all .3s ease-in-out;
+}
+.link-credit:hover svg{
+    width: 48px;
+    margin-left: 20px;
+}
