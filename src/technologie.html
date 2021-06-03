@@ -113,7 +113,7 @@
         </div>
     </header>
     <main class="bg-cream">
-        <section class="container px-10 xl:px-20 pt-10 pb-32 relative reveal">
+        <section class="container px-10 xl:px-20 pt-10 pb-32 relative z-30 reveal">
             <h2 class="font-medium text-2lg sm:text-2xl md:text-3xl xl:text-4xl leading-snug relative z-10 reveal-2">Comment fonctionne <span class="tracking-wide">Vertigo</span></h2>
             <div class="mt-10">
                 <span class="uppercase tracking-wider text-sm font-medium block max-w-lg reveal-3">Technologie</span>
@@ -125,6 +125,25 @@
             <div class="h-700px w-700px rounded-full blur bg-neon block absolute bottom-0 lg:top-20 -right-96 xl:-right-72 z-0"></div>
             <div class="mt-10 h-full md:w-7/12 lg:w-5/12 md:ml-auto md:-mt-28 lg:-mt-96 xl:-mt-400px relative noise overflow-hidden img-hover reveal-4">
                 <img class="w-full h-full object-cover" src="assets/images/techno-img02.jpg" srcset="assets/images/techno-img02@2x.jpg" alt="Photo d'un rue rempli de monde">
+                <a href="webcam.html" class="w-32 h-32 md:w-40 md:h-40 xl:h-52 xl:w-52 block z-30 bg-transparent absolute left-10 bottom-10 text-neon link circle-video">
+                    <div class="bg-neon w-20 h-20 md:w-24 md:h-24 xl:w-32 xl:h-32 absolute top-1/2 left-1/2 transform translate-y-center translate-x-center rounded-full circle-play">
+                        <svg class="absolute top-1/2 left-1/2 transform translate-y-center translate-x-center rounded-full h-10 w-10 xl:h-12 xl:w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H7.004V6h11v11h-2V9.414z"/></svg>
+                    </div>
+                    <div class="w-32 h-32 md:w-40 md:h-40 xl:h-52 xl:w-52 absolute top-1/2 left-1/2 transform translate-y-center translate-x-center circle-rotate z-20">
+                        <svg viewBox="0 0 150 150" class="fill-current">
+                            <path fill="transparent" id="curve" d="M 15, 75 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" />
+                            <text width="150" font-family="Helvetica Neue" font-size="15px">
+                                <textPath xlink:href="#curve">Avant-première</textPath>
+                            </text>
+                            <text width="150" font-family="Helvetica Neue" font-size="15px" transform = "rotate(120 75 75)">
+                                <textPath xlink:href="#curve">Avant-première</textPath>
+                            </text>
+                            <text width="150" font-family="Helvetica Neue" font-size="15px" transform = "rotate(240 75 75)">
+                                <textPath xlink:href="#curve">Avant-première</textPath>
+                            </text>
+                        </svg>
+                    </div>
+                </a>
             </div>
         </section>
         <section class="container px-10 xl:px-20 mt-10 mb-32 xl:mb-56 relative lg:-mt-48 xl:-mt-72">

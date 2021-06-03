@@ -412,10 +412,16 @@ input[type="range"]::-webkit-slider-thumb {
     transition: all .3s ease-in-out;
 }
 .circle-video:hover .circle-play{
-    width: 180px;
-    height: 180px;
+    width: 148px;
+    height: 148px;
 }
-@media (min-width:1024px) {
+@media (min-width:768px) {
+    .circle-video:hover .circle-play{
+        width: 180px;
+        height: 180px;
+    }
+}
+@media (min-width:1440px) {
     .circle-video:hover .circle-play{
         width: 230px;
         height: 230px;
@@ -431,87 +437,4 @@ input[type="range"]::-webkit-slider-thumb {
     100%{
         transform: translate(-50%, -50%) rotate(360deg);
     }
-}
-/* .page-loader{
-    animation: loader .5s ease-in-out;
-}
-@keyframes loader {
-	0% {
-		opacity: 0;
-        top: -100%;
-	}
-	100% {
-		opacity: 1;
-        top: 0;
-	}
-}
-.page-finish{
-    transition: all .5s ease-in-out;
-    opacity: 0;
-    top: 100%;
-} */
-
-/* DARK MODE */
-body[data-theme=light] .btn-dark{
-    display: none;
-}
-body[data-theme=dark] .btn-light{
-    display: none;
-}
-body[data-theme=dark]{
-    background-color: #121212;
-}
-body[data-theme=dark] header{
-    background-color: #121212;
-}
-body[data-theme=dark] main{
-    background-color: #121212;
-}
-body[data-theme=dark] footer{
-    background-color: #121212;
-}
-body[data-theme=dark] section{
-    background-color: #121212;
-}
-body[data-theme=dark] p{
-    color: white;
-}
-body[data-theme=dark] a{
-    color: white;
-}
-body[data-theme=dark] h2{
-    color: white;
-}
-body[data-theme=dark] h3{
-    color: white;
-}
-body[data-theme=dark] span{
-    color: white;
-}
-body[data-theme=dark] li{
-    color: white;
-}
-body[data-theme=dark] .menu{
-    background-color: #121212;
-}
-body[data-theme=dark] .btn-soutenir{
-    color: black;
-}
-body[data-theme=dark] .soutenir-footer{
-    color: black;
-}
-body[data-theme=dark] .burger-line01{
-    background-color: white;
-}
-body[data-theme=dark] .burger-line02{
-    background-color: white;
-}
-body[data-theme=dark] .svg-propos{
-    fill: white;
-}
-body[data-theme=dark] .link-menu div{
-    background-color: white;
-}
-body[data-theme=dark] .btn-send{
-   border: white solid 1px;
 }
