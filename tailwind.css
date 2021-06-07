@@ -40,6 +40,16 @@ html, body{
       -moz-filter: blur(30px);
       filter: blur(30px);
   }
+  .blur-img{
+      background-image: url(../assets/icons/round-blur-neon.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .blur-img-olive{
+    background-image: url(../assets/icons/round-blur-olive.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
   body[data-menu] .menu{
       display: block;
       opacity: 0;

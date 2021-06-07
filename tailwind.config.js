@@ -67,8 +67,10 @@ module.exports = {
         '8px': '8px',
         '450px': '450px',
         '500px': '500px',
+        '600px': '600px',
         '700px': '700px',
         '800px': '800px',
+        '900px': '900px',
         '80vh': '80vh',
         '650px': '650px',
       },
@@ -79,9 +81,11 @@ module.exports = {
         '6px': '6px',
         '8px': '8px',
         '500px': '500px',
+        '600px': '600px',
         '700px': '700px',
         '720px': '720px',
         '800px': '800px',
+        '900px': '900px',
         '1280px': '1280px',
       },
       backdropFilter: { // defaults to {}
@@ -120,7 +124,7 @@ module.exports = {
         '500px':'500px',
         '-500px': '-500px',
         '-110%': '-110%',
-      }
+      },
     },
   },
   variants: {

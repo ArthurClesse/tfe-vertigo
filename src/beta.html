@@ -105,11 +105,11 @@
         <section class="container px-10 xl:px-20 block xl:hidden">
             <h2 class="text-white text-lg sm:text-2lg lg:text-xl font-medium text-center my-20">Désolé, mais la bêta de Vertigo n'est disponible que sur desktop. Ouvrez la page sur un écran de minimum 1440px.</h2>
         </section>
-        <div class="fixed bottom-10 right-10 bg-cream w-96 z-20 container-popup text-animated-1">
-            <div class="p-5 text-black">
+        <div class="fixed bottom-10 right-10 bg-cream w-96 z-20 container-popup">
+            <div id="popup" class="p-5 text-black">
                 <h2 class="font-medium text-tiny">Avertissement bêta Vertigo</h2>
                 <p class="text-sm mt-3 leading-relaxed">Pour rappel, ceci n'est qu'une bêta du logiciel Vertigo. Elle vous permet de mieux comprendre le logiciel ainsi que de découvrir quelques fonctionnalités qui seront disponibles lors du lancement du logiciel.</p>
-                <button class="mt-3 text-purple underline btn-popup link focus:outline-none">J'ai compris</button>
+                <button id="popup-close" class="mt-3 text-purple underline btn-popup link focus:outline-none">J'ai compris</button>
             </div>
         </div>
         <section class="hidden w-1280px h-700px mx-auto mt-10 mb-20 rounded-2xl xl:flex container-beta">

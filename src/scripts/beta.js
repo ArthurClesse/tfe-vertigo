@@ -75,7 +75,7 @@ linkGene.addEventListener("click", function(){
 
 //POPUP 
 const popUp = document.querySelector(".container-popup");
-const btnPop = document.querySelector(".btn-popup");
+const btnPop = document.querySelector(".container-popup");
 
 btnPop.addEventListener("click", function(){
   popUp.classList.add("hidden");
