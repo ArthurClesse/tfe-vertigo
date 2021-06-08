@@ -93,10 +93,14 @@ linkGene.addEventListener("click", function(){
   linkFace.classList.remove("text-purple");
 })
 
-//POPUP 
-const popUp = document.querySelector(".container-popup");
-const btnPop = document.querySelector(".btn-popup");
+//COOKIE
+const showMsg = localStorage.getItem('showMsg');
 
-btnPop.addEventListener("click", function(){
-  popUp.classList.add("hidden");
+if(showMsg === 'false'){
+  $('#popup').css("display", "none");
+}
+
+$('#popup-close').on('click', function(){
+  localStorage.setItem('showMsg', 'false');
+  $('#popup').css("display", "none");
 });

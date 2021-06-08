@@ -74,9 +74,22 @@ linkGene.addEventListener("click", function(){
 })
 
 //POPUP 
-const popUp = document.querySelector(".container-popup");
-const btnPop = document.querySelector(".container-popup");
+// const popUp = document.querySelector(".container-popup");
+// const btnPop = document.querySelector(".container-popup");
 
-btnPop.addEventListener("click", function(){
-  popUp.classList.add("hidden");
+// btnPop.addEventListener("click", function(){
+//   popUp.classList.add("hidden");
+// });
+
+
+//COOKIE
+const showMsg = localStorage.getItem('showMsg');
+
+if(showMsg === 'false'){
+  $('#popup').css("display", "none");
+}
+
+$('#popup-close').on('click', function(){
+  localStorage.setItem('showMsg', 'false');
+  $('#popup').css("display", "none");
 });
