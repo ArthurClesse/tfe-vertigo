@@ -255,12 +255,12 @@ canvas{
     background-color: #E7FE98;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     transition: all .3s ease-in-out;
 }
 .btn-send:hover::after{
     width: 100%;
-    right: 0;
+    left: 0;
 }
 .btn-send svg{
     transition: transform .3s ease-in-out;
