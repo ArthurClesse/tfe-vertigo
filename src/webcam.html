@@ -45,7 +45,7 @@
                 <img class="h-12 sm:h-14" src="assets/icons/logo.svg" alt="Logo vertigo">
                 <h1 class="hidden md:block uppercase font-bold text-tiny ml-3">Vertigo</h1>
             </a>
-            <button class="flex items-center font-medium text-tiny outline-none focus:outline-none btn-menu z-50 fixed right-0 pr-10 xl:pr-20 link">
+            <button id="disable-scroll-button" class="flex items-center font-medium text-tiny outline-none focus:outline-none btn-menu z-50 fixed right-0 pr-10 xl:pr-20 link">
                 <span class="hidden sm:block mr-2">Menu</span>
                 <span class="transform -scale-x-1 burger relative w-8 h-4">
                     <span class="h-4px w-8 bg-white block burger-line01 absolute inset-x-0 top-0 transition-transform"></span>
@@ -72,7 +72,7 @@
                         </a>
                     </li>
                     <li class="flex mt-10 text-tiny font-medium text-animated-4">
-                        <a class="bg-neon px-5 py-3 flex items-center mr-10 btn-soutenir link relative z-10" href="soutenir.html">Soutenir
+                        <a class="bg-neon px-5 py-3 flex items-center mr-10 btn-soutenir link relative z-10 text-black" href="soutenir.html">Soutenir
                             <div class="bg-black w-12 h-2px block ml-3 relative">
                             </div>
                         </a>
@@ -105,13 +105,13 @@
         </div>
     </header>
     <main class="flex-grow bg-gordon">
-        <section class="container px-10 xl:px-20 block xl:hidden text-width">
-            <h2 class="text-white text-lg sm:text-2lg lg:text-xl font-medium text-center my-20">Désolé, mais la technologie de Vertigo n'est disponible que sur desktop. Ouvrez la page sur un écran de minimum 1440px.</h2>
+        <section class="container px-10 xl:px-20 block lg:hidden text-width">
+            <h2 class="text-white text-lg sm:text-2lg lg:text-xl font-medium text-center my-20">Désolé, mais la technologie de Vertigo n'est disponible que sur desktop. Ouvrez la page sur un écran de minimum 1024px.</h2>
         </section>
         <section class="container px-10 xl:px-20 hidden msg-safari">
             <h2 class="text-white text-lg sm:text-2lg lg:text-xl font-medium text-center my-20">Pour le moment, le technologie de Vertigo n'est pas disponible sur Safari.</h2>
         </section>
-        <section class="container px-10 xl:px-20 hidden xl:block webcam">
+        <section class="container px-10 xl:px-20 hidden lg:block webcam">
             <h2 class="hidden">Webcam</h2>
             <div id="container-video" class="relative my-10 flex justify-center z-30">
                 <video id="video" height="690" width="920" autoplay muted></video>
@@ -137,7 +137,7 @@
                         <a class="link" href="technologie.html">Technologie</a>
                     </li>
                     <li class="flex text-tiny font-medium mt-3 lg:mt-0 lg:ml-5 xl:ml-10">
-                        <a class="bg-neon px-5 py-3 flex items-center btn-soutenir link relative z-10" href="soutenir.html">Soutenir
+                        <a class="bg-neon px-5 py-3 flex items-center btn-soutenir link relative z-10 text-black" href="soutenir.html">Soutenir
                             <div class="bg-black w-12 h-2px block ml-3 relative">
                             </div>
                         </a>

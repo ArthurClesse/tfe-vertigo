@@ -69,6 +69,15 @@ html, body{
 .btn-menu:hover .burger-line01{
     width: 24px;
 }
+.disable-scroll {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 body[data-menu] .burger-line01{
     top: 50%;
     width: 24px;
@@ -77,10 +86,6 @@ body[data-menu] .burger-line01{
 body[data-menu] .burger-line02{
     bottom: 50%;
     transform: translateY(50%) rotate(45deg);
-}
-body[data-menu]{
-    max-height: 100vh;
-    overflow: hidden;
 }
 body[data-stroke] .stroke{
     -webkit-text-fill-color: none;
