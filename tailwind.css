@@ -359,7 +359,7 @@ canvas{
 .link-propos:hover svg{
     transform: rotate(90deg);
 }
-.link-beta::after{
+.link-beta div::after{
     content: '';
     display: block;
     width: 208px;
@@ -374,7 +374,7 @@ canvas{
     opacity: 50%;
     transition: all .3s ease-in-out;
 }
-.link-beta:hover::after{
+.link-beta:hover div::after{
     transform: translate(-50%, -50%) scale(1);
 }
 .link-video::after{
