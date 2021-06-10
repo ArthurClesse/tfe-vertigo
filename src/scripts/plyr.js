@@ -12,13 +12,13 @@ const controls = `
         <span role="tooltip" class="plyr__tooltip">00:00</span>
     </div>
     <div class="plyr__time plyr__time--duration" aria-label="Duration">00:00</div>
-    <button type="button" class="plyr__control" aria-label="Mute" data-plyr="mute">
+    <button type="button" class="plyr__control btn-volume" aria-label="Mute" data-plyr="mute">
     <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-muted"></use></svg>
     <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-volume"></use></svg>
     <span class="label--pressed plyr__tooltip" role="tooltip">Unmute</span>
     <span class="label--not-pressed plyr__tooltip" role="tooltip">Mute</span>
-</button>
-    <div class="plyr__volume">
+    </button>
+    <div class="plyr__volume volume">
         <input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" aria-label="Volume">
     </div>  
     <button type="button" class="plyr__control btn-fullscreen" data-plyr="fullscreen">

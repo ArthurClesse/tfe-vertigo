@@ -461,12 +461,24 @@ canvas{
     --plyr-color-main: #E7FE98;
     --plyr-video-control-color: #B9CC7A;
 }
+#player{
+    overflow: visible !important;
+}
 .plyr__controls{
     width: 100%;
     justify-content: space-between;
+    position: absolute !important;
+    bottom: -50px !important;
+    background: none !important;
 }
 .plyr__progress{
     width: 60%;
+}
+.plyr__volume{
+    display: none;
+}
+.plyr__controls .btn-volume{
+    display: none;
 }
 @media (min-width:768px) {
     .plyr__controls .btn-fullscreen{
@@ -474,6 +486,12 @@ canvas{
     }
     .plyr__progress{
         width: 80%;
+    }
+    .plyr__volume{
+        display: block;
+    }
+    .plyr__controls .btn-volume{
+        display: block;
     }
 }
 .hide-safari{
