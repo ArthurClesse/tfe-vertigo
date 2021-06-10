@@ -35,3 +35,5 @@ const player = new Plyr('#player',{
     autoplay: true,
 });
 player.fullscreen.enabled;
+
+
